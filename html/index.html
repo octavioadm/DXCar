@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Autos, Nuevos, Usados" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta
+      name="description"
+      content="Web Automotora DXCAR, Autos, Nuevos, Usados"
+    />
+    <meta name="author" content="#DX" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DXCars</title>
+
+    <!-- CSS Popio -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- ANIMATE STYLE CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body class="bodyInicio">
+    <!-- ######  HEADER ###### -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <!-- NAVBAR LOGO -->
+          <a class="logoDXCar" href="index.html"
+            ><img src="../img/DXCar.PNG" alt="logoDXCar"
+          /></a>
+          <!-- NAVBAR LINKS-->
+          <nav class="nav">
+            <ul>
+              <li><a href="ceroKm.html">0Km</a></li>
+              <li><a href="usados.html">Usados</a></li>
+              <li><a href="empresa.html">Empresa</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- LINEA VIOLERA DEBAJO DEL HEADER -->
+    <div class="backLineNavbar"></div>
+    <!-- VIDEO O IMAGENES -->
+    <div class="boxVideoPortada">
+      <video id="videoPortada" autoplay="" loop="" muted="">
+        <source src="../img/vid.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <!-- SEPARACION SECCION -->
+    <div class="wave">
+      <img src="../img/wave1.svg" alt="" />
+    </div>
+    <!-- NUEVOS Y USADOS -->
+    <!-- NUEVOS -->
+    <section>
+      <div class="bannerNewCars">Nuevos</div>
+      <div class="bannerUsedCars">Usados</div>
+      <div class="newUsedCards">
+        <div class="newUsedCards__card">
+          <a href="ceroKm.html"
+            ><img src="../img/nuevoVeh.png" alt="Vehiculos Nuevos"
+          /></a>
+          <h2>Nuevos-0Km</h2>
+          <p>
+            Somos concesionario Oficial de: <br />
+            Chevrolet, Dodge, BMW, Jeep, Cooper, Lexus, Renault y Hyundai.
+            <br />
+            Visite y vea el vehiculo 0Km de su interés.
+          </p>
+          <a href="ceroKm.html"
+            ><input
+              type="button"
+              name="verNuevos"
+              id="verNuevos"
+              value="Ver Nuevos"
+          /></a>
+        </div>
+
+        <!-- USADOS -->
+        <div class="newUsedCards__card">
+          <a href="usados.html"
+            ><img src="../img/usadoVeh.png" alt="Vehiculos Usados"
+          /></a>
+          <h2>Usados</h2>
+          <p>
+            Tenemos unidades de todas las marcas del mercado en excelente
+            estado. <br />
+            Visite y vea el vehículo Usado que mas se adecue a sus necesidades.
+          </p>
+          <a href="usados.html"
+            ><input
+              type="button"
+              name="verNuevos"
+              id="verNuevos"
+              value="Ver Usados"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION VEHICULOS DESTACADOS -->
+    <section>
+      <div class="wave">
+        <img src="../img/wave2.svg" alt="" />
+      </div>
+      <div class="wave">
+        <img src="../img/wave1.svg" alt="" />
+      </div>
+      <div class="boxCards">
+        <div class="boxCards__titleCar">
+          <h2>Vehículos destacados</h2>
+          <p>Nuestros destacados del mes</p>
+        </div>
+        <!-- AUTO DESTACADO 1 -->
+        <div class="boxCards__card">
+          <div class="boxCards__item">
+            <img class="boxCards__img" src="../img/CHJoy.png" alt="" />
+            <h4>CHEVROLET - Joy Black</h4>
+            <div class="boxCards__ul">
+              <ul class="boxCards__vinetaUL">
+                <li>Garatía 3 años o 100.000Km</li>
+                <li>Motor 1.0</li>
+                <li>3 estrellas de seguridad "Latincap"</li>
+                <li>Llantas de 15''</li>
+              </ul>
+            </div>
+            <h5>COLORES DISPONIBLES</h5>
+            <div class="containerColorCarsDisp">
+              <div class="containerColorCarsDisp__item" id="red"></div>
+              <div class="containerColorCarsDisp__item" id="blue"></div>
+              <div class="containerColorCarsDisp__item" id="grey"></div>
+              <div class="containerColorCarsDisp__item" id="black"></div>
+            </div>
+          </div>
+          <!-- AUTO DESTACADO 2 -->
+          <div class="boxCards__item">
+            <img class="boxCards__img" src="../img/HYhb20.png" alt="" />
+            <h4>HYUNDAI - HB20</h4>
+            <div class="boxCards__ul">
+              <ul class="boxCards__vinetaUL">
+                <li>Garatía 2 años o 50.000Km</li>
+                <li>Motor 1.6</li>
+                <li>1 estrellas de seguridad "Latincap"</li>
+                <li>Transmisión de sexta</li>
+              </ul>
+            </div>
+            <h5>COLORES DISPONIBLES</h5>
+            <div class="containerColorCarsDisp">
+              <div class="containerColorCarsDisp__item" id="green"></div>
+              <div class="containerColorCarsDisp__item" id="blue"></div>
+              <div class="containerColorCarsDisp__item" id="grey"></div>
+              <div class="containerColorCarsDisp__item" id="yellow"></div>
+            </div>
+          </div>
+          <!-- AUTO DESTACADO 3 -->
+          <div class="boxCards__item">
+            <img class="boxCards__img" src="../img/REkwid.png" alt="" />
+            <h4>RENAULT - Kwid</h4>
+            <div class="boxCards__ul">
+              <ul class="boxCards__vinetaUL">
+                <li>Garatía 3 años o 100.000Km</li>
+                <li>Motor 1.0</li>
+                <li>3 estrellas de seguridad "Latincap"</li>
+                <li>Radio Multimedia 'Android'</li>
+              </ul>
+            </div>
+            <h5>COLORES DISPONIBLES</h5>
+            <div class="containerColorCarsDisp">
+              <div class="containerColorCarsDisp__item" id="orange"></div>
+              <div class="containerColorCarsDisp__item" id="blue"></div>
+              <div class="containerColorCarsDisp__item" id="red"></div>
+              <div class="containerColorCarsDisp__item" id="black"></div>
+            </div>
+          </div>
+        </div>
+        <div class="wave">
+          <img src="../img/wave2.svg" alt="" />
+        </div>
+        <div class="wave">
+          <img src="../img/wave1.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION MARCAS EN VENTA -->
+    <section>
+      <div class="titleBrands">
+        <h2>Marcas trabajadas</h2>
+        <p>Marcas que confian en nosotros.</p>
+      </div>
+      <div class="containerBrands">
+        <div class="containerBrands__in">
+          <div class="containerBrands__item">
+            <img src="../img/chevrolet.png" alt="chevrolet" />
+          </div>
+          <div class="containerBrands__item">
+            <img src="../img/dodge.png" alt="dodge" />
+          </div>
+          <div class="containerBrands__item">
+            <img src="../img/bmw.png" alt="bmw" />
+          </div>
+          <div class="containerBrands__item">
+            <img src="../img/jeep.png" alt="jeep" />
+          </div>
+        </div>
+        <div class="containerBrands__in">
+          <div class="containerBrands__item">
+            <img src="../img/cooper.png" alt="cooper" />
+          </div>
+          <div class="containerBrands__item">
+            <img src="../img/lexus.png" alt="lexus" />
+          </div>
+          <div class="containerBrands__item">
+            <img src="../img/renault.png" alt="renault" />
+          </div>
+          <div class="containerBrands__item">
+            <img src="../img/hyundai.jpg" alt="hyundai" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="gradientLineFooter"></div>
+      <div class="footerLinks">
+        <div class="footerLinks__Left">
+          <a href="ceroKm.html">0Km</a>
+          <a href="usados.html">Usados</a>
+        </div>
+        <div class="footerLogo">
+          <img src="../img/DXCar.PNG" id="footerImg" alt="logoDXCar" />
+          <h3>Copyright © DXCar 2022</h3>
+        </div>
+        <div class="underLineCopyright"></div>
+        <div class="footerLinks__Right">
+          <a href="empresa.html">Empresa</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+
+      <!-- IMAGENES "LINKS" A REDES SOCIALES -->
+      <div class="footerSocialNetworks">
+        <a href="https://es-la.facebook.com/" target="_blank"
+          ><img
+            class="footerSocialNetworks__img"
+            src="../img/facebook.png"
+            alt="facebook"
+        /></a>
+        <a href="https://www.instagram.com/?hl=es-la" target="_blank"
+          ><img
+            class="footerSocialNetworks__img"
+            src="../img/instagram.png"
+            alt="instagram"
+        /></a>
+        <a href="https://twitter.com/?lang=es" target="_blank"
+          ><img
+            class="footerSocialNetworks__img"
+            src="../img/twitter.png"
+            alt="twitter"
+        /></a>
+        <a
+          href="https://wa.me/59898735585?text=Bienvenido%20a%20DXCar%20, %20En%20que%20podemos%20ayudarte?"
+          target="_blank"
+          ><img
+            class="footerSocialNetworks__img"
+            src="../img/whatsapp.png"
+            alt="whatsapp"
+        /></a>
+      </div>
+    </footer>
+  </body>
+
+  <!-- #DX -->
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usados</title>
+    <!-- CSS Popio -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- ANIMATE STYLE CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body class="bodyUsados">
+    <!-- ######  HEADER ###### -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <!-- NAVBAR LOGO -->
+          <a class="logoDXCar" href="index.html"
+            ><img src="../img/DXCar.PNG" alt="logoDXCar"
+          /></a>
+          <!-- NAVBAR LINKS-->
+          <nav class="nav">
+            <ul>
+              <li><a href="ceroKm.html">0Km</a></li>
+              <li><a href="usados.html">Usados</a></li>
+              <li><a href="empresa.html">Empresa</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- LINEA VIOLERA DEBAJO DEL HEADER -->
+    <div class="backLineNavbar"></div>
+    <!-- AUTOS USADOS -->
+    <section>
+      <div class="containerTitleUsados">
+        <h2>Usados</h2>
+        <hr />
+      </div>
+      <!-- GRID FILTRO Y AUTOS USADOS -->
+      <div class="containerUsados">
+        <div class="containerUsados__filtro">
+          <div class="tituloFiltro">
+            <h3>Filtro</h3>
+          </div>
+          <div class="ano">
+            <h4>Cant. KM</h4>
+            <hr />
+            <select name="filtrosUsadoKM" id="filtrosUsadoKM">
+              <option value="0_50">De 0 a 50.000</option>
+              <option value="50_100">De 50.000 a 100.000</option>
+              <option value="100mas">Más de 100.000</option>
+            </select>
+            <br />
+          </div>
+          <div class="marca">
+            <h4>Marca</h4>
+            <hr />
+            <select name="filtrosNuevoMarca" id="filtrosNuevoMarca">
+              <option value="Hyundai">Hyundai</option>
+              <option value="Chevrolet">Chevrolet</option>
+              <option value="Lexus">Lexus</option>
+              <option value="Jeep">Jeep</option>
+              <option value="BMW">BMW</option>
+            </select>
+            <br />
+          </div>
+          <div class="modelo">
+            <h4>Modelo</h4>
+            <hr />
+            <select name="filtrosNuevoTipo" id="filtrosNuevoTipo">
+              <option value="Urbano">Urbano</option>
+              <option value="Hatch">Hatch</option>
+              <option value="Hatch">Familiar</option>
+              <option value="Hatch">Sedan</option>
+            </select>
+          </div>
+        </div>
+        <!-- AUTO-6 -->
+        <div class="containerUsado__autos auto6">
+          <div class="auto6Img">
+            <img src="../img/jeepUsed.png" alt="logoDXCar" />
+          </div>
+          <div class="auto6Descripcion">
+            <h5>JEEP - Wrangler</h5>
+            <br />
+            <div class="autoDescripcion__Desc">
+              <ul>
+                <li>Garatía 12 meses - Unicamente motor</li>
+                <li>Motor V6 - 3.6</li>
+                <li>120.000 Km</li>
+                <li>Transmisión automática de 8 velocidades</li>
+                <li>Sistema Select-Track 4x4</li>
+              </ul>
+            </div>
+          </div>
+          <div class="auto6ComprarInformacion">
+            <a href="#"
+              ><input type="button" name="comprar" value="Comprar" id="comprar"
+            /></a>
+            <a href="contacto.html"
+              ><input
+                type="button"
+                name="masInformacion"
+                value="+ Información"
+                id="masInformacion"
+            /></a>
+          </div>
+        </div>
+        <!-- AUTO-7 -->
+        <div class="containerCerokm__autos auto7">
+          <div class="auto7Img">
+            <img src="../img/LexusLS400.png" alt="logoDXCar" />
+          </div>
+          <div class="auto7Descripcion">
+            <h5>LEXUS - LS400</h5>
+            <br />
+            <div class="autoDescripcion__Desc">
+              <ul>
+                <li>Garatía 12 meses - Unicamente motor</li>
+                <li>Motor V8 - 4.0</li>
+                <li>55.000 Km"</li>
+                <li>Diesel</li>
+                <li>Transmisión Automática</li>
+              </ul>
+            </div>
+          </div>
+          <div class="auto7ComprarInformacion">
+            <a href="#"
+              ><input type="button" name="comprar" value="Comprar" id="comprar"
+            /></a>
+            <a href="contacto.html"
+              ><input
+                type="button"
+                name="masInformacion"
+                value="+ Información"
+                id="masInformacion"
+            /></a>
+          </div>
+        </div>
+        <!-- AUTO-8 -->
+        <div class="containerCerokm__autos auto8">
+          <div class="auto8Img">
+            <img src="../img/HYAccent2011.png" alt="logoDXCar" />
+          </div>
+          <div class="auto8Descripcion">
+            <h5>HYUNDAI - Accent 2011</h5>
+            <br />
+            <div class="autoDescripcion__Desc">
+              <ul>
+                <li>Garatía 12 meses - Unicamente motor</li>
+                <li>Motor 1.5</li>
+                <li>89.000 Km</li>
+                <li>Diesel</li>
+                <li>Transmisión Manual</li>
+              </ul>
+            </div>
+          </div>
+          <div class="auto8ComprarInformacion">
+            <a href="#"
+              ><input type="button" name="comprar" value="Comprar" id="comprar"
+            /></a>
+            <a href="contacto.html"
+              ><input
+                type="button"
+                name="masInformacion"
+                value="+ Información"
+                id="masInformacion"
+            /></a>
+          </div>
+        </div>
+        <!-- AUTO-9 -->
+        <div class="containerCerokm__autos auto9">
+          <div class="auto9Img">
+            <img src="../img/BMW328i2016.png" alt="logoDXCar" />
+          </div>
+          <div class="auto9Descripcion">
+            <h5>BMW - 328i</h5>
+            <br />
+            <div class="autoDescripcion__Desc">
+              <ul>
+                <li>Garatía 12 meses - Unicamente motor</li>
+                <li>Motor 2.0</li>
+                <li>45.000 Km</li>
+                <li>Nafta</li>
+                <li>Transmisión Manual</li>
+              </ul>
+            </div>
+          </div>
+          <div class="auto9ComprarInformacion">
+            <a href="#"
+              ><input type="button" name="comprar" value="Comprar" id="comprar"
+            /></a>
+            <a href="contacto.html"
+              ><input
+                type="button"
+                name="masInformacion"
+                value="+ Información"
+                id="masInformacion"
+            /></a>
+          </div>
+        </div>
+        <!-- AUTO-10 -->
+        <div class="containerCerokm__autos auto10">
+          <div class="auto10Img">
+            <img src="../img/camaroSix.png" alt="logoDXCar" />
+          </div>
+          <div class="auto10Descripcion">
+            <h5>CHEVROLET - Camaro Six</h5>
+            <br />
+            <div class="autoDescripcion__Desc">
+              <ul>
+                <li>Garatía 12 meses - Unicamente motor</li>
+                <li>Motor V8 - 6.2</li>
+                <li>30.000Km</li>
+                <li>Nafta</li>
+                <li>Transmisión Manual</li>
+              </ul>
+            </div>
+          </div>
+          <div class="auto10ComprarInformacion">
+            <a href="#"
+              ><input type="button" name="comprar" value="Comprar" id="comprar"
+            /></a>
+            <a href="contacto.html"
+              ><input
+                type="button"
+                name="masInformacion"
+                value="+ Información"
+                id="masInformacion"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="gradientLineFooter"></div>
+      <div class="footerLinks">
+        <div class="footerLinks__Left">
+          <a href="ceroKm.html">0Km</a>
+          <a href="usados.html">Usados</a>
+        </div>
+        <div class="footerLogo">
+          <img src="../img/DXCar.PNG" id="footerImg" alt="logoDXCar" />
+          <h3>Copyright © DXCar 2022</h3>
+        </div>
+        <div class="underLineCopyright"></div>
+        <div class="footerLinks__Right">
+          <a href="empresa.html">Empresa</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+
+      <!-- IMAGENES "LINKS" A REDES SOCIALES -->
+      <div class="footerSocialNetworks">
+        <a href="https://es-la.facebook.com/" target="_blank"
+          ><img
+            class="footerSocialNetworks__img"
+            src="../img/facebook.png"
+            alt="facebook"
+        /></a>
+        <a href="https://www.instagram.com/?hl=es-la" target="_blank"
+          ><img
+            class="footerSocialNetworks__img"
+            src="../img/instagram.png"
+            alt="instagram"
+        /></a>
+        <a href="https://twitter.com/?lang=es" target="_blank"
+          ><img
+            class="footerSocialNetworks__img"
+            src="../img/twitter.png"
+            alt="twitter"
+        /></a>
+        <a
+          href="https://wa.me/59898735585?text=Bienvenido%20a%20DXCar%20, %20En%20que%20podemos%20ayudarte?"
+          target="_blank"
+          ><img
+            class="footerSocialNetworks__img"
+            src="../img/whatsapp.png"
+            alt="whatsapp"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
