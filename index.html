@@ -14,6 +14,8 @@
 
     <!-- CSS Popio -->
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- LINK ANIMATION AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- ANIMATE STYLE CSS -->
     <link
       rel="stylesheet"
@@ -57,10 +59,14 @@
     <!-- NUEVOS Y USADOS -->
     <!-- NUEVOS -->
     <section>
-      <div class="bannerNewCars">Nuevos</div>
-      <div class="bannerUsedCars">Usados</div>
+      <div class="bannerNewCars" data-aos="fade-right">Nuevos</div>
+      <div class="bannerUsedCars" data-aos="fade-left">Usados</div>
       <div class="newUsedCards">
-        <div class="newUsedCards__card">
+        <div
+          class="newUsedCards__card"
+          data-aos="fade-up-right"
+          data-aos-duration="1000"
+        >
           <a href="ceroKm.html"
             ><img src="img/nuevoVeh.png" alt="Vehiculos Nuevos"
           /></a>
@@ -81,7 +87,11 @@
         </div>
 
         <!-- USADOS -->
-        <div class="newUsedCards__card">
+        <div
+          class="newUsedCards__card"
+          data-aos="fade-up-left"
+          data-aos-duration="1000"
+        >
           <a href="usados.html"
             ><img src="img/usadoVeh.png" alt="Vehiculos Usados"
           /></a>
@@ -117,7 +127,7 @@
         </div>
         <!-- AUTO DESTACADO 1 -->
         <div class="boxCards__card">
-          <div class="boxCards__item">
+          <div class="boxCards__item" data-aos="fade-down-right">
             <img class="boxCards__img" src="img/CHJoy.png" alt="" />
             <h4>CHEVROLET - Joy Black</h4>
             <div class="boxCards__ul">
@@ -137,7 +147,7 @@
             </div>
           </div>
           <!-- AUTO DESTACADO 2 -->
-          <div class="boxCards__item">
+          <div class="boxCards__item" data-aos="fade-down">
             <img class="boxCards__img" src="img/HYhb20.png" alt="" />
             <h4>HYUNDAI - HB20</h4>
             <div class="boxCards__ul">
@@ -157,7 +167,7 @@
             </div>
           </div>
           <!-- AUTO DESTACADO 3 -->
-          <div class="boxCards__item">
+          <div class="boxCards__item" data-aos="fade-down-left">
             <img class="boxCards__img" src="img/REkwid.png" alt="" />
             <h4>RENAULT - Kwid</h4>
             <div class="boxCards__ul">
@@ -194,30 +204,30 @@
       </div>
       <div class="containerBrands">
         <div class="containerBrands__in">
-          <div class="containerBrands__item">
+          <div class="containerBrands__item" data-aos="zoom-in-right">
             <img src="img/chevrolet.png" alt="chevrolet" />
           </div>
-          <div class="containerBrands__item">
+          <div class="containerBrands__item" data-aos="zoom-in-down">
             <img src="img/dodge.png" alt="dodge" />
           </div>
-          <div class="containerBrands__item">
+          <div class="containerBrands__item" data-aos="zoom-in-down">
             <img src="img/bmw.png" alt="bmw" />
           </div>
-          <div class="containerBrands__item">
+          <div class="containerBrands__item" data-aos="zoom-in-left">
             <img src="img/jeep.png" alt="jeep" />
           </div>
         </div>
         <div class="containerBrands__in">
-          <div class="containerBrands__item">
+          <div class="containerBrands__item" data-aos="zoom-in-right">
             <img src="img/cooper.png" alt="cooper" />
           </div>
-          <div class="containerBrands__item">
+          <div class="containerBrands__item" data-aos="zoom-in-up">
             <img src="img/lexus.png" alt="lexus" />
           </div>
-          <div class="containerBrands__item">
+          <div class="containerBrands__item" data-aos="zoom-in-up">
             <img src="img/renault.png" alt="renault" />
           </div>
-          <div class="containerBrands__item">
+          <div class="containerBrands__item" data-aos="zoom-in-left">
             <img src="img/hyundai.jpg" alt="hyundai" />
           </div>
         </div>
@@ -272,6 +282,10 @@
         /></a>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 
   <!-- #DX -->
