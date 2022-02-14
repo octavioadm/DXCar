@@ -12,6 +12,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- LINK ANIMATION AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- ######  HEADER ###### -->
@@ -76,7 +78,7 @@
       </div>
       <div class="containerCardsTeam">
         <!-- CEO -->
-        <div class="cardsTeamItem">
+        <div class="cardsTeamItem" data-aos="fade-right">
           <div class="cardsTeamImg">
             <img src="../img/Gerente.jpg" alt="" />
           </div>
@@ -87,7 +89,7 @@
           </div>
         </div>
         <!-- GERENTE -->
-        <div class="cardsTeamItem">
+        <div class="cardsTeamItem" data-aos="fade-up">
           <div class="cardsTeamImg">
             <img src="../img/SubGerente.jpg" alt="" />
           </div>
@@ -98,7 +100,7 @@
           </div>
         </div>
         <!-- JEFE DE VENTAS -->
-        <div class="cardsTeamItem">
+        <div class="cardsTeamItem "data-aos="fade-left">
           <div class="cardsTeamImg">
             <img src="../img/JefaVentas.jpg" alt="" />
           </div>
@@ -159,5 +161,9 @@
         /></a>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
