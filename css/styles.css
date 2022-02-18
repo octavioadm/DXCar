@@ -21,23 +21,25 @@ html {
 /* ################################################################################
 ############################### BARRA DE NAVEGACION - NAVBAR ######################
 ################################################################################ */
+/* NAVBAR */
 header {
   position: relative;
-  height: 10vh;
+  height: 9vh;
   background: var(--grisBase);
 }
 .containerHeader {
   position: fixed;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 10vh;
+  height: 9vh;
   background: var(--grisBase);
   z-index: 10;
 }
 .containerHeader__row {
   display: flex;
+  width: 100%;
+  margin: 0 auto;
   justify-content: space-around;
 }
 .logoDXCar {
@@ -48,34 +50,39 @@ header {
   transition: 0.3s;
   opacity: 0.8;
 }
-.containerHeader__row-nav {
-  align-self: flex-end;
+.containerHeader__row-navLinks {
   animation: 1s fadeInRight;
+  align-self: flex-end;
 }
-.containerHeader__row-nav ul {
+.containerHeader__row-navLinks ul {
   display: flex;
   list-style: none;
   font-size: 1.8rem;
+  padding: 0;
+  margin: 0;
 }
-.containerHeader__row-nav a {
+/* EFECTOS LINKS NAVBAR */
+.containerHeader__row-navLinks li:hover {
+  opacity: 0.6;
+  text-shadow: 1px 1px 5px #000000;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.containerHeader__row-navLinks a {
   font-family: var(--fuenteRussoVerdana);
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
   margin-left: 5rem;
 }
+.containerHeader__row-navLinks a:hover {
+  color: #ffffff;
+}
 a:visited {
   color: #ffffff;
 }
 a:focus {
   color: #000000;
-}
-/* EFECTOS LINKS NAVBAR y FOOTER*/
-.containerHeader__row-nav li:hover {
-  opacity: 0.6;
-  text-shadow: 1px 1px 5px #000000;
-  transform: scale(1.1);
-  transition: 0.3s;
 }
 /* LINEA VIOLETA DEBAJO DEL NAV y FOOTER*/
 .containerLineNavbar {
@@ -88,15 +95,6 @@ a:focus {
   height: 2rem;
   background: linear-gradient(180deg, var(--grisBase), var(--violetaBase));
   z-index: 1;
-}
-
-/* NAVBAR COLAPSE */
-@media only screen and (max-width: 780px) {
-  .containerHeader__row-nav ul {
-    display: block;
-    list-style-image: url("../img/vineta2.png");
-    font-size: 1.8rem;
-  }
 }
 
 /* ################################################################################
@@ -123,6 +121,7 @@ a:focus {
   font-size: 2rem;
 }
 .footerLinks a:hover {
+  color: #ffffff;
   opacity: 0.6;
   text-shadow: 1px 1px 5px #000000;
   transition: 0.3s;
@@ -188,13 +187,12 @@ a:focus {
   background-attachment: fixed;
   background-size: cover;
 }
-/* VIDEO PORTADA */
 #videoPortada {
   width: 100%;
 }
 /* ONDAS VIOLETAS DEBAJO DE LOOP DE VIDEO */
 .wave {
-  margin-top: -2px;
+  margin-top: -6px;
 }
 /* BANNER TRASERO */
 .bannerNewCars {
