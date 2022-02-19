@@ -7,6 +7,13 @@
     <title>Empresa</title>
     <!-- CSS Popio -->
     <link rel="stylesheet" href="../css/styles.css" />
+        <!-- CSS BOOTSTRAP -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"
+      />
     <!-- ANIMATE STYLE CSS -->
     <link
       rel="stylesheet"
@@ -17,27 +24,48 @@
   </head>
   <body>
     <!-- ######  HEADER ###### -->
-    <header>
-      <div class="container">
-        <div class="row">
-          <!-- NAVBAR LOGO -->
-          <a class="logoDXCar" href="../index.html"
-            ><img src="../img/DXCar.PNG" alt="logoDXCar"
+    <header class="fixed-top">
+      <!-- NAVBAR GRIS BASE -->
+      <nav class="navbar navbar-expand-lg navbar-light navbarColor py-5">
+        <div id="containerNavButton" class="container">
+          <a class="navbar-brand logoDXCar" href="../index.html"
+            ><img src="../img/DXCar.PNG" alt=""
           /></a>
-          <!-- NAVBAR LINKS-->
-          <nav class="nav">
-            <ul>
-              <li><a href="ceroKm.html">0Km</a></li>
-              <li><a href="usados.html">Usados</a></li>
-              <li><a href="empresa.html">Empresa</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
+          <!-- BOTON RESPONSIVE -->
+          <button
+            id="navbarButton"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+          >
+            <span class="navbar-toggler-icon navbar-toggler-icon--color"></span>
+          </button>
+          <!-- NAVBAR LINKS -->
+          <div
+            class="collapse navbar-collapse fadeInAnimate align-self-end containerNavLinks"
+            id="navbarMenu"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="ceroKm.html">0Km</a>
+              </li>
+              <li class="nav-item">
+                <a href="usados.html">Usados</a>
+              </li>
+              <li class="nav-item">
+                <a href="empresa.html">Empresa</a>
+              </li>
+              <li class="nav-item">
+                <a href="contacto.html">Contacto</a>
+              </li>
             </ul>
-          </nav>
+          </div>
         </div>
-      </div>
+      </nav>
+      <!-- LINEA VIOLERA DEBAJO DEL NAVBAR -->
+      <div class="backLineNavbar"></div>
     </header>
-    <!-- LINEA VIOLERA DEBAJO DEL HEADER -->
-    <div class="backLineNavbar"></div>
     <!-- SOBRE NOSOTROS -->
     <section>
       <div class="containerAboutUs">
@@ -165,5 +193,11 @@
     <script>
       AOS.init();
     </script>
+        <!-- SCRIPT DE BOOTSTRAP -->
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+      ></script>
   </body>
 </html>
