@@ -88,81 +88,47 @@ a:focus {
 /* ################################################################################
 ############################### PIE DE PAGINA - FOOTER ############################
 ################################################################################ */
-.footer {
-  background-color: var(--grisBase);
-  padding-top: 1rem;
-  position: relative;
-  bottom: 0%;
-  top: 10rem;
-  /* margin: 1% auto 0%; */
-  width: 100%;
-  max-width: 100%;
-}
-.footerLinks {
-  margin-bottom: -25px;
-}
-.footerLinks a {
-  font-family: var(--fuenteRussoVerdana);
-  text-decoration: none;
-  margin: 0rem 5rem 0rem 5rem;
-  color: #ffffff;
-  font-size: 2rem;
-}
-.footerLinks a:hover {
-  color: #ffffff;
-  opacity: 0.6;
-  text-shadow: 1px 1px 5px #000000;
-  transition: 0.3s;
-}
-.footerLinks__Left {
-  position: absolute;
-  top: 5rem;
-  left: 5%;
-}
-.footerLinks__Right {
-  position: absolute;
-  top: 5rem;
-  right: 5%;
-}
-.footerLogo {
-  font-family: var(--fuenteVerdanaGeneva);
-  text-align: center;
-  font-style: italic;
-  line-height: 2;
-  color: #ffffff;
-}
-#footerImg {
-  width: 150px;
-  margin-top: 15px;
-}
 .gradientLineFooter {
   height: 2rem;
   width: 100%;
   background: linear-gradient(360deg, var(--grisBase), var(--violetaBase));
-  position: absolute;
-  top: 0rem;
 }
-.underLineCopyright {
-  height: 0.1rem;
+.underLineGradientLine {
+  height: 0.2rem;
   width: 100%;
-  background: linear-gradient(90deg, #000000, #7c7c7c);
-  position: relative;
-  top: 1rem;
+  background: linear-gradient(90deg, #181717, #383838);
 }
-
+.footerColor {
+  background: var(--grisBase);
+}
+/* MAPA */
+.footerMap {
+  filter: drop-shadow(1px 1px 20px black);
+}
 /* REDES SOCIALES */
-.footerSocialNetworks {
-  margin: 2rem auto 0rem;
-  text-align: center;
-  width: 40%;
-}
 .footerSocialNetworks__img {
   border-radius: 50%;
   margin: 2.5rem 1.5rem 1rem;
-  height: 3rem;
+  height: 4rem;
 }
 .footerSocialNetworks__img:hover {
   box-shadow: 1px 1px 20px #000000;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.googleMap {
+  width: 50%;
+}
+.googleMap iframe {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .containerLocation {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 /* ################################################################################
