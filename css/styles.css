@@ -399,7 +399,6 @@ h5 {
 /* TITULO */
 .bodyContacto {
   background-image: url("../img/autoContacto.jpg");
-  font-family: var(--fuenteRussoVerdana);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -408,6 +407,7 @@ h5 {
   margin: 10% 30% 0% 5%;
 }
 .titContacto h2 {
+  font-family: var(--fuenteRussoVerdana);
   font-size: 5vw;
   letter-spacing: 4px;
   color: #c9c6c6d2;
@@ -425,6 +425,7 @@ h5 {
 }
 
 .titForm {
+  font-family: var(--fuenteRussoVerdana);
   font-size: 3rem;
   margin: 4% 0% 1% 5%;
   letter-spacing: 0.1rem;
@@ -443,6 +444,7 @@ h5 {
 }
 /* FORMULARIO - CONTACTO */
 .ContactForm {
+  font-family: var(--fuenteRussoVerdana);
   background: linear-gradient(180deg, #3b434d81, #8400ff3b);
   padding: 15px;
   border: 1px solid rgb(94, 89, 89);
@@ -655,7 +657,6 @@ h5 {
 ################################################################################ */
 .bodyCerokm {
   background-image: linear-gradient(45deg, #ffffff71 0%, #c09fe633 100%);
-  font-family: var(--fuenteRussoVerdana);
 }
 .containerTitleCerokm {
   width: 80%;
@@ -663,11 +664,13 @@ h5 {
   margin: 160px auto 10px;
 }
 .containerTitleCerokm h2 {
+  font-family: var(--fuenteRussoVerdana);
   font-size: 5rem;
   text-shadow: 1px 1px 5px var(--grisBase);
 }
 /* CONTAINER GENERAL DEL GRID*/
 .containerCeroKM {
+  font-family: var(--fuenteRussoVerdana);
   display: grid;
   width: 80%;
   margin: 50px auto;
@@ -912,7 +915,6 @@ h5 {
 ################################################################################ */
 .bodyUsados {
   background-image: linear-gradient(45deg, #ffffff71 0%, #c09fe633 100%);
-  font-family: var(--fuenteRussoVerdana);
 }
 .containerTitleUsados {
   width: 80%;
@@ -920,11 +922,13 @@ h5 {
   margin: 160px auto 10px;
 }
 .containerTitleUsados h2 {
+  font-family: var(--fuenteRussoVerdana);
   font-size: 5rem;
   text-shadow: 1px 1px 5px var(--grisBase);
 }
 /* CONTAINER GENERAL DEL GRID*/
 .containerUsados {
+  font-family: var(--fuenteRussoVerdana);
   display: grid;
   width: 80%;
   margin: 50px auto;
