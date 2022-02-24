@@ -116,12 +116,6 @@ a:focus {
   transform: scale(1.1);
   transition: 0.3s;
 }
-.googleMap {
-  width: 50%;
-}
-.googleMap iframe {
-  width: 100%;
-}
 @media (max-width: 768px) {
   .containerLocation {
     margin-top: 50px;
@@ -172,11 +166,8 @@ a:focus {
   text-shadow: 1px 1px 10px #440aafa9;
   width: 30%;
   font-size: 8vw;
-  display: inline-block;
-  margin: 1% 0% 0% 15%;
   color: #000000;
 }
-
 /* CARDS NUEVOS Y USADOS */
 .newUsedCards {
   font-family: var(--fuenteRussoVerdana);
