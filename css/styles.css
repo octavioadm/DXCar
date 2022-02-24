@@ -138,16 +138,19 @@ a:focus {
 .boxVideoPortada {
   position: relative;
   width: 100%;
-  top: 11.9rem;
+  top: 11.5rem;
 }
 #videoPortada {
+  position: relative;
+  object-fit: cover;
+  object-position: center;
   width: 100%;
 }
 /* ONDAS VIOLETAS DEBAJO DE LOOP DE VIDEO */
 .wave {
   position: relative;
-  top: 10rem;
-  margin-top: 0px;
+  top: 11rem;
+  width: 100%;
 }
 /* BANNER TRASERO */
 .titleNewUsedCars {
@@ -161,6 +164,15 @@ a:focus {
 @media (min-width: 0) {
   .titleNewUsedCars {
     display: none;
+  }
+  .newUsedCards {
+    margin-top: 50px;
+  }
+  .boxCards__titleCar {
+    margin-top: -300px;
+  }
+  .titleBrands {
+    margin-top: -300px;
   }
 }
 /* CARDS NUEVOS Y USADOS */
@@ -217,12 +229,12 @@ a:focus {
 }
 .boxCards__titleCar h2 {
   font-size: 4.5vw;
-  margin: -10% 0% 0% 10%;
+  margin: -15% 0% 0% 10%;
 }
 .boxCards__titleCar p {
   font-size: 2.5vw;
   text-align: center;
-  margin: 4% 0% 2% 0%;
+  padding: 3%;
 }
 .boxCards__card {
   display: flex;
@@ -240,7 +252,7 @@ a:focus {
     radial-gradient(ellipse at bottom, #3b434d, transparent);
   /* background: radial-gradient(); */
 }
-/* REDIMENSIONAMIENTO "CARDS" VEHICULOS DESTACADOS USADOS AL REDUCIR TAMAÑO PANTALLA */
+/* REDIMENSIONAMIENTO "CARDS" VEHICULOS DESTACADOS AL REDUCIR TAMAÑO PANTALLA */
 @media (max-width: 768px) {
   .boxCards__card {
     flex-direction: column;
@@ -331,12 +343,12 @@ h5 {
 }
 .titleBrands h2 {
   font-size: 4.5vw;
-  margin: -10% 0% 0% 10%;
+  margin: -15% 0% 0% 10%;
 }
 .titleBrands p {
   font-size: 2.5vw;
   text-align: center;
-  margin: 4% 0% 2% 0%;
+  padding: 1%;
 }
 .containerBrands {
   width: 80%;
