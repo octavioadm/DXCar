@@ -93,66 +93,83 @@
     <!-- NUEVOS Y USADOS -->
     <!-- NUEVOS -->
     <section class="p-5">
-      <div class="container-fluid">
-        <div class="row g-4 d-sm-flex">
-          <div class="col-md bannerNewCars" data-aos="fade-right">Nuevos</div>
-          <div class="col-md bannerUsedCars" data-aos="fade-left">Usados</div>
-        </div>
-        <div class="newUsedCards">
-          <div
-            class="newUsedCards__card"
-            data-aos="fade-up-right"
-            data-aos-duration="1000"
-          >
-            <a href="html/ceroKm.html"
-              ><img src="img/nuevoVeh.png" alt="Vehiculos Nuevos"
-            /></a>
-            <h2>Nuevos-0Km</h2>
-            <p>
-              Somos concesionario Oficial de: <br />
-              Chevrolet, Dodge, BMW, Jeep, Cooper, Lexus, Renault y Hyundai.
-              <br />
-              Visite y vea el vehiculo 0Km de su interés.
-            </p>
-            <a href="html/ceroKm.html"
-              ><input
-                type="button"
-                name="verNuevos"
-                id="verNuevos"
-                value="Ver Nuevos"
-            /></a>
+      <div class="container-fluid d-flex">
+        <div class="row d-flex justify-content-evenly">
+          <!-- CARD NUEVOS -->
+          <div class="col-md-5">
+            <h2
+              class="titleNewUsedCars d-sm-none d-xs-none d-md-block"
+              data-aos="fade-right"
+            >
+              Nuevos
+            </h2>
+            <div
+              class="newUsedCards mt-sm-5"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+            >
+              <a href="html/ceroKm.html"
+                ><img
+                  src="img/nuevoVeh.png"
+                  class="img-fluid w-50"
+                  alt="Vehiculos Nuevos"
+              /></a>
+              <h2>Nuevos-0Km</h2>
+              <p class="lead">
+                Somos concesionario Oficial de: <br />
+                Chevrolet, Dodge, BMW, Jeep, Cooper, Lexus, Renault y Hyundai.
+                <br />
+                Visite y vea el vehiculo 0Km de su interés.
+              </p>
+              <a href="html/ceroKm.html">
+                <button
+                  class="bt fs-1 m-5"
+                  data-bs-toggle="modal"
+                  data-bs-target="#reservar"
+                >
+                  Ver Nuevos
+                </button></a
+              >
+            </div>
           </div>
-
-          <!-- USADOS -->
-          <div
-            class="newUsedCards__card"
-            data-aos="fade-up-left"
-            data-aos-duration="1000"
-          >
-            <a href="html/usados.html"
-              ><img src="img/usadoVeh.png" alt="Vehiculos Usados"
-            /></a>
-            <h2>Usados</h2>
-            <p>
-              Tenemos unidades de todas las marcas del mercado en excelente
-              estado. <br />
-              Visite y vea el vehículo Usado que mas se adecue a sus
-              necesidades.
-            </p>
-            <a href="html/usados.html"
-              ><input
-                type="button"
-                name="verNuevos"
-                id="verNuevos"
-                value="Ver Usados"
-            /></a>
+          <!-- CARD USADOS -->
+          <div class="col-md-5" data-aos="fade-left">
+            <h2 class="titleNewUsedCars d-sm-none d-md-block">Usados</h2>
+            <div
+              class="newUsedCards mt-sm-5"
+              data-aos="fade-up-left"
+              data-aos-duration="1000"
+            >
+              <a href="html/usados.html"
+                ><img
+                  src="img/usadoVeh.png"
+                  class="img-fluid w-50"
+                  alt="Vehiculos Usados"
+              /></a>
+              <h2>Usados</h2>
+              <p>
+                Tenemos unidades de todas las marcas del mercado en excelente
+                estado. <br />
+                Visite y vea el vehículo Usado que mas se adecue a sus
+                necesidades.
+              </p>
+              <a href="html/usados.html">
+                <button
+                  class="bt fs-1 m-5"
+                  data-bs-toggle="modal"
+                  data-bs-target="#reservar"
+                >
+                  Ver Usados
+                </button></a
+              >
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- SECCION VEHICULOS DESTACADOS -->
-    <section class="SeccionNewUsedCars">
+    <section class="seccionDestacados">
       <div class="boxCards">
         <div class="boxCards__titleCar">
           <h2>Vehículos destacados</h2>
@@ -220,17 +237,11 @@
             </div>
           </div>
         </div>
-        <div class="wave">
-          <img src="img/wave2.svg" alt="" />
-        </div>
-        <div class="wave">
-          <img src="img/wave1.svg" alt="" />
-        </div>
       </div>
     </section>
 
-    <!-- SECCION MARCAS EN VENTA -->
-    <section>
+    <!-- SECCION MARCAS TRABAJADAS -->
+    <section class="seccionMarcasTrabajadas">
       <div class="titleBrands">
         <h2>Marcas trabajadas</h2>
         <p>Marcas que confian en nosotros.</p>

@@ -150,81 +150,66 @@ a:focus {
   margin-top: 0px;
 }
 /* BANNER TRASERO */
-.bannerNewCars {
+.titleNewUsedCars {
   font-family: var(--fuenteRussoVerdana);
   font-style: oblique;
   text-shadow: 1px 1px 10px #440aafa9;
-  width: 30%;
   font-size: 8vw;
-  display: inline-block;
-  margin: 1% 0% 0% 5%;
+  margin-left: -5vw;
   color: #000000;
 }
-.bannerUsedCars {
-  font-family: var(--fuenteRussoVerdana);
-  font-style: oblique;
-  text-shadow: 1px 1px 10px #440aafa9;
-  width: 30%;
-  font-size: 8vw;
-  color: #000000;
+@media (min-width: 0) {
+  .titleNewUsedCars {
+    display: none;
+  }
 }
 /* CARDS NUEVOS Y USADOS */
 .newUsedCards {
-  font-family: var(--fuenteRussoVerdana);
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-}
-.newUsedCards__card {
   background: var(--gradientGreenBlack);
   border-radius: 50px;
-  width: 35%;
+  padding: 3%;
   box-shadow: 1px 1px 5px black;
-}
-
-.newUsedCards img {
-  width: 50%;
-  margin: 2% 0% 2% 2%;
 }
 .newUsedCards img:hover {
   transform: scale(1.1);
   transition-duration: 0.4s;
 }
 .newUsedCards h2 {
-  font-size: 3rem;
-  margin-left: 5rem;
+  font-family: var(--fuenteRussoVerdana);
+  font-size: 6rem;
+  color: #000000d7;
   letter-spacing: 1px;
+  margin-top: 5rem;
   text-shadow: 1px 1px 5px var(--grisBase);
 }
 .newUsedCards p {
-  letter-spacing: 1px;
-  font-variant: small-caps;
   color: #212327;
+  font-weight: bolder;
   font-size: 2.5rem;
-  margin: 2% 7%;
+  margin: 2% 5%;
 }
 
-.newUsedCards input {
-  font-family: var(--fuenteRussoVerdaa);
+.newUsedCards button {
+  font-family: var(--fuenteRussoVerdana);
   background-color: rgb(73, 155, 248);
   border: 2px solid rgb(71, 71, 243);
   box-shadow: 1px 1px 5px blue;
-  width: 30%;
-  font-size: 1.3vw;
-  padding: 1rem;
+  font-size: 3rem;
+  padding: 1rem 2rem;
   border-radius: 1rem;
-  margin: 1% 0% 5% 64%;
   color: #ffffff;
 }
-.newUsedCards input:hover {
-  background-color: rgb(23, 118, 228);
-  border: 2px solid rgb(50, 50, 247);
+.newUsedCards button:hover {
   transform: scale(1.1);
   transition-duration: 0.4s;
   cursor: pointer;
 }
 
 /* CARDS VEHICULOS DESTACADOS */
+.seccionDestacados {
+  position: relative;
+  top: 40rem;
+}
 .boxCards__titleCar {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
   text-shadow: 1px 1px 10px var(--grisBase);
@@ -255,22 +240,8 @@ a:focus {
     radial-gradient(ellipse at bottom, #3b434d, transparent);
   /* background: radial-gradient(); */
 }
-/* REDIMENSIONAMIENTO "CARDS" VEHICULOS NUEVOS USADOS AL REDUCIR TAMAÑO PANTALLA */
-@media (max-width: 800px) {
-  .newUsedCards {
-    flex-direction: column;
-    margin-top: 10px;
-  }
-  .newUsedCards__card {
-    margin-top: 10px;
-  }
-  .newUsedCards input {
-    width: 30%;
-  }
-}
 /* REDIMENSIONAMIENTO "CARDS" VEHICULOS DESTACADOS USADOS AL REDUCIR TAMAÑO PANTALLA */
-
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .boxCards__card {
     flex-direction: column;
   }
@@ -285,12 +256,11 @@ a:focus {
 .boxCards__img:hover {
   animation: 1.5s bounce;
 }
-
 .boxCards__ul {
   font-family: var(--fuenteRussoVerdana);
-  font-size: 16px;
+  font-size: 2rem;
   color: #000000;
-  margin: 4% 0% 1% 15%;
+  margin: 4% 0% 5% 10%;
 }
 /* TABLA VEHICULOS DESTACADOS */
 .boxCards h4,
@@ -351,6 +321,9 @@ h5 {
 }
 
 /* SECCION MARCAS TRABAJADAS */
+.seccionMarcasTrabajadas {
+  margin-top: 80rem;
+}
 .titleBrands {
   font-family: var(--fuenteRussoVerdana);
   text-shadow: 1px 1px 10px var(--grisBase);
@@ -375,6 +348,19 @@ h5 {
   display: flex;
   justify-content: space-evenly;
   padding: 30px;
+}
+@media (max-width: 768px) {
+  .containerBrands {
+    display: flex;
+    justify-content: center;
+  }
+  .containerBrands__in {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerBrands__item img {
+    margin-top: 10px;
+  }
 }
 .containerBrands__item img {
   border-radius: 15px;
