@@ -137,6 +137,7 @@ a:focus {
 }
 .boxVideoPortada {
   position: relative;
+  height: 60vh;
   width: 100%;
   top: 11.5rem;
 }
@@ -145,6 +146,7 @@ a:focus {
   object-fit: cover;
   object-position: center;
   width: 100%;
+  height: 60vh;
 }
 /* ONDAS VIOLETAS DEBAJO DE LOOP DE VIDEO */
 .wave {
@@ -228,11 +230,11 @@ a:focus {
   color: #000000ec;
 }
 .boxCards__titleCar h2 {
-  font-size: 4.5vw;
+  font-size: 7vw;
   margin: -15% 0% 0% 10%;
 }
 .boxCards__titleCar p {
-  font-size: 2.5vw;
+  font-size: 4vw;
   text-align: center;
   padding: 3%;
 }
@@ -341,18 +343,14 @@ h5 {
   text-shadow: 1px 1px 10px var(--grisBase);
   color: #000000;
 }
-.titleBrands h2 {
-  font-size: 4.5vw;
-  margin: -15% 0% 0% 10%;
-}
 .titleBrands p {
-  font-size: 2.5vw;
+  font-size: 4vw;
   text-align: center;
   padding: 1%;
 }
 .containerBrands {
   width: 80%;
-  margin: 10rem auto;
+  margin: 5rem auto;
   border-radius: 15px;
   background: radial-gradient(#d8de2aa9, #00000044);
 }
@@ -360,6 +358,15 @@ h5 {
   display: flex;
   justify-content: space-evenly;
   padding: 30px;
+}
+.containerBrands__item img {
+  width: 100%;
+  border-radius: 15px;
+  filter: drop-shadow(10px 10px 20px black);
+}
+.containerBrands__item img:hover {
+  transform: translate(1px, -30px);
+  transition-duration: 1s;
 }
 @media (max-width: 768px) {
   .containerBrands {
@@ -373,14 +380,6 @@ h5 {
   .containerBrands__item img {
     margin-top: 10px;
   }
-}
-.containerBrands__item img {
-  border-radius: 15px;
-  filter: drop-shadow(10px 10px 20px black);
-}
-.containerBrands__item img:hover {
-  transform: translate(1px, -30px);
-  transition-duration: 1s;
 }
 /* ################################################################################
 ############################### PESTAÑA CONTACTO ##################################
