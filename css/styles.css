@@ -680,7 +680,7 @@ h5 {
   border-radius: 15px;
   background-color: #5858583d;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
   grid-template-areas:
     "tituloFiltro"
     "ano"
@@ -688,36 +688,38 @@ h5 {
     "modelo";
   grid-area: containerCerokm__filtro;
 }
-.tituloFiltro {
-  font-size: 3rem;
+
+.tituloFiltro h3 {
+  font-size: 4rem;
   text-shadow: 1px 1px 2px var(--grisBase);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   grid-area: tituloFiltro;
+  text-align: center;
 }
 .ano {
   grid-area: ano;
 }
-
 .marca {
   grid-area: marca;
 }
-
 .modelo {
   grid-area: modelo;
 }
 
 .containerCerokm__filtro h4 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-shadow: 1px 1px 1px var(--grisBase);
   letter-spacing: 1px;
 }
 .containerCerokm__filtro select {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border-width: 0.2rem;
+  padding: 1rem;
+  margin: 1rem;
+  width: 90%;
   color: #000000;
-  border-radius: 5px;
-  border-width: 2px;
-  padding: 4px;
-  margin: 20px;
-  width: 85%;
 }
 /* COLUMNA AUTOS-DESCRIPCION-COMPRA-INFORMACION */
 .containerCerokm__autos {
@@ -729,6 +731,7 @@ h5 {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto auto;
   gap: 0px 15px;
+  height: fit-content;
 }
 .containerCerokm__autos img {
   margin-bottom: 10px;
@@ -736,20 +739,29 @@ h5 {
   border-style: double;
   border-radius: 15px;
   width: 100%;
-  max-width: 100%;
+  min-width: 200px;
 }
 .containerCerokm__autos h5 {
+  font-size: 4rem;
   background-color: #9fde2a3d;
   border-radius: 15px;
   padding: 10px;
 }
 .autoDescripcion__Desc {
-  margin-left: 50px;
+  margin: 0 5rem 2rem;
   font-style: italic;
   font-size: 1.9rem;
   background-color: #d8de2a3d;
   border-radius: 15px;
   padding: 10px 25px;
+}
+.tituloModal {
+  font-size: 3rem;
+  color: white;
+}
+.infoModal {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
 }
 /* AUTO 1 */
 .auto1 {
@@ -766,6 +778,8 @@ h5 {
 }
 .auto1ComprarInformacion {
   grid-area: auto1ComprarInformacion;
+  margin-top: 50px;
+  align-self: center;
 }
 /* AUTO 2 */
 .auto2 {
@@ -782,6 +796,8 @@ h5 {
 }
 .auto2ComprarInformacion {
   grid-area: auto2ComprarInformacion;
+  margin-top: 50px;
+  align-self: center;
 }
 /* AUTO 3 */
 .auto3 {
@@ -798,6 +814,8 @@ h5 {
 }
 .auto3ComprarInformacion {
   grid-area: auto3ComprarInformacion;
+  margin-top: 50px;
+  align-self: center;
 }
 /* AUTO 4 */
 .auto4 {
@@ -814,6 +832,8 @@ h5 {
 }
 .auto4ComprarInformacion {
   grid-area: auto4ComprarInformacion;
+  margin-top: 50px;
+  align-self: center;
 }
 /* AUTO 5 */
 .auto5 {
@@ -830,9 +850,10 @@ h5 {
 }
 .auto5ComprarInformacion {
   grid-area: auto5ComprarInformacion;
+  margin-top: 50px;
+  align-self: center;
 }
 #comprar {
-  font-family: var(--fuenteRussoVerdana);
   background-color: #1c6dc9;
   border: 2px solid #4747f3;
   box-shadow: 1px 1px 10px #0000ff;
@@ -858,7 +879,7 @@ h5 {
   background-color: #ff8800;
   border: 2px solid #f86927;
   box-shadow: 1px 1px 5px #ff9900;
-  width: 17%;
+  width: 15%;
   font-size: 1.2vw;
   padding: 1rem;
   border-radius: 5px;
@@ -868,7 +889,7 @@ h5 {
   transform: scale(1.1);
   transition: 0.3s;
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 768px) {
   .containerCerokm__autos {
     display: flex;
     flex-direction: column;
@@ -891,7 +912,7 @@ h5 {
   #comprar {
     font-size: 3vw;
     width: 100%;
-    margin: 0 0 5px 0;
+    margin: 1rem 0 5px 0;
   }
   #masInformacion {
     font-size: 3vw;
