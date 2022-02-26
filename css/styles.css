@@ -282,7 +282,6 @@ h5 {
   font-family: var(--fuenteRussoVerdana);
   text-shadow: 1px 1px 3px #0000009f;
   font-size: 3rem;
-  margin: 5% 0% 2% 5%;
   color: #000000;
 }
 .boxCards h5 {
@@ -748,7 +747,6 @@ h5 {
   padding: 10px;
 }
 .autoDescripcion__Desc {
-  margin: 0 5rem 2rem;
   font-style: italic;
   font-size: 1.9rem;
   background-color: #d8de2a3d;
@@ -778,8 +776,7 @@ h5 {
 }
 .auto1ComprarInformacion {
   grid-area: auto1ComprarInformacion;
-  margin-top: 50px;
-  align-self: center;
+  margin: 25px 0px 0px;
 }
 /* AUTO 2 */
 .auto2 {
@@ -796,8 +793,7 @@ h5 {
 }
 .auto2ComprarInformacion {
   grid-area: auto2ComprarInformacion;
-  margin-top: 50px;
-  align-self: center;
+  margin: 25px 0px 0px;
 }
 /* AUTO 3 */
 .auto3 {
@@ -814,8 +810,7 @@ h5 {
 }
 .auto3ComprarInformacion {
   grid-area: auto3ComprarInformacion;
-  margin-top: 50px;
-  align-self: center;
+  margin: 25px 0px 0px;
 }
 /* AUTO 4 */
 .auto4 {
@@ -832,8 +827,7 @@ h5 {
 }
 .auto4ComprarInformacion {
   grid-area: auto4ComprarInformacion;
-  margin-top: 50px;
-  align-self: center;
+  margin: 25px 0px 0px;
 }
 /* AUTO 5 */
 .auto5 {
@@ -850,14 +844,13 @@ h5 {
 }
 .auto5ComprarInformacion {
   grid-area: auto5ComprarInformacion;
-  margin-top: 50px;
-  align-self: center;
+  margin: 25px 0px 0px;
 }
 #comprar {
   background-color: #1c6dc9;
   border: 2px solid #4747f3;
   box-shadow: 1px 1px 10px #0000ff;
-  width: 15%;
+  width: 18%;
   font-size: 1.2vw;
   padding: 1rem;
   border-radius: 5px;
@@ -877,8 +870,8 @@ h5 {
 #masInformacion {
   font-family: var(--fuenteRussoVerdana);
   background-color: #ff8800;
-  border: 2px solid #f86927;
-  box-shadow: 1px 1px 5px #ff9900;
+  border: 2px solid #fc7232;
+  box-shadow: 1px 1px 10px #ff9900;
   width: 15%;
   font-size: 1.2vw;
   padding: 1rem;
@@ -886,6 +879,9 @@ h5 {
   color: rgba(255, 255, 255, 0.87);
 }
 #masInformacion:hover {
+  background-color: #f3952a;
+  border: 2px solid #fa611a;
+  box-shadow: 1px 1px 5px #ff9900;
   transform: scale(1.1);
   transition: 0.3s;
 }
