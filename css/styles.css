@@ -693,7 +693,7 @@ h5 {
   text-shadow: 1px 1px 2px var(--grisBase);
   letter-spacing: 1px;
   grid-area: tituloFiltro;
-  text-align: center;
+  tsext-align: center;
 }
 .ano {
   grid-area: ano;
@@ -955,7 +955,7 @@ h5 {
   border-radius: 15px;
   background-color: #5858583d;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
   grid-template-areas:
     "tituloFiltro"
     "ano"
@@ -963,11 +963,12 @@ h5 {
     "modelo";
   grid-area: containerUsados__filtro;
 }
-.tituloFiltro {
-  font-size: 3rem;
+.tituloFiltro h3 {
+  font-size: 4rem;
   text-shadow: 1px 1px 2px var(--grisBase);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   grid-area: tituloFiltro;
+  text-align: center;
 }
 .ano {
   grid-area: ano;
@@ -982,17 +983,19 @@ h5 {
 }
 
 .containerUsados__filtro h4 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-shadow: 1px 1px 1px var(--grisBase);
   letter-spacing: 1px;
 }
 .containerUsados__filtro select {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border-width: 0.2rem;
+  padding: 1rem;
+  margin: 1rem;
+  width: 90%;
   color: #000000;
-  border-radius: 5px;
-  border-width: 2px;
-  padding: 4px;
-  margin: 20px;
-  width: 85%;
 }
 /* COLUMNA AUTOS-DESCRIPCION-COMPRA-INFORMACION */
 .containerUsado__autos {
@@ -1004,6 +1007,7 @@ h5 {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto auto;
   gap: 0px 15px;
+  height: fit-content;
 }
 .containerUsado__autos img {
   margin-bottom: 10px;
@@ -1011,17 +1015,11 @@ h5 {
   border-style: double;
   border-radius: 15px;
   width: 100%;
-  max-width: 100%;
+  min-width: 200px;
 }
 .containerUsado__autos h5 {
+  font-size: 4rem;
   background-color: #9fde2a3d;
-  border-radius: 15px;
-  padding: 10px;
-}
-.containerUsado__autos p {
-  font-style: italic;
-  font-size: 1.9rem;
-  background-color: #d8de2a3d;
   border-radius: 15px;
   padding: 10px;
 }
