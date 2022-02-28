@@ -1,0 +1,66 @@
+.navbarColor {
+  background: $grisBase;
+
+  .fadeInAnimate {
+    animation: 1s fadeInRight;
+  }
+  .logoDXCar {
+    animation: 1s fadeInLeft;
+
+    img:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
+      opacity: 0.8;
+    }
+  }
+  #navbarButton {
+    border-color: rgba(255, 255, 255, 0.808);
+    font-size: 2rem;
+
+    .navbar-toggler-icon--color {
+      filter: invert(1);
+    }
+  }
+  #containerNavButton {
+    justify-content: space-around;
+  }
+  .containerNavLinks {
+    ul {
+      font-size: 1.8rem;
+      padding-top: 20px;
+
+      /* EFECTOS LINKS NAVBAR */
+      li {
+        &:hover {
+          opacity: 0.6;
+          text-shadow: 1px 1px 5px #000000;
+          transform: scale(1.1);
+          transition: 0.3s;
+        }
+        a {
+          font-family: $fuenteRussoVerdana;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #ffffff;
+          margin-left: 5rem;
+
+          &:hover {
+            color: #ffffff;
+          }
+          &:visited {
+            color: #ffffff;
+          }
+          &:focus {
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}
+/* LINEA VIOLETA DEBAJO DEL NAV y FOOTER*/
+.backLineNavbar {
+  height: 2rem;
+  background: linear-gradient(180deg, $grisBase, $violetaBase);
+  z-index: 10;
+}

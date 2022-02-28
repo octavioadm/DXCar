@@ -1,0 +1,1057 @@
+@import "variables";
+@import "general";
+@import "fuentes";
+@import "navbar";
+
+/* ################################################################################
+############################### PIE DE PAGINA - FOOTER ############################
+################################################################################ */
+.gradientLineFooter {
+  height: 2rem;
+  width: 100%;
+  background: linear-gradient(360deg, $grisBase, $violetaBase);
+}
+.underLineGradientLine {
+  height: 0.2rem;
+  width: 100%;
+  background: linear-gradient(90deg, #181717, #383838);
+}
+.footerColor {
+  background: $grisBase;
+}
+/* MAPA */
+.footerMap {
+  filter: drop-shadow(1px 1px 20px black);
+}
+/* REDES SOCIALES */
+.footerSocialNetworks__img {
+  border-radius: 50%;
+  margin: 2.5rem 1.5rem 1rem;
+  height: 4rem;
+}
+.footerSocialNetworks__img:hover {
+  box-shadow: 1px 1px 20px #000000;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .containerLocation {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* ################################################################################
+############################### PESTAÑA INICIO ####################################
+################################################################################ */
+.bodyInicio {
+  background-image: url("../img/autoInicio.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.boxVideoPortada {
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  top: 11.5rem;
+}
+#videoPortada {
+  position: relative;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 60vh;
+}
+/* ONDAS VIOLETAS DEBAJO DE LOOP DE VIDEO */
+.wave {
+  position: relative;
+  top: 11.5rem;
+  width: 100%;
+}
+/* BANNER TRASERO */
+.titleNewUsedCars {
+  font-family: $fuenteRussoVerdana;
+  font-style: oblique;
+  text-shadow: 1px 1px 10px #440aafa9;
+  font-size: 8vw;
+  margin-left: -5vw;
+  color: #000000;
+}
+@media (min-width: 0) {
+  .titleNewUsedCars {
+    display: none;
+  }
+  .newUsedCards {
+    margin-top: 50px;
+  }
+  .boxCards__titleCar {
+    margin-top: -300px;
+  }
+  .titleBrands {
+    margin-top: -300px;
+  }
+}
+/* CARDS NUEVOS Y USADOS */
+.newUsedCards {
+  background: $gradientGreenBlack;
+  border-radius: 50px;
+  padding: 3%;
+  box-shadow: 1px 1px 5px black;
+}
+.newUsedCards img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.4s;
+}
+.newUsedCards h2 {
+  font-family: $fuenteRussoVerdana;
+  font-size: 6rem;
+  color: #000000d7;
+  letter-spacing: 1px;
+  margin-top: 5rem;
+  text-shadow: 1px 1px 5px $grisBase;
+}
+.newUsedCards p {
+  color: #212327;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  margin: 2% 5%;
+}
+
+.newUsedCards button {
+  font-family: $fuenteRussoVerdana;
+  background-color: rgb(73, 155, 248);
+  border: 2px solid rgb(71, 71, 243);
+  box-shadow: 1px 1px 5px blue;
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  color: #ffffff;
+}
+.newUsedCards button:hover {
+  transform: scale(1.1);
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+/* CARDS VEHICULOS DESTACADOS */
+.seccionDestacados {
+  position: relative;
+  top: 40rem;
+}
+.boxCards__titleCar {
+  font-family: $fuenteRussoVerdana;
+  text-shadow: 1px 1px 10px $grisBase;
+  color: #000000ec;
+}
+.boxCards__titleCar h2 {
+  font-size: 7vw;
+  margin: -15% 0% 0% 10%;
+}
+.boxCards__titleCar p {
+  font-size: 4vw;
+  text-align: center;
+  padding: 3%;
+}
+.boxCards__card {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.boxCards__item {
+  width: 25%;
+  border: 1px solid #000000;
+  margin: 0px 25px 0px 25px;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px $grisBase;
+  background: radial-gradient(ellipse at top, #d0d31579, transparent),
+    radial-gradient(ellipse at bottom, #3b434d, transparent);
+  /* background: radial-gradient(); */
+}
+/* REDIMENSIONAMIENTO "CARDS" VEHICULOS DESTACADOS AL REDUCIR TAMAÑO PANTALLA */
+@media (max-width: 768px) {
+  .boxCards__card {
+    flex-direction: column;
+  }
+  .boxCards__item {
+    width: 80%;
+    margin-top: 10px;
+  }
+}
+.boxCards__img {
+  width: 100%;
+}
+.boxCards__img:hover {
+  animation: 1.5s bounce;
+}
+.boxCards__ul {
+  font-family: $fuenteRussoVerdana;
+  font-size: 2rem;
+  color: #000000;
+  margin: 4% 0% 5% 10%;
+}
+/* TABLA VEHICULOS DESTACADOS */
+.boxCards h4,
+h5 {
+  font-family: $fuenteRussoVerdana;
+  text-shadow: 1px 1px 3px #0000009f;
+  font-size: 3rem;
+  color: #000000;
+}
+.boxCards h5 {
+  font-size: 2rem;
+}
+
+.boxCards__vinetaUL {
+  list-style-image: url("../img/vineta.png");
+}
+/* FLEX COLORES DISPONIBLES */
+.containerColorCarsDisp {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5%;
+}
+.containerColorCarsDisp__item {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 20%;
+  border: 1px solid #000000;
+  filter: drop-shadow(5px 5px 20px black);
+}
+.containerColorCarsDisp__item:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  filter: brightness(1.5);
+}
+
+#red {
+  background-color: #ff0000;
+}
+#blue {
+  background-color: #2660df;
+}
+#grey {
+  background-color: #666565;
+}
+#black {
+  background-color: #000000;
+}
+#green {
+  background-color: #008000;
+}
+#yellow {
+  background-color: #ffff00;
+}
+#orange {
+  background-color: #ffa500;
+}
+
+/* SECCION MARCAS TRABAJADAS */
+.seccionMarcasTrabajadas {
+  margin-top: 80rem;
+}
+.titleBrands {
+  font-family: $fuenteRussoVerdana;
+  text-shadow: 1px 1px 10px $grisBase;
+  color: #000000;
+}
+.titleBrands p {
+  font-size: 4vw;
+  text-align: center;
+  padding: 1%;
+}
+.containerBrands {
+  width: 80%;
+  margin: 5rem auto;
+  border-radius: 15px;
+  background: radial-gradient(#d8de2aa9, #00000044);
+}
+.containerBrands__in {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+.containerBrands__item img {
+  width: 100%;
+  border-radius: 15px;
+  filter: drop-shadow(10px 10px 20px black);
+}
+.containerBrands__item img:hover {
+  transform: translate(1px, -30px);
+  transition-duration: 1s;
+}
+@media (max-width: 768px) {
+  .containerBrands {
+    display: flex;
+    justify-content: center;
+  }
+  .containerBrands__in {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerBrands__item img {
+    margin-top: 10px;
+  }
+}
+/* ################################################################################
+############################### PESTAÑA CONTACTO ##################################
+################################################################################ */
+/* TITULO */
+.bodyContacto {
+  background-image: url("../img/autoContacto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.titContacto {
+  margin: 10% 30% 0% 5%;
+}
+.titContacto h2 {
+  font-family: $fuenteRussoVerdana;
+  font-size: 5vw;
+  letter-spacing: 4px;
+  color: #c9c6c6d2;
+  text-shadow: 5px 5px 10px $grisBase;
+  animation: 0.7s 0s reverse slideinTitContacto;
+}
+/* EFECTO ANIMATION TITULO CONTACTO */
+@keyframes slideinTitContacto {
+  from {
+    margin-left: 4%;
+  }
+  to {
+    margin-left: 10%;
+  }
+}
+
+.titForm {
+  font-family: $fuenteRussoVerdana;
+  font-size: 3rem;
+  margin: 4% 0% 1% 5%;
+  letter-spacing: 0.1rem;
+  font-weight: normal;
+  color: #f7f7f7d2;
+  text-shadow: 1px 1px 10px $grisBase;
+  animation: 0.7s 0s reverse slideinTitForm;
+}
+@keyframes slideinTitForm {
+  from {
+    margin-left: 5%;
+  }
+  to {
+    margin-left: -30%;
+  }
+}
+/* FORMULARIO - CONTACTO */
+.ContactForm {
+  font-family: $fuenteRussoVerdana;
+  background: linear-gradient(180deg, #3b434d81, #8400ff3b);
+  padding: 15px;
+  border: 1px solid rgb(94, 89, 89);
+  border-radius: 10px;
+  margin: 10px 5%;
+  width: 500px;
+  box-sizing: content-box;
+  animation: 0.7s 0s reverse slideinContactForm;
+}
+@keyframes slideinContactForm {
+  from {
+    margin-left: 5%;
+  }
+  to {
+    margin-left: -30%;
+  }
+}
+.ContactForm__label {
+  display: inline-block;
+  width: 25%;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.87);
+}
+.ContactForm__input {
+  color: #000000;
+  border-radius: 5px;
+  border-width: 2px;
+  padding: 5px;
+}
+
+.ContactForm__textArea {
+  border-radius: 10px;
+  border-width: 2px;
+  padding: 15px;
+  resize: none;
+}
+.ContactForm__submitButton {
+  font-family: $fuenteRussoVerdana;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #ffffffd5;
+  font-weight: bolder;
+  border: 2px solid #d4fab1;
+  border-radius: 5px;
+  padding: 9px;
+  background-color: #7bff0096;
+  box-shadow: 1px 1px 5px #7bff00;
+  transition-duration: 0.4s;
+}
+
+.ContactForm__resetButton {
+  font-family: $fuenteRussoVerdana;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #ffffffd5;
+  font-weight: bolder;
+  margin-left: 2%;
+  border: 2px solid #f87c88be;
+  border-radius: 5px;
+  padding: 9px;
+  background-color: #ff0019a9;
+  box-shadow: 1px 1px 2px #ff0019be;
+  transition-duration: 0.4s;
+}
+/* EFECTOS BOTONES SUBMIT Y RESET */
+.ContactForm__submitButton:hover {
+  background-color: #59b304be;
+  box-shadow: 1px 1px 2px #59b304be;
+  border: 2px solid #5cbd02be;
+  color: #ffffffd5;
+}
+.ContactForm__resetButton:hover {
+  background-color: #c20417be;
+  box-shadow: 1px 1px 5px #c20417be;
+  border: 2px solid #bb2837;
+  color: #ffffffd5;
+}
+/* ################################################################################
+##################################### PESTAÑA EMPRESA #############################
+################################################################################ */
+.containerAboutUs {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1fr auto;
+  gap: 5rem 2rem;
+  grid-template-areas:
+    "containerAboutUs__title"
+    "containerAboutUs__img" "containerAboutUs__Description";
+  font-family: $fuenteRussoVerdana;
+  width: 80%;
+  margin: 150px auto;
+}
+.containerAboutUs__title {
+  font-size: 3rem;
+  text-shadow: 1px 1px 5px $grisBase;
+  grid-area: containerAboutUs__title;
+}
+.containerAboutUs__img {
+  grid-area: containerAboutUs__img;
+}
+.containerAboutUs__img img {
+  border-radius: 15px;
+  filter: drop-shadow(5px 5px 10px black);
+}
+.containerAboutUs__Description {
+  padding: 20px;
+  background-color: $grisBase;
+  border-radius: 15px;
+  filter: drop-shadow(5px 5px 10px black);
+  grid-area: containerAboutUs__Description;
+}
+.containerAboutUs__Description img {
+  padding: 0.5rem;
+  margin-bottom: 3rem;
+}
+.containerAboutUs__Description p {
+  font-style: italic;
+  font-size: 2.5rem;
+  background-color: #d8de2a3d;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.containerAboutUs__Contacto {
+  width: 90%;
+  margin: 3% auto;
+}
+.containerAboutUs__Description input {
+  font-family: $fuenteRussoVerdana;
+  background-color: #1c6dc9;
+  border: 2px solid #4747f3;
+  box-shadow: 1px 1px 10px #0000ff;
+  width: 100%;
+  font-size: 2.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: rgba(255, 255, 255, 0.87);
+}
+.containerAboutUs__Description input:hover {
+  transform: scale(1.1);
+  transition-duration: 0.4s;
+}
+.teamTitle {
+  width: 80%;
+  margin: 10px auto;
+  font-family: $fuenteRussoVerdana;
+  font-size: 3rem;
+  text-shadow: 1px 1px 5px $grisBase;
+}
+.containerCardsTeam {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  margin-top: 5rem;
+}
+.cardsTeamItem {
+  background: linear-gradient(#0066ff3b, #ffffffcc);
+  border: 1px solid grey;
+  border-radius: 1.5rem;
+  text-align: center;
+}
+.cardsTeamImg {
+  padding: 1.5rem;
+}
+.cardsTeamImg img {
+  border-radius: 1.5rem;
+}
+.cardsTeamDescription {
+  padding: 3rem;
+  font-family: $fuenteRussoVerdana;
+}
+.cardsTeamDescription h2 {
+  font-size: 2.5rem;
+  text-shadow: 0.5px 0.5px 20px rgb(0, 0, 0);
+}
+.cardsTeamDescription h3 {
+  font-size: 2rem;
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.521);
+}
+@media (min-width: 1200px) {
+  .containerAboutUs {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "containerAboutUs__title containerAboutUs__title"
+      "containerAboutUs__img containerAboutUs__Description";
+  }
+  .containerAboutUs__Description p {
+    font-size: 2rem;
+  }
+  .containerAboutUs__Contacto {
+    width: 100%;
+  }
+  .containerAboutUs__Description input {
+    width: 25%;
+    font-size: 2.5rem;
+  }
+  .containerCardsTeam {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 0px;
+  }
+}
+/* ################################################################################
+##################################### PESTAÑA CERO KM #############################
+################################################################################ */
+.bodyCerokm {
+  background-image: linear-gradient(45deg, #ffffff71 0%, #c09fe633 100%);
+}
+.containerTitleCerokm {
+  width: 80%;
+  margin: 0 auto;
+  margin: 160px auto 10px;
+}
+.containerTitleCerokm h2 {
+  font-family: $fuenteRussoVerdana;
+  font-size: 5rem;
+  text-shadow: 1px 1px 5px $grisBase;
+}
+/* CONTAINER GENERAL DEL GRID*/
+.containerCeroKM {
+  font-family: $fuenteRussoVerdana;
+  display: grid;
+  width: 80%;
+  margin: 50px auto;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 20px;
+  grid-template-areas:
+    "containerCerokm__filtro auto1"
+    ". auto2"
+    ". auto3"
+    ". auto4"
+    ". auto5";
+}
+/* COLUMNA FILTRO */
+.containerCerokm__filtro {
+  display: grid;
+  box-shadow: 1px 1px 5px black;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #5858583d;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "tituloFiltro"
+    "ano"
+    "marca"
+    "modelo";
+  grid-area: containerCerokm__filtro;
+}
+
+.tituloFiltro h3 {
+  font-size: 4rem;
+  text-shadow: 1px 1px 2px $grisBase;
+  letter-spacing: 1px;
+  grid-area: tituloFiltro;
+}
+.ano {
+  grid-area: ano;
+}
+.marca {
+  grid-area: marca;
+}
+.modelo {
+  grid-area: modelo;
+}
+
+.containerCerokm__filtro h4 {
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px $grisBase;
+  letter-spacing: 1px;
+}
+.containerCerokm__filtro select {
+  font-family: $fuenteVerdanaGeneva;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border-width: 0.2rem;
+  padding: 1rem;
+  margin: 1rem;
+  width: 90%;
+  color: #000000;
+}
+/* COLUMNA AUTOS-DESCRIPCION-COMPRA-INFORMACION */
+.containerCerokm__autos {
+  background-color: #d8de2a1c;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px black;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
+  gap: 0px 15px;
+  height: fit-content;
+}
+.containerCerokm__autos img {
+  margin-bottom: 10px;
+  border: 5px solid $grisBase;
+  border-style: double;
+  border-radius: 15px;
+  width: 100%;
+  min-width: 200px;
+}
+.containerCerokm__autos h5 {
+  font-size: 4rem;
+  background-color: #9fde2a3d;
+  border-radius: 15px;
+  padding: 10px;
+}
+.autoDescripcion__Desc {
+  font-style: italic;
+  font-size: 1.9rem;
+  background-color: #d8de2a3d;
+  border-radius: 15px;
+  padding: 10px 25px;
+}
+.tituloModal {
+  font-size: 3rem;
+  color: white;
+}
+.infoModal {
+  font-family: $fuenteVerdanaGeneva;
+  font-size: 2rem;
+}
+/* AUTO 1 */
+.auto1 {
+  grid-template-areas:
+    "auto1Img auto1Descripcion"
+    "auto1ComprarInformacion auto1ComprarInformacion";
+  grid-area: auto1;
+}
+.auto1Img {
+  grid-area: auto1Img;
+}
+.auto1Descripcion {
+  grid-area: auto1Descripcion;
+}
+.auto1ComprarInformacion {
+  grid-area: auto1ComprarInformacion;
+  margin: 25px 0px 0px;
+}
+/* AUTO 2 */
+.auto2 {
+  grid-template-areas:
+    "auto2Img auto2Descripcion"
+    "auto2ComprarInformacion auto2ComprarInformacion";
+  grid-area: auto2;
+}
+.auto2Img {
+  grid-area: auto2Img;
+}
+.auto2Descripcion {
+  grid-area: auto2Descripcion;
+}
+.auto2ComprarInformacion {
+  grid-area: auto2ComprarInformacion;
+  margin: 25px 0px 0px;
+}
+/* AUTO 3 */
+.auto3 {
+  grid-template-areas:
+    "auto3Img auto3Descripcion"
+    "auto3ComprarInformacion auto3ComprarInformacion";
+  grid-area: auto3;
+}
+.auto3Img {
+  grid-area: auto3Img;
+}
+.auto3Descripcion {
+  grid-area: auto3Descripcion;
+}
+.auto3ComprarInformacion {
+  grid-area: auto3ComprarInformacion;
+  margin: 25px 0px 0px;
+}
+/* AUTO 4 */
+.auto4 {
+  grid-template-areas:
+    "auto4Img auto4Descripcion"
+    "auto4ComprarInformacion auto4ComprarInformacion";
+  grid-area: auto4;
+}
+.auto4Img {
+  grid-area: auto4Img;
+}
+.auto4Descripcion {
+  grid-area: auto4Descripcion;
+}
+.auto4ComprarInformacion {
+  grid-area: auto4ComprarInformacion;
+  margin: 25px 0px 0px;
+}
+/* AUTO 5 */
+.auto5 {
+  grid-template-areas:
+    "auto5Img auto5Descripcion"
+    "auto5ComprarInformacion auto5ComprarInformacion";
+  grid-area: auto5;
+}
+.auto5Img {
+  grid-area: auto5Img;
+}
+.auto5Descripcion {
+  grid-area: auto5Descripcion;
+}
+.auto5ComprarInformacion {
+  grid-area: auto5ComprarInformacion;
+  margin: 25px 0px 0px;
+}
+#comprar {
+  background-color: #1c6dc9;
+  border: 2px solid #4747f3;
+  box-shadow: 1px 1px 10px #0000ff;
+  width: 18%;
+  font-size: 1.2vw;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 1%;
+  color: rgba(255, 255, 255, 0.87);
+}
+#comprar:hover {
+  font-family: $fuenteRussoVerdana;
+  background-color: #1776e4;
+  border: 2px solid #3232f7;
+  box-shadow: 1px 1px 5px #0000ff;
+  padding: 1rem;
+  border-radius: 10px;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+#masInformacion {
+  font-family: $fuenteRussoVerdana;
+  background-color: #ff8800;
+  border: 2px solid #fc7232;
+  box-shadow: 1px 1px 10px #ff9900;
+  width: 15%;
+  font-size: 1.2vw;
+  padding: 1rem;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.87);
+}
+#masInformacion:hover {
+  background-color: #f3952a;
+  border: 2px solid #fa611a;
+  box-shadow: 1px 1px 5px #ff9900;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+@media only screen and (max-width: 768px) {
+  .containerCerokm__autos {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-self: baseline;
+  }
+  .containerCeroKM {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .containerCerokm__filtro {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  .tituloFiltro {
+    width: 100%;
+  }
+  #comprar {
+    font-size: 3vw;
+    width: 100%;
+    margin: 1rem 0 5px 0;
+  }
+  #masInformacion {
+    font-size: 3vw;
+    width: 100%;
+  }
+}
+/* ################################################################################
+##################################### PESTAÑA USADOS###############################
+################################################################################ */
+.bodyUsados {
+  background-image: linear-gradient(45deg, #ffffff71 0%, #c09fe633 100%);
+}
+.containerTitleUsados {
+  width: 80%;
+  margin: 0 auto;
+  margin: 160px auto 10px;
+}
+.containerTitleUsados h2 {
+  font-family: $fuenteRussoVerdana;
+  font-size: 5rem;
+  text-shadow: 1px 1px 5px $grisBase;
+}
+/* CONTAINER GENERAL DEL GRID*/
+.containerUsados {
+  font-family: $fuenteRussoVerdana;
+  display: grid;
+  width: 80%;
+  margin: 50px auto;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 20px;
+  grid-template-areas:
+    "containerUsados__filtro auto6"
+    ". auto7"
+    ". auto8"
+    ". auto9"
+    ". auto10";
+}
+/* COLUMNA FILTRO */
+.containerUsados__filtro {
+  display: grid;
+  box-shadow: 1px 1px 5px black;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #5858583d;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "tituloFiltro"
+    "ano"
+    "marca"
+    "modelo";
+  grid-area: containerUsados__filtro;
+}
+.tituloFiltro h3 {
+  font-size: 4rem;
+  text-shadow: 1px 1px 2px $grisBase;
+  letter-spacing: 1px;
+  grid-area: tituloFiltro;
+  text-align: center;
+}
+.ano {
+  grid-area: ano;
+}
+
+.marca {
+  grid-area: marca;
+}
+
+.modelo {
+  grid-area: modelo;
+}
+
+.containerUsados__filtro h4 {
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px $grisBase;
+  letter-spacing: 1px;
+}
+.containerUsados__filtro select {
+  font-family: $fuenteVerdanaGeneva;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border-width: 0.2rem;
+  padding: 1rem;
+  margin: 1rem;
+  width: 90%;
+  color: #000000;
+}
+/* COLUMNA AUTOS-DESCRIPCION-COMPRA-INFORMACION */
+.containerUsado__autos {
+  background-color: #d8de2a1c;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px black;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
+  gap: 0px 15px;
+  height: fit-content;
+}
+.containerUsado__autos img {
+  margin-bottom: 10px;
+  border: 5px solid $grisBase;
+  border-style: double;
+  border-radius: 15px;
+  width: 100%;
+  min-width: 200px;
+}
+.containerUsado__autos h5 {
+  font-size: 4rem;
+  background-color: #9fde2a3d;
+  border-radius: 15px;
+  padding: 10px;
+}
+/* AUTO 6 */
+.auto6 {
+  grid-template-areas:
+    "auto6Img auto6Descripcion"
+    "auto6ComprarInformacion auto6ComprarInformacion";
+  grid-area: auto6;
+}
+.auto6Img {
+  grid-area: auto6Img;
+}
+.auto6Descripcion {
+  grid-area: auto6Descripcion;
+}
+.auto6ComprarInformacion {
+  grid-area: auto6ComprarInformacion;
+}
+/* AUTO 7 */
+.auto7 {
+  grid-template-areas:
+    "auto7Img auto7Descripcion"
+    "auto7ComprarInformacion auto7ComprarInformacion";
+  grid-area: auto7;
+}
+.auto7Img {
+  grid-area: auto7Img;
+}
+.auto7Descripcion {
+  grid-area: auto7Descripcion;
+}
+.auto7ComprarInformacion {
+  grid-area: auto7ComprarInformacion;
+}
+/* AUTO 8 */
+.auto8 {
+  grid-template-areas:
+    "auto8Img auto8Descripcion"
+    "auto8ComprarInformacion auto8ComprarInformacion";
+  grid-area: auto8;
+}
+.auto8Img {
+  grid-area: auto8Img;
+}
+.auto8Descripcion {
+  grid-area: auto8Descripcion;
+}
+.auto8ComprarInformacion {
+  grid-area: auto8ComprarInformacion;
+}
+/* AUTO 9 */
+.auto9 {
+  grid-template-areas:
+    "auto9Img auto9Descripcion"
+    "auto9ComprarInformacion auto9ComprarInformacion";
+  grid-area: auto9;
+}
+.auto9Img {
+  grid-area: auto9Img;
+}
+.auto9Descripcion {
+  grid-area: auto9Descripcion;
+}
+.auto9ComprarInformacion {
+  grid-area: auto9ComprarInformacion;
+}
+/* AUTO 10 */
+.auto10 {
+  grid-template-areas:
+    "auto10Img auto10Descripcion"
+    "auto10ComprarInformacion auto10ComprarInformacion";
+  grid-area: auto10;
+}
+.auto10Img {
+  grid-area: auto10Img;
+}
+.auto10Descripcion {
+  grid-area: auto10Descripcion;
+}
+.auto10ComprarInformacion {
+  grid-area: auto10ComprarInformacion;
+}
+@media only screen and (max-width: 1100px) {
+  .containerUsado__autos {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-self: baseline;
+  }
+  .containerUsados {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .containerUsados__filtro {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  .tituloFiltro {
+    width: 100%;
+  }
+  #comprar {
+    font-size: 3vw;
+    width: 100%;
+    margin: 0 0 5px 0;
+  }
+  #masInformacion {
+    font-size: 3vw;
+    width: 100%;
+  }
+}
+
+/* ################################################################################
+##################################### FIN CSS #####################################
+################################################################################ */
