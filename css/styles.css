@@ -270,7 +270,7 @@ html {
 }
 
 /* CARDS VEHICULOS DESTACADOS */
-.seccionDestacados {
+.boxCards {
   position: relative;
   top: 40rem;
 }
@@ -282,8 +282,11 @@ html {
 }
 
 .boxCards__titleCar h2 {
-  font-size: 7vw;
   margin: -15% 0% 0% 10%;
+}
+
+.boxCards__titleCar--titleSize {
+  font-size: 7vw;
 }
 
 .boxCards__titleCar p {
