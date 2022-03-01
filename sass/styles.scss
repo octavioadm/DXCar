@@ -440,22 +440,35 @@ h5 {
   font-family: $fuenteRussoVerdana;
   text-shadow: 1px 1px 5px $grisBase;
 }
+/*OPERACIONES*/
 .titleSection h2 {
-  font-size: 3.5rem;
+  font-size: ($sizeTitles / 2) + 1;
+}
+/*CONDICIONALES*/
+$bordeCurvo: grande; /*aplicamos radius de 10 , en caso contrario no*/
+/*BOOLEANO*/
+$mostrar: true;
+/*EXTEND*/
+.cardsTeamImg {
+  @extend .containerAboutUs__Description--parrafo;
 }
 #containerAboutUs {
   border: 1px solid rgba(110, 109, 109, 0.555);
-  border-radius: 10px;
-  overflow: auto;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  @if $bordeCurvo == grande {
+    border-radius: 10px;
+  } @else if $bordeCurvo == chico {
+    border-radius: 50px;
+  } @else {
+    border-radius: 0;
+  }
+  @if $mostrar {
+    overflow: auto;
+  }
 }
 .containerAboutUs {
   font-family: $fuenteRussoVerdana;
   width: 80%;
-  margin: 150px auto 0;
+  margin: 15rem auto 0;
 }
 .AboutUsTitle {
   position: relative;
@@ -466,14 +479,14 @@ h5 {
 }
 .containerAboutUs__logo {
   background: $grisBase;
-  padding: 20px;
+  padding: 2rem;
 }
 .containerAboutUs__Description {
   background: linear-gradient(90deg, #c4caa4b6, #d9dd6ea9);
 }
 .containerAboutUs__Description--parrafo {
   font-size: 2rem;
-  padding: 10px;
+  padding: 1.5rem;
 }
 .containerAboutUs__Contacto {
   width: 90%;
@@ -525,6 +538,7 @@ h5 {
   justify-content: space-around;
 }
 .cardsTeamItem {
+  box-shadow: 1px 1px 10px black;
   background: linear-gradient(#0066ff3b, #ffffffcc);
   border: 1px solid grey;
   border-radius: 1rem;
@@ -533,9 +547,6 @@ h5 {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
-}
-.cardsTeamImg {
-  padding: 1.5rem;
 }
 .cardsTeamImg img {
   border-radius: 1rem;
