@@ -433,93 +433,117 @@ h5 {
 /* ################################################################################
 ##################################### PESTAÑA EMPRESA #############################
 ################################################################################ */
+/*SOBRE NOSOTROS*/
+.titleSection {
+  width: 80%;
+  margin: 5rem auto;
+  font-family: $fuenteRussoVerdana;
+  text-shadow: 1px 1px 5px $grisBase;
+}
+.titleSection h2 {
+  font-size: 3.5rem;
+}
+#containerAboutUs {
+  border: 1px solid rgba(110, 109, 109, 0.555);
+  border-radius: 10px;
+  overflow: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
 .containerAboutUs {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.1fr 1fr auto;
-  gap: 5rem 2rem;
-  grid-template-areas:
-    "containerAboutUs__title"
-    "containerAboutUs__img" "containerAboutUs__Description";
   font-family: $fuenteRussoVerdana;
   width: 80%;
-  margin: 150px auto;
+  margin: 150px auto 0;
 }
-.containerAboutUs__title {
-  font-size: 3rem;
+.AboutUsTitle {
+  position: relative;
+  top: 130px;
+  width: 80%;
+  font-family: $fuenteRussoVerdana;
   text-shadow: 1px 1px 5px $grisBase;
-  grid-area: containerAboutUs__title;
 }
-.containerAboutUs__img {
-  grid-area: containerAboutUs__img;
-}
-.containerAboutUs__img img {
-  border-radius: 15px;
-  filter: drop-shadow(5px 5px 10px black);
+.containerAboutUs__logo {
+  background: $grisBase;
+  padding: 20px;
 }
 .containerAboutUs__Description {
-  padding: 20px;
-  background-color: $grisBase;
-  border-radius: 15px;
-  filter: drop-shadow(5px 5px 10px black);
-  grid-area: containerAboutUs__Description;
+  background: linear-gradient(90deg, #c4caa4b6, #d9dd6ea9);
 }
-.containerAboutUs__Description img {
-  padding: 0.5rem;
-  margin-bottom: 3rem;
-}
-.containerAboutUs__Description p {
-  font-style: italic;
-  font-size: 2.5rem;
-  background-color: #d8de2a3d;
-  border-radius: 1rem;
-  padding: 0.5rem;
+.containerAboutUs__Description--parrafo {
+  font-size: 2rem;
+  padding: 10px;
 }
 .containerAboutUs__Contacto {
   width: 90%;
-  margin: 3% auto;
+  margin: 1% 1%;
 }
-.containerAboutUs__Description input {
-  font-family: $fuenteRussoVerdana;
+#botonContacto {
   background-color: #1c6dc9;
   border: 2px solid #4747f3;
   box-shadow: 1px 1px 10px #0000ff;
-  width: 100%;
-  font-size: 2.5rem;
+  width: 15%;
+  font-size: 1.1vw;
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 5px;
+  margin: 2% 0 1% 0%;
   color: rgba(255, 255, 255, 0.87);
 }
-.containerAboutUs__Description input:hover {
-  transform: scale(1.1);
-  transition-duration: 0.4s;
+#botonContacto:hover {
+  background-color: #1776e4;
+  border: 2px solid #3232f7;
+  transform: scale(1.05);
+  transition: 0.3s;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
-.teamTitle {
-  width: 80%;
-  margin: 10px auto;
-  font-family: $fuenteRussoVerdana;
-  font-size: 3rem;
-  text-shadow: 1px 1px 5px $grisBase;
+/*SECCION NUESTRO EQUIPO*/
+.containerTeam__img {
+  filter: drop-shadow(5px 5px 10px black);
+  -webkit-filter: drop-shadow(5px 5px 10px black);
+  margin: 5rem 0;
 }
+.containerTeam__img img {
+  width: 60%;
+  border: 1px solid rgba(110, 109, 109, 0.555);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+/*SECCION AUTORIDADES*/
 .containerCardsTeam {
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  flex-direction: row;
   gap: 10px;
-  align-items: center;
-  margin-top: 5rem;
+  margin: 2rem auto 10rem;
+  width: 80%;
+  justify-content: space-around;
 }
 .cardsTeamItem {
   background: linear-gradient(#0066ff3b, #ffffffcc);
   border: 1px solid grey;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   text-align: center;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 .cardsTeamImg {
   padding: 1.5rem;
 }
 .cardsTeamImg img {
-  border-radius: 1.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 .cardsTeamDescription {
   padding: 3rem;
@@ -533,31 +557,28 @@ h5 {
   font-size: 2rem;
   text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.521);
 }
-@media (min-width: 1200px) {
-  .containerAboutUs {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr auto;
-    grid-template-areas:
-      "containerAboutUs__title containerAboutUs__title"
-      "containerAboutUs__img containerAboutUs__Description";
-  }
-  .containerAboutUs__Description p {
-    font-size: 2rem;
-  }
+@media (max-width: 768px) {
+  /*SOBRE NOSOTROS*/
   .containerAboutUs__Contacto {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
   }
-  .containerAboutUs__Description input {
-    width: 25%;
+  #botonContacto {
+    width: 80%;
     font-size: 2.5rem;
+  }
+  /*NUESTRO EQUIPO*/
+  .titleSection {
+    text-align: center;
   }
   .containerCardsTeam {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    gap: 0px;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    gap: 10px;
   }
 }
 /* ################################################################################
@@ -696,7 +717,6 @@ h5 {
 }
 .auto1ComprarInformacion {
   grid-area: auto1ComprarInformacion;
-  margin: 25px 0px 0px;
 }
 /* AUTO 2 */
 .auto2 {
@@ -713,7 +733,6 @@ h5 {
 }
 .auto2ComprarInformacion {
   grid-area: auto2ComprarInformacion;
-  margin: 25px 0px 0px;
 }
 /* AUTO 3 */
 .auto3 {
@@ -730,7 +749,6 @@ h5 {
 }
 .auto3ComprarInformacion {
   grid-area: auto3ComprarInformacion;
-  margin: 25px 0px 0px;
 }
 /* AUTO 4 */
 .auto4 {
@@ -747,7 +765,6 @@ h5 {
 }
 .auto4ComprarInformacion {
   grid-area: auto4ComprarInformacion;
-  margin: 25px 0px 0px;
 }
 /* AUTO 5 */
 .auto5 {
@@ -764,7 +781,6 @@ h5 {
 }
 .auto5ComprarInformacion {
   grid-area: auto5ComprarInformacion;
-  margin: 25px 0px 0px;
 }
 #comprar {
   background-color: #1c6dc9;
@@ -824,11 +840,6 @@ h5 {
   }
   .tituloFiltro {
     width: 100%;
-  }
-  #comprar {
-    font-size: 3vw;
-    width: 100%;
-    margin: 1rem 0 5px 0;
   }
   #masInformacion {
     font-size: 3vw;
@@ -1023,7 +1034,7 @@ h5 {
 .auto10ComprarInformacion {
   grid-area: auto10ComprarInformacion;
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 768px) {
   .containerUsado__autos {
     display: flex;
     flex-direction: column;
@@ -1034,7 +1045,6 @@ h5 {
     display: flex;
     flex-wrap: wrap;
   }
-
   .containerUsados__filtro {
     display: flex;
     flex-flow: row wrap;
@@ -1046,7 +1056,7 @@ h5 {
   #comprar {
     font-size: 3vw;
     width: 100%;
-    margin: 0 0 5px 0;
+    margin: 10px 0 5px 0;
   }
   #masInformacion {
     font-size: 3vw;

@@ -73,40 +73,55 @@
     </header>
     <!-- SOBRE NOSOTROS -->
     <section>
-      <div class="containerAboutUs">
-        <div class="containerAboutUs__title">
-          <h2>Sobre Nosotros</h2>
-          <hr />
-        </div>
-        <div class="containerAboutUs__img">
-          <img src="../img/aboutUs.jpg" alt="automotora" />
-        </div>
-        <div class="containerAboutUs__Description">
+      <div class="AboutUsTitle titleSection">
+        <h2>Sobre Nosotros</h2>
+        <hr />
+      </div>
+      <div id="containerAboutUs" class="card containerAboutUs">
+        <div class="containerAboutUs__logo">
           <img src="../img/DXCar.PNG" alt="logoDXCar" />
-          <p>
-            Somos <strong> DXCar</strong> una empresa nacional en la venta
-            automotriz habiendo logrado a la fecha un record en cantidad de
-            unidades vendidas en autos nuevos y usados que nos enorgullecen,
-            dejando en la cima la imagen de nuestra empresa y de todo Uruguay.
+        </div>
+        <div class="card-body containerAboutUs__Description">
+          <p class="card-text containerAboutUs__Description--parrafo">
+            Somos una empresa nacional en la venta automotriz habiendo logrado a
+            la fecha un record en cantidad de unidades vendidas en autos nuevos
+            y usados que nos enorgullecen, dejando en la cima la imagen de
+            nuestra empresa y de todo Uruguay.
             <br />
             Nuestro personal brinda una perfecta fusión entre experiencia y
             compromiso otorgando los requisitos más exigentes que necesita el
             cliente con dedicación e integridad y compromiso, apostando por la
             mejora de la atención de quienes confían en nosotros.
           </p>
-          <br />
           <div class="containerAboutUs__Contacto">
-            <a href="contacto.html"
-              ><input type="button" name="contacto" value="Contacto"
-            /></a>
+            <a
+              href="contacto.html"
+              id="botonContacto"
+              class="btn btn-primary containerAboutUsContacto"
+              ><i class="fas fa-file-signature"></i> Contacto</a
+            >
           </div>
         </div>
       </div>
     </section>
     <!-- NUESTRO EQUIPO -->
     <section>
-      <div class="teamTitle">
+      <div class="titleSection">
         <h2>Nuestro Equipo</h2>
+        <hr />
+      </div>
+      <div class="containerTeam__img">
+        <img
+          src="../img/aboutUs.jpg"
+          class="img-fluid mx-auto d-block"
+          alt="automotora"
+        />
+      </div>
+    </section>
+    <!-- AUTORIDADES-->
+    <section>
+      <div class="titleSection">
+        <h2>Autoridades</h2>
         <hr />
       </div>
       <div class="containerCardsTeam">
