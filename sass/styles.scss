@@ -527,6 +527,15 @@ $mostrar: true;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+  transition: transform 1s, filter 1.5s ease-in-out;
+  filter: grayscale(100%);
+  -webkit-transition: transform 1s, filter 1.5s ease-in-out;
+  -moz-transition: transform 1s, filter 1.5s ease-in-out;
+  -ms-transition: transform 1s, filter 1.5s ease-in-out;
+  -o-transition: transform 1s, filter 1.5s ease-in-out;
+}
+.containerTeam__img img:hover {
+  filter: grayscale(0);
 }
 /*SECCION AUTORIDADES*/
 .containerCardsTeam {
