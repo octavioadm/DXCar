@@ -499,68 +499,50 @@ h5 {
 /* TITULO */
 .bodyContacto {
   background-image: url("../img/autoContacto.jpg");
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-color: #000000;
 }
 
 .titContacto {
-  margin: 10% 30% 0% 5%;
+  position: relative;
+  top: 20rem;
+  margin-left: 5%;
 }
 
 .titContacto h2 {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 5vw;
-  letter-spacing: 4px;
+  font-size: 6vw;
   color: #c9c6c6d2;
   text-shadow: 5px 5px 10px #3b434d;
+  animation: 0.7s 0s reverse slideinTitContacto;
+}
+
+.titContacto h3 {
+  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3vw;
+  color: #f7f7f7d2;
+  text-shadow: 2px 2px 10px #3b434d;
   animation: 0.7s 0s reverse slideinTitContacto;
 }
 
 /* EFECTO ANIMATION TITULO CONTACTO */
 @-webkit-keyframes slideinTitContacto {
   from {
-    margin-left: 4%;
+    margin-left: 5%;
   }
   to {
-    margin-left: 10%;
+    margin-left: -100%;
   }
 }
 @keyframes slideinTitContacto {
   from {
-    margin-left: 4%;
-  }
-  to {
-    margin-left: 10%;
-  }
-}
-
-.titForm {
-  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 3rem;
-  margin: 4% 0% 1% 5%;
-  letter-spacing: 0.1rem;
-  font-weight: normal;
-  color: #f7f7f7d2;
-  text-shadow: 1px 1px 10px #3b434d;
-  animation: 0.7s 0s reverse slideinTitForm;
-}
-
-@-webkit-keyframes slideinTitForm {
-  from {
     margin-left: 5%;
   }
   to {
-    margin-left: -30%;
-  }
-}
-
-@keyframes slideinTitForm {
-  from {
-    margin-left: 5%;
-  }
-  to {
-    margin-left: -30%;
+    margin-left: -100%;
   }
 }
 
