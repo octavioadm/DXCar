@@ -70,84 +70,129 @@
       <div class="backLineNavbar"></div>
     </header>
     <!-- CUERPO CONTACTO -->
-    <div class="titContacto">
-      <h2>CONTACTENOS</h2>
-      <h3>Envíenos su mensaje aquí</h3>
-    </div>
-    <div class="ContactForm">
+    <section>
       <form action="">
-        <label class="ContactForm__label" for="nombre">Nombre: </label>
-        <input
-          class="ContactForm__input"
-          type="text"
-          name="nombre"
-          id="nombre"
-          required
-          placeholder="Escriba su nombre."
-        />
-        <br />
-        <br />
-        <label class="ContactForm__label" for="apellido">Apellido:</label>
-        <input
-          class="ContactForm__input"
-          type="text"
-          name="apellido"
-          id="apellido"
-          required
-          placeholder="Escriba su apellido."
-        />
-        <br />
-        <br />
-        <label class="ContactForm__label" for="email">E-mail:</label>
-        <input
-          class="ContactForm__input"
-          type="email"
-          name="email"
-          id="email"
-          required
-          placeholder="juan@gmail.com."
-        />
-        <br />
-        <br />
-        <label class="ContactForm__label" for="VehiculoContacto"
-          >Consulta por:</label
-        >
-        <select class="ContactForm__input" name="VehContacto" id="VehContacto">
-          <option value="compra0km">Compra 0Km.</option>
-          <option value="compraUsados">Compra Usados.</option>
-          <option value="cotizacion">Cotización.</option>
-        </select>
-        <br />
-        <br />
-        <label class="ContactForm__label" for="novedades"
-          >Desea recibir Novedades?</label
-        >
-        <input type="checkbox" name="novedades" id="novedades" />
-        <br />
-        <br />
-        <textarea
-          class="ContactForm__textArea"
-          name="comentarios"
-          id="comentarios"
-          cols="60"
-          rows="10"
-        ></textarea>
-        <br />
-        <br />
-        <input
-          class="ContactForm__submitButton"
-          type="submit"
-          value="Enviar Consulta"
-          id="submitButtonContacto"
-        />
-        <input
-          class="ContactForm__resetButton"
-          type="reset"
-          value="Borrar"
-          id="resetButtonContacto"
-        />
+        <div class="container-fluid ms-5 titContacto">
+          <div class="row p-5 m-5">
+            <div class="col-xl-4 col-lg-8 col-md-12 col-xs-12 col-sm-12">
+              <h2>CONTACTENOS</h2>
+              <h3>Envíenos su mensaje aquí</h3>
+            </div>
+          </div>
+        </div>
+        <!-- FORMULARIO CONTACTO -->
+
+        <div class="container-fluid ms-5">
+          <div class="row p-5 m-5">
+            <div
+              class="col-xl-4 col-lg-8 col-md-12 col-xs-12 col-sm-12 p-5 ContactForm"
+            >
+              <!-- CAMPO/LABEL NOMBRE -->
+              <div class="mb-4 input-group-lg">
+                <label
+                  for="campoNombre"
+                  class="form-label ContactForm__label fs-2 text-light"
+                  >Nombre:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="campoNombre"
+                  required
+                  placeholder="Nombre"
+                />
+              </div>
+              <!-- CAMPO/LABEL APELLIDO -->
+              <div class="mb-4 input-group-lg">
+                <label
+                  for="campoApellido"
+                  class="form-label ContactForm__label fs-2 text-light"
+                  >Apellido:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="campoApellido"
+                  required
+                  placeholder="Apellido"
+                />
+              </div>
+              <!-- CAMPO/LABEL EMAIL -->
+              <div class="mb-4 input-group-lg">
+                <label
+                  for="campoEmail"
+                  class="form-label ContactForm__label fs-2 text-light"
+                  >Email:</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="campoEmail"
+                  required
+                  placeholder="Email"
+                />
+              </div>
+              <!-- CAMPO/LABEL SELECTOR -->
+              <div class="col-md-4 mb-4 input-group-lg">
+                <label
+                  for="selectorForm"
+                  class="form-label ContactForm__label fs-2 text-light"
+                  >Consulta por:</label
+                >
+                <select
+                  id="selectorForm"
+                  class="form-select mb-4 input-group-lg"
+                >
+                  <option selected value="compra0km">Compra 0Km.</option>
+                  <option value="compraUsados">Compra Usados.</option>
+                  <option value="cotizacion">Cotización.</option>
+                </select>
+              </div>
+              <!-- CHECKBOX -->
+              <div class="col-12 d-flex mb-4">
+                <label class="form-check-label text-light fs-2" for="gridCheck">
+                  Desea recibir Novedades?
+                </label>
+                <div class="form-check">
+                  <input
+                    class="form-check-input p-3 ms-2"
+                    type="checkbox"
+                    id="gridCheck"
+                  />
+                </div>
+              </div>
+              <!-- CAMPO/LABEL TEXTAREA -->
+              <div class="mb-3">
+                <textarea
+                  class="form-control fs-2"
+                  placeholder="Escriba su consulta"
+                  id="textarea"
+                  cols="60"
+                  rows="5"
+                  required
+                  rows="3"
+                ></textarea>
+              </div>
+              <!-- BUTTONS SUBMIT AND RESET -->
+              <div class="mt-5">
+                <!-- SUBMIT BUTTON -->
+                <input
+                  class="btn ContactForm__submitButton"
+                  type="submit"
+                  value="Enviar"
+                />
+                <!-- RESET BUTTON -->
+                <input
+                  class="btn ContactForm__resetButton"
+                  type="reset"
+                  value="Restablecer"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </form>
-    </div>
+    </section>
     <!-- FOOTER -->
     <footer>
       <div class="gradientLineFooter"></div>
