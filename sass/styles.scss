@@ -497,8 +497,8 @@ $mostrar: true;
   background-color: #1c6dc9;
   border: 2px solid #4747f3;
   box-shadow: 1px 1px 10px #0000ff;
-  width: 15%;
-  font-size: 1.1vw;
+  width: 18rem;
+  font-size: 2rem;
   padding: 1rem;
   border-radius: 5px;
   margin: 2% 0 1% 0%;
@@ -587,8 +587,8 @@ $mostrar: true;
     padding: 1rem;
   }
   #botonContacto {
-    width: 50%;
-    font-size: 2.5rem;
+    width: 20rem;
+    font-size: 2rem;
   }
   /*NUESTRO EQUIPO*/
   .titleSection {
@@ -598,7 +598,7 @@ $mostrar: true;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 70%;
     gap: 15px;
   }
   .containerTeam__img img {
