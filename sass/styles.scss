@@ -343,14 +343,6 @@ h5 {
     margin-left: -100%;
   }
 }
-@media (max-width: 768px) {
-  .titContacto h2 {
-    font-size: 10vw;
-  }
-  .titContacto h3 {
-    font-size: 4vw;
-  }
-}
 /* FORMULARIO - CONTACTO */
 .ContactForm {
   background: linear-gradient(180deg, #3b434d81, #8400ff3b);
@@ -421,6 +413,22 @@ h5 {
   box-shadow: 1px 1px 5px #c20417be;
   border: 2px solid #bb2837;
   color: #ffffffd5;
+}
+@media (max-width: 768px) {
+  .titContacto h2 {
+    font-size: 10vw;
+  }
+  .titContacto h3 {
+    font-size: 4vw;
+  }
+  .ContactForm__resetButton {
+    margin: 0;
+  }
+  .containerButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
 }
 /* ################################################################################
 ##################################### PESTAÑA EMPRESA #############################
