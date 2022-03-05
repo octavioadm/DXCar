@@ -667,7 +667,7 @@ h5 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 2px;
+    gap: 5px;
   }
 }
 
