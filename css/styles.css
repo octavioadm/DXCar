@@ -722,6 +722,7 @@ h5 {
 }
 
 .containerAboutUs__Description--parrafo, .cardsTeamImg {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2rem;
   padding: 1.5rem;
 }
@@ -843,8 +844,13 @@ h5 {
     width: 80%;
     margin: 0 auto;
   }
+  .containerAboutUs__Description--parrafo, .cardsTeamImg {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
   #botonContacto {
-    width: 80%;
+    width: 50%;
     font-size: 2.5rem;
   }
   /*NUESTRO EQUIPO*/
@@ -862,8 +868,11 @@ h5 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 60%;
-    gap: 10px;
+    width: 50%;
+    gap: 15px;
+  }
+  .containerTeam__img img {
+    width: 80%;
   }
 }
 
@@ -1534,10 +1543,10 @@ h5 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
     width: 100%;
   }
   .tituloFiltro {

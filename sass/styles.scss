@@ -485,6 +485,7 @@ $mostrar: true;
   background: linear-gradient(90deg, #c4caa4b6, #d9dd6ea9);
 }
 .containerAboutUs__Description--parrafo {
+  font-family: $fuenteVerdanaGeneva;
   font-size: 2rem;
   padding: 1.5rem;
 }
@@ -580,8 +581,13 @@ $mostrar: true;
     width: 80%;
     margin: 0 auto;
   }
+  .containerAboutUs__Description--parrafo {
+    font-family: $fuenteVerdanaGeneva;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
   #botonContacto {
-    width: 80%;
+    width: 50%;
     font-size: 2.5rem;
   }
   /*NUESTRO EQUIPO*/
@@ -592,8 +598,11 @@ $mostrar: true;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
-    gap: 10px;
+    width: 50%;
+    gap: 15px;
+  }
+  .containerTeam__img img {
+    width: 80%;
   }
 }
 /* ################################################################################
@@ -1062,7 +1071,7 @@ $mostrar: true;
   }
   .containerUsados__filtro {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     width: 100%;
   }
   .tituloFiltro {

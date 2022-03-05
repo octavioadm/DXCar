@@ -81,7 +81,10 @@
     </header>
     <!-- CUERPO CONTACTO -->
     <section>
-      <form action="">
+      <form
+        action="https://formsubmit.co/d99d3dcd868d900c7a2c11852d9fc3c2"
+        method="POST"
+      >
         <div class="container-fluid titContacto">
           <div class="row p-5 mb-5 mt-5">
             <div class="col-xl-4 col-lg-8 col-md-12 col-xs-12 col-sm-12">
@@ -109,6 +112,7 @@
                   id="campoNombre"
                   required
                   placeholder="Nombre"
+                  name="Nombre"
                 />
               </div>
               <!-- CAMPO/LABEL APELLIDO -->
@@ -124,6 +128,7 @@
                   id="campoApellido"
                   required
                   placeholder="Apellido"
+                  name="Apellido"
                 />
               </div>
               <!-- CAMPO/LABEL EMAIL -->
@@ -139,6 +144,7 @@
                   id="campoEmail"
                   required
                   placeholder="Email"
+                  name="email"
                 />
               </div>
               <!-- CAMPO/LABEL SELECTOR -->
@@ -151,6 +157,7 @@
                 <select
                   id="selectorForm"
                   class="form-select mb-4 input-group-lg"
+                  name="select"
                 >
                   <option selected value="compra0km">Compra 0Km.</option>
                   <option value="compraUsados">Compra Usados.</option>
@@ -167,6 +174,7 @@
                     class="form-check-input p-3 ms-2"
                     type="checkbox"
                     id="gridCheck"
+                    name="checkbox"
                   />
                 </div>
               </div>
@@ -176,6 +184,7 @@
                   class="form-control fs-2"
                   placeholder="Escriba su consulta"
                   id="textarea"
+                  name="textarea"
                   cols="60"
                   rows="5"
                   required
@@ -189,12 +198,14 @@
                   class="btn ContactForm__submitButton"
                   type="submit"
                   value="Enviar"
+                  name="submit"
                 />
                 <!-- RESET BUTTON -->
                 <input
                   class="btn ContactForm__resetButton"
                   type="reset"
                   value="Restablecer"
+                  name="reset"
                 />
               </div>
             </div>
