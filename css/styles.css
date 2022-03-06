@@ -214,6 +214,12 @@ html {
   .titleBrands {
     margin-top: -300px;
   }
+  .newUsedCards p {
+    font-size: 2rem;
+  }
+  #newUsedCards__img {
+    width: 50%;
+  }
 }
 
 /* CARDS NUEVOS Y USADOS */
@@ -324,10 +330,26 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .boxCards__item {
     width: 80%;
     margin-top: 10px;
+  }
+  .newUsedCards p {
+    font-size: 2rem;
+  }
+  #newUsedCards__img {
+    width: 100%;
+  }
+  .newUsedCards h2 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .newUsedCards__button {
+    text-align: center;
   }
 }
 
@@ -464,10 +486,13 @@ h5 {
 }
 
 .containerBrands__item img:hover {
-  -webkit-transform: rotate3d(0, 1, 0.5, 3.142rad);
-          transform: rotate3d(0, 1, 0.5, 3.142rad);
+  transform: rotate3d(0, 1, 0.5, 3.142rad);
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
+  -webkit-transform: rotate3d(0, 1, 0.5, 3.142rad);
+  -moz-transform: rotate3d(0, 1, 0.5, 3.142rad);
+  -ms-transform: rotate3d(0, 1, 0.5, 3.142rad);
+  -o-transform: rotate3d(0, 1, 0.5, 3.142rad);
 }
 
 @media (max-width: 768px) {
@@ -490,6 +515,18 @@ h5 {
   }
   .containerBrands__item img {
     margin-top: 10px;
+  }
+  .boxCards__item h4,
+  h5 {
+    text-align: center;
+  }
+  .containerColorCarsDisp {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .boxCards__ul {
+    margin: 0;
   }
 }
 
