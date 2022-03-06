@@ -287,6 +287,10 @@ h5 {
 .containerBrands__item img:hover {
   transform: rotate3d(0, 1, 0.5, 3.142rad);
   transition-duration: 1s;
+  -webkit-transform: rotate3d(0, 1, 0.5, 3.142rad);
+  -moz-transform: rotate3d(0, 1, 0.5, 3.142rad);
+  -ms-transform: rotate3d(0, 1, 0.5, 3.142rad);
+  -o-transform: rotate3d(0, 1, 0.5, 3.142rad);
 }
 @media (max-width: 768px) {
   .containerBrands {
