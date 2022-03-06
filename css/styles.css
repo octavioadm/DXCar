@@ -464,13 +464,10 @@ h5 {
 }
 
 .containerBrands__item img:hover {
-  transfsorm: scale(1.1);
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  -webkit-filter: drop-shadow(10px 10px 30px black);
-          filter: drop-shadow(10px 10px 30px black);
   -webkit-transform: rotate3d(0, 1, 0.5, 3.142rad);
           transform: rotate3d(0, 1, 0.5, 3.142rad);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 @media (max-width: 768px) {
