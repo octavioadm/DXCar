@@ -16,7 +16,7 @@ Si tienes algun comentario, realizalo aqui: octavioadm@gmail.com
 
 ## 🛠 Skills
 
-HTML, CSS, GIT, GITHUB ...
+HTML, CSS, SASS, GIT, GITHUB ...
 
 ## Screenshots
 
