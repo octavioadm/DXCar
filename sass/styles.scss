@@ -285,8 +285,10 @@ h5 {
   filter: drop-shadow(10px 10px 20px black);
 }
 .containerBrands__item img:hover {
-  transform: translate(1px, -30px);
+  transfsorm: scale(1.1);
   transition-duration: 1s;
+  filter: drop-shadow(10px 10px 30px black);
+  transform: rotate3d(0, 1, 0.5, 3.142rad);
 }
 @media (max-width: 768px) {
   .containerBrands {
