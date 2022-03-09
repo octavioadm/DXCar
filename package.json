@@ -1,0 +1,23 @@
+{
+  "name": "dxcar",
+  "version": "1.0.0",
+  "description": "Proyecto - Desarrollo Web - CODERHOUSE",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch sass:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octavioadm/DXCar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/octavioadm/DXCar/issues"
+  },
+  "homepage": "https://github.com/octavioadm/DXCar#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
