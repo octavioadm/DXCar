@@ -7,8 +7,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* 10px = 1 rem */
@@ -20,55 +19,38 @@ html {
 .navbarColor {
   background: #3b434d;
 }
-
 .navbarColor .fadeInAnimate {
-  -webkit-animation: 1s fadeInRight;
-          animation: 1s fadeInRight;
+  animation: 1s fadeInRight;
 }
-
 .navbarColor .logoDXCar {
-  -webkit-animation: 1s fadeInLeft;
-          animation: 1s fadeInLeft;
+  animation: 1s fadeInLeft;
 }
-
 .navbarColor .logoDXCar img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.3s;
+  transform: scale(1.1);
   transition: 0.3s;
   opacity: 0.8;
 }
-
 .navbarColor #navbarButton {
   border-color: rgba(255, 255, 255, 0.808);
   font-size: 2rem;
 }
-
 .navbarColor #navbarButton .navbar-toggler-icon--color {
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  filter: invert(1);
 }
-
 .navbarColor #containerNavButton {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
-
 .navbarColor .containerNavLinks ul {
   font-size: 1.8rem;
   padding-top: 20px;
   /* EFECTOS LINKS NAVBAR */
 }
-
 .navbarColor .containerNavLinks ul li:hover {
   opacity: 0.6;
   text-shadow: 1px 1px 5px #000000;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.3s;
+  transform: scale(1.1);
   transition: 0.3s;
 }
-
 .navbarColor .containerNavLinks ul li a {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
@@ -76,15 +58,12 @@ html {
   color: #ffffff;
   margin-left: 5rem;
 }
-
 .navbarColor .containerNavLinks ul li a:hover {
   color: #ffffff;
 }
-
 .navbarColor .containerNavLinks ul li a:visited {
   color: #ffffff;
 }
-
 .navbarColor .containerNavLinks ul li a:focus {
   color: #000000;
 }
@@ -92,7 +71,6 @@ html {
 /* LINEA VIOLETA DEBAJO DEL NAV y FOOTER*/
 .backLineNavbar {
   height: 2rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#3b434d), to(#8400ff));
   background: linear-gradient(180deg, #3b434d, #8400ff);
   z-index: 10;
 }
@@ -103,14 +81,12 @@ html {
 .gradientLineFooter {
   height: 2rem;
   width: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#3b434d), to(#8400ff));
   background: linear-gradient(360deg, #3b434d, #8400ff);
 }
 
 .underLineGradientLine {
   height: 0.2rem;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#181717), to(#383838));
   background: linear-gradient(90deg, #181717, #383838);
 }
 
@@ -120,8 +96,7 @@ html {
 
 /* MAPA */
 .footerMap {
-  -webkit-filter: drop-shadow(1px 1px 20px black);
-          filter: drop-shadow(1px 1px 20px black);
+  filter: drop-shadow(1px 1px 20px black);
 }
 
 /* REDES SOCIALES */
@@ -130,32 +105,20 @@ html {
   margin: 2.5rem 1.5rem 1rem;
   height: 4rem;
 }
-
 .footerSocialNetworks__img:hover {
-  -webkit-box-shadow: 1px 1px 20px #000000;
-          box-shadow: 1px 1px 20px #000000;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.3s;
+  box-shadow: 1px 1px 20px #000000;
+  transform: scale(1.1);
   transition: 0.3s;
 }
 
 @media (max-width: 768px) {
   .containerLocation {
     margin-top: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
 }
-
 /* ################################################################################
 ############################### PESTAÑA INICIO ####################################
 ################################################################################ */
@@ -165,34 +128,31 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  /* ONDAS VIOLETAS DEBAJO DE LOOP DE VIDEO */
+  /* BANNER TITULOS NEW USED */
+  /* CARDS NUEVOS Y USADOS */
+  /* CARDS VEHICULOS DESTACADOS */
+  /* SECCION MARCAS TRABAJADAS */
 }
-
-.boxVideoPortada {
+.bodyInicio .boxVideoPortada {
   position: relative;
   height: 60vh;
   width: 100%;
   top: 11.5rem;
 }
-
-#videoPortada {
+.bodyInicio .boxVideoPortada #videoPortada {
   position: relative;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   width: 100%;
   height: 60vh;
 }
-
-/* ONDAS VIOLETAS DEBAJO DE LOOP DE VIDEO */
-.wave {
+.bodyInicio .wave {
   position: relative;
   top: 11.5rem;
   width: 100%;
 }
-
-/* BANNER TRASERO */
-.titleNewUsedCars {
+.bodyInicio .titleNewUsedCars {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
   font-style: oblique;
   text-shadow: 1px 1px 10px #440aafa9;
@@ -200,46 +160,17 @@ html {
   margin-left: -5vw;
   color: #000000;
 }
-
-@media (min-width: 0) {
-  .titleNewUsedCars {
-    display: none;
-  }
-  .newUsedCards {
-    margin-top: 50px;
-  }
-  .boxCards__titleCar {
-    margin-top: -300px;
-  }
-  .titleBrands {
-    margin-top: -300px;
-  }
-  .newUsedCards p {
-    font-size: 2rem;
-  }
-  #newUsedCards__img {
-    width: 50%;
-  }
-}
-
-/* CARDS NUEVOS Y USADOS */
-.newUsedCards {
-  background: -webkit-gradient(linear, left top, right top, from(#3b434d7c), to(#d8de2aa9));
+.bodyInicio .newUsedCards {
   background: linear-gradient(90deg, #3b434d7c, #d8de2aa9);
   border-radius: 50px;
   padding: 3%;
-  -webkit-box-shadow: 1px 1px 5px black;
-          box-shadow: 1px 1px 5px black;
+  box-shadow: 1px 1px 5px black;
 }
-
-.newUsedCards img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+.bodyInicio .newUsedCards img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.4s;
 }
-
-.newUsedCards h2 {
+.bodyInicio .newUsedCards h2 {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 6rem;
   color: #000000d7;
@@ -247,289 +178,232 @@ html {
   margin-top: 5rem;
   text-shadow: 1px 1px 5px #3b434d;
 }
-
-.newUsedCards p {
+.bodyInicio .newUsedCards p {
   color: #212327;
   font-weight: bolder;
   font-size: 2.5rem;
   margin: 2% 5%;
 }
-
-.newUsedCards button {
+.bodyInicio .newUsedCards button {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
   background-color: #499bf8;
   border: 2px solid #4747f3;
-  -webkit-box-shadow: 1px 1px 5px blue;
-          box-shadow: 1px 1px 5px blue;
+  box-shadow: 1px 1px 5px blue;
   font-size: 3rem;
   padding: 1rem 2rem;
   border-radius: 1rem;
   color: #ffffff;
 }
-
-.newUsedCards button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+.bodyInicio .newUsedCards button:hover {
+  transform: scale(1.1);
+  transition-duration: 0.4s;
   cursor: pointer;
 }
-
-/* CARDS VEHICULOS DESTACADOS */
-.boxCards {
+.bodyInicio .boxCards {
   position: relative;
   top: 40rem;
 }
-
-.boxCards__titleCar {
+.bodyInicio .boxCards .boxCards__titleCar {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
   text-shadow: 1px 1px 10px #3b434d;
   color: #000000ec;
 }
-
-.boxCards__titleCar h2 {
+.bodyInicio .boxCards .boxCards__titleCar h2 {
   margin: -15% 0% 0% 10%;
 }
-
-.boxCards__titleCar--titleSize {
+.bodyInicio .boxCards .boxCards__titleCar .boxCards__titleCar--titleSize {
   font-size: 7vw;
 }
-
-.boxCards__titleCar p {
+.bodyInicio .boxCards .boxCards__titleCar p {
   font-size: 4vw;
   text-align: center;
   padding: 3%;
 }
-
-.boxCards__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.bodyInicio .boxCards .boxCards__card {
   display: flex;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
-.boxCards__item {
+.bodyInicio .boxCards .boxCards__card .boxCards__item {
   width: 25%;
   border: 1px solid #000000;
   margin: 0px 25px 0px 25px;
   padding: 20px;
   border-radius: 30px;
-  -webkit-box-shadow: 1px 1px 10px #3b434d;
-          box-shadow: 1px 1px 10px #3b434d;
+  box-shadow: 1px 1px 10px #3b434d;
   background: radial-gradient(ellipse at top, #d0d31579, transparent), radial-gradient(ellipse at bottom, #3b434d, transparent);
-  /* background: radial-gradient(); */
+  /* FLEX COLORES DISPONIBLES */
 }
-
-/* REDIMENSIONAMIENTO "CARDS" VEHICULOS DESTACADOS AL REDUCIR TAMAÑO PANTALLA */
-@media (max-width: 768px) {
-  .boxCards__card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .boxCards__item {
-    width: 80%;
-    margin-top: 10px;
-  }
-  .newUsedCards p {
-    font-size: 2rem;
-  }
-  #newUsedCards__img {
-    width: 100%;
-  }
-  .newUsedCards h2 {
-    font-size: 5rem;
-    text-align: center;
-  }
-  .newUsedCards__button {
-    text-align: center;
-  }
-}
-
-.boxCards__img {
+.bodyInicio .boxCards .boxCards__card .boxCards__item .boxCards__img {
   width: 100%;
 }
-
-.boxCards__img:hover {
-  -webkit-animation: 1.5s bounce;
-          animation: 1.5s bounce;
+.bodyInicio .boxCards .boxCards__card .boxCards__item .boxCards__img:hover {
+  animation: 1.5s bounce;
 }
-
-.boxCards__ul {
+.bodyInicio .boxCards .boxCards__card .boxCards__item .boxCards__ul {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2rem;
   color: #000000;
   margin: 4% 0% 5% 10%;
 }
-
-/* TABLA VEHICULOS DESTACADOS */
-.boxCards h4,
-h5 {
-  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
-  text-shadow: 1px 1px 3px #0000009f;
-  font-size: 3rem;
-  color: #000000;
-}
-
-.boxCards h5 {
-  font-size: 2rem;
-}
-
-.boxCards__vinetaUL {
+.bodyInicio .boxCards .boxCards__card .boxCards__item .boxCards__ul .boxCards__vinetaUL {
   list-style-image: url("../img/vineta.png");
 }
-
-/* FLEX COLORES DISPONIBLES */
-.containerColorCarsDisp {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.bodyInicio .boxCards .boxCards__card .boxCards__item .containerColorCarsDisp {
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   padding: 5%;
 }
-
-.containerColorCarsDisp__item {
+.bodyInicio .boxCards .boxCards__card .boxCards__item .containerColorCarsDisp .containerColorCarsDisp__item {
   width: 40px;
   height: 40px;
   margin-left: 10px;
   border-radius: 20%;
   border: 1px solid #000000;
-  -webkit-filter: drop-shadow(5px 5px 20px black);
-          filter: drop-shadow(5px 5px 20px black);
+  filter: drop-shadow(5px 5px 20px black);
 }
-
-.containerColorCarsDisp__item:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  -webkit-filter: brightness(1.5);
-          filter: brightness(1.5);
+.bodyInicio .boxCards .boxCards__card .boxCards__item .containerColorCarsDisp .containerColorCarsDisp__item:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  filter: brightness(1.5);
 }
-
-#red {
+.bodyInicio .boxCards h4,
+.bodyInicio .boxCards h5 {
+  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 1px 1px 3px #0000009f;
+  font-size: 3rem;
+  color: #000000;
+}
+.bodyInicio #red {
   background-color: #ff0000;
 }
-
-#blue {
+.bodyInicio #blue {
   background-color: #2660df;
 }
-
-#grey {
+.bodyInicio #grey {
   background-color: #666565;
 }
-
-#black {
+.bodyInicio #black {
   background-color: #000000;
 }
-
-#green {
+.bodyInicio #green {
   background-color: #008000;
 }
-
-#yellow {
+.bodyInicio #yellow {
   background-color: #ffff00;
 }
-
-#orange {
+.bodyInicio #orange {
   background-color: #ffa500;
 }
-
-/* SECCION MARCAS TRABAJADAS */
-.seccionMarcasTrabajadas {
+.bodyInicio .seccionMarcasTrabajadas {
   margin-top: 80rem;
 }
-
-.titleBrands {
+.bodyInicio .seccionMarcasTrabajadas .titleBrands {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
   text-shadow: 1px 1px 10px #3b434d;
   color: #000000;
 }
-
-.titleBrands p {
+.bodyInicio .seccionMarcasTrabajadas .titleBrands p {
   font-size: 4vw;
   text-align: center;
   padding: 1%;
 }
-
-.containerBrands {
+.bodyInicio .containerBrands {
   width: 80%;
   margin: 5rem auto;
   border-radius: 15px;
   background: radial-gradient(#d8de2aa9, #00000044);
 }
-
-.containerBrands__in {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.bodyInicio .containerBrands .containerBrands__in {
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   padding: 30px;
 }
-
-.containerBrands__item img {
+.bodyInicio .containerBrands .containerBrands__in .containerBrands__item img {
   width: 100%;
   border-radius: 15px;
-  -webkit-filter: drop-shadow(10px 10px 20px black);
-          filter: drop-shadow(10px 10px 20px black);
+  filter: drop-shadow(10px 10px 20px black);
 }
-
-.containerBrands__item img:hover {
+.bodyInicio .containerBrands .containerBrands__in .containerBrands__item:hover {
   transform: rotate3d(0, 1, 0.5, 3.142rad);
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  transition-duration: 1s;
   -webkit-transform: rotate3d(0, 1, 0.5, 3.142rad);
   -moz-transform: rotate3d(0, 1, 0.5, 3.142rad);
   -ms-transform: rotate3d(0, 1, 0.5, 3.142rad);
   -o-transform: rotate3d(0, 1, 0.5, 3.142rad);
 }
 
-@media (max-width: 768px) {
-  .containerBrands {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+/*#######################*/
+/*######## INDEX ########*/
+/*#######################*/
+@media (min-width: 0) {
+  .titleNewUsedCars {
+    display: none;
   }
-  .containerBrands__in {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+
+  .newUsedCards {
+    margin-top: 50px;
   }
-  .containerBrands__item img {
-    margin-top: 10px;
+
+  .boxCards__titleCar {
+    margin-top: -300px;
   }
-  .boxCards__item h4,
-  h5 {
-    text-align: center;
+
+  .titleBrands {
+    margin-top: -300px;
   }
-  .containerColorCarsDisp {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .boxCards__ul {
-    margin: 0;
+
+  #newUsedCards__img {
+    width: 50%;
   }
 }
+@media (max-width: 768px) {
+  .newUsedCards p {
+    font-size: 2rem;
+  }
+  .newUsedCards h2 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .newUsedCards .newUsedCards__button {
+    text-align: center;
+  }
 
+  #newUsedCards__img {
+    width: 100%;
+  }
+
+  .boxCards__card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .boxCards__card .boxCards__item {
+    width: 80%;
+    margin-top: 10px;
+  }
+  .boxCards__card .boxCards__item h4,
+.boxCards__card .boxCards__item h5 {
+    text-align: center;
+  }
+  .boxCards__card .boxCards__item .containerColorCarsDisp {
+    justify-content: center;
+  }
+  .boxCards__card .boxCards__item .boxCards__ul {
+    margin: 0;
+  }
+
+  .containerBrands {
+    display: flex;
+    justify-content: center;
+  }
+  .containerBrands .containerBrands__in {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerBrands .containerBrands__item img {
+    margin-top: 15px;
+  }
+}
 /* ################################################################################
 ############################### PESTAÑA CONTACTO ##################################
 ################################################################################ */
@@ -568,14 +442,6 @@ h5 {
 }
 
 /* EFECTO ANIMATION TITULO CONTACTO */
-@-webkit-keyframes slideinTitContacto {
-  from {
-    margin-left: 5%;
-  }
-  to {
-    margin-left: -100%;
-  }
-}
 @keyframes slideinTitContacto {
   from {
     margin-left: 5%;
@@ -584,10 +450,8 @@ h5 {
     margin-left: -100%;
   }
 }
-
 /* FORMULARIO - CONTACTO */
 .ContactForm {
-  background: -webkit-gradient(linear, left top, left bottom, from(#3b434d81), to(#8400ff3b));
   background: linear-gradient(180deg, #3b434d81, #8400ff3b);
   border: 1px solid #5e5959;
   border-radius: 10px;
@@ -601,23 +465,6 @@ h5 {
 
 .ContactForm label {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
-}
-
-@-webkit-keyframes zoominContactForm {
-  from {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-  }
-  to {
-    transform: scale(0);
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-  }
 }
 
 @keyframes zoominContactForm {
@@ -636,7 +483,6 @@ h5 {
     -o-transform: scale(0);
   }
 }
-
 .ContactForm__submitButton {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.8rem;
@@ -646,10 +492,8 @@ h5 {
   border-radius: 5px;
   padding: 9px 15px;
   background-color: #7bff0096;
-  -webkit-box-shadow: 1px 1px 2px #7bff00;
-          box-shadow: 1px 1px 2px #7bff00;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  box-shadow: 1px 1px 2px #7bff00;
+  transition-duration: 0.4s;
 }
 
 .ContactForm__resetButton {
@@ -663,25 +507,21 @@ h5 {
   border-radius: 5px;
   padding: 9px 15px;
   background-color: #777777a9;
-  -webkit-box-shadow: 1px 1px 2px #000000be;
-          box-shadow: 1px 1px 2px #000000be;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  box-shadow: 1px 1px 2px #000000be;
+  transition-duration: 0.4s;
 }
 
 /* EFECTOS BOTONES SUBMIT Y RESET */
 .ContactForm__submitButton:hover {
   background-color: #92e742be;
-  -webkit-box-shadow: 1px 1px 5px #f1ff70be;
-          box-shadow: 1px 1px 5px #f1ff70be;
+  box-shadow: 1px 1px 5px #f1ff70be;
   border: 2px solid #ebfcc3;
   color: #ffffffd5;
 }
 
 .ContactForm__resetButton:hover {
   background-color: #000000be;
-  -webkit-box-shadow: 1px 1px 5px #c20417be;
-          box-shadow: 1px 1px 5px #c20417be;
+  box-shadow: 1px 1px 5px #c20417be;
   border: 2px solid #bb2837;
   color: #ffffffd5;
 }
@@ -690,24 +530,21 @@ h5 {
   .titContacto h2 {
     font-size: 10vw;
   }
+
   .titContacto h3 {
     font-size: 4vw;
   }
+
   .ContactForm__resetButton {
     margin: 0;
   }
+
   .containerButtons {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 5px;
   }
 }
-
 /* ################################################################################
 ##################################### PESTAÑA EMPRESA #############################
 ################################################################################ */
@@ -754,7 +591,6 @@ h5 {
 }
 
 .containerAboutUs__Description {
-  background: -webkit-gradient(linear, left top, right top, from(#c4caa4b6), to(#d9dd6ea9));
   background: linear-gradient(90deg, #c4caa4b6, #d9dd6ea9);
 }
 
@@ -772,8 +608,7 @@ h5 {
 #botonContacto {
   background-color: #1c6dc9;
   border: 2px solid #4747f3;
-  -webkit-box-shadow: 1px 1px 10px #0000ff;
-          box-shadow: 1px 1px 10px #0000ff;
+  box-shadow: 1px 1px 10px #0000ff;
   width: 18rem;
   font-size: 2rem;
   padding: 1rem;
@@ -786,7 +621,6 @@ h5 {
   background-color: #1776e4;
   border: 2px solid #3232f7;
   transform: scale(1.05);
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -809,12 +643,8 @@ h5 {
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
-  -webkit-transition: -webkit-transform 1s, -webkit-filter 1.5s ease-in-out;
-  transition: -webkit-transform 1s, -webkit-filter 1.5s ease-in-out;
   transition: transform 1s, filter 1.5s ease-in-out;
-  transition: transform 1s, filter 1.5s ease-in-out, -webkit-transform 1s, -webkit-filter 1.5s ease-in-out;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
   -webkit-transition: transform 1s, filter 1.5s ease-in-out;
   -moz-transition: transform 1s, filter 1.5s ease-in-out;
   -ms-transition: transform 1s, filter 1.5s ease-in-out;
@@ -822,8 +652,7 @@ h5 {
 }
 
 .containerTeam__img img:hover {
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 /*SECCION AUTORIDADES*/
@@ -832,9 +661,7 @@ h5 {
 }
 
 .cardsTeamItem {
-  -webkit-box-shadow: 1px 1px 10px black;
-          box-shadow: 1px 1px 10px black;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0066ff3b), to(#ffffffcc));
+  box-shadow: 1px 1px 10px black;
   background: linear-gradient(#0066ff3b, #ffffffcc);
   border: 1px solid grey;
   border-radius: 1rem;
@@ -872,47 +699,40 @@ h5 {
 @media (max-width: 768px) {
   /*SOBRE NOSOTROS*/
   .containerAboutUs__Contacto {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     width: 80%;
     margin: 0 auto;
   }
+
   .containerAboutUs__Description--parrafo, .cardsTeamImg {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5rem;
     padding: 1rem;
   }
+
   #botonContacto {
     width: 20rem;
     font-size: 2rem;
   }
+
   /*NUESTRO EQUIPO*/
   .titleSection {
     text-align: center;
   }
+
   .containerCardsTeam {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     width: 70%;
     gap: 15px;
   }
+
   .containerTeam__img img {
     width: 80%;
   }
 }
-
 /* ################################################################################
 ##################################### PESTAÑA CERO KM #############################
 ################################################################################ */
@@ -935,34 +755,25 @@ h5 {
 /* CONTAINER GENERAL DEL GRID*/
 .containerCeroKM {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
-  display: -ms-grid;
   display: grid;
   width: 80%;
   margin: 50px auto;
-  -ms-grid-columns: 1fr 3fr;
-      grid-template-columns: 1fr 3fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 10px 20px;
-      grid-template-areas: "containerCerokm__filtro auto1" ". auto2" ". auto3" ". auto4" ". auto5";
+  grid-template-areas: "containerCerokm__filtro auto1" ". auto2" ". auto3" ". auto4" ". auto5";
 }
 
 /* COLUMNA FILTRO */
 .containerCerokm__filtro {
-  display: -ms-grid;
   display: grid;
-  -webkit-box-shadow: 1px 1px 5px black;
-          box-shadow: 1px 1px 5px black;
+  box-shadow: 1px 1px 5px black;
   padding: 15px;
   border-radius: 15px;
   background-color: #5858583d;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: auto auto auto auto;
-      grid-template-rows: auto auto auto auto;
-      grid-template-areas: "tituloFiltro" "ano" "marca" "modelo";
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "tituloFiltro" "ano" "marca" "modelo";
   grid-area: containerCerokm__filtro;
 }
 
@@ -970,26 +781,18 @@ h5 {
   font-size: 4rem;
   text-shadow: 1px 1px 2px #3b434d;
   letter-spacing: 1px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: tituloFiltro;
 }
 
 .ano {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: ano;
 }
 
 .marca {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   grid-area: marca;
 }
 
 .modelo {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
   grid-area: modelo;
 }
 
@@ -1015,17 +818,11 @@ h5 {
   background-color: #d8de2a1c;
   padding: 15px;
   border-radius: 15px;
-  -webkit-box-shadow: 1px 1px 5px black;
-          box-shadow: 1px 1px 5px black;
-  display: -ms-grid;
+  box-shadow: 1px 1px 5px black;
   display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
   gap: 0px 15px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -1065,144 +862,98 @@ h5 {
 
 /* AUTO 1 */
 .auto1 {
-      grid-template-areas: "auto1Img auto1Descripcion" "auto1ComprarInformacion auto1ComprarInformacion";
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  grid-template-areas: "auto1Img auto1Descripcion" "auto1ComprarInformacion auto1ComprarInformacion";
   grid-area: auto1;
 }
 
 .auto1Img {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: auto1Img;
 }
 
 .auto1Descripcion {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: auto1Descripcion;
 }
 
 .auto1ComprarInformacion {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: auto1ComprarInformacion;
 }
 
 /* AUTO 2 */
 .auto2 {
-      grid-template-areas: "auto2Img auto2Descripcion" "auto2ComprarInformacion auto2ComprarInformacion";
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  grid-template-areas: "auto2Img auto2Descripcion" "auto2ComprarInformacion auto2ComprarInformacion";
   grid-area: auto2;
 }
 
 .auto2Img {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: auto2Img;
 }
 
 .auto2Descripcion {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: auto2Descripcion;
 }
 
 .auto2ComprarInformacion {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: auto2ComprarInformacion;
 }
 
 /* AUTO 3 */
 .auto3 {
-      grid-template-areas: "auto3Img auto3Descripcion" "auto3ComprarInformacion auto3ComprarInformacion";
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
+  grid-template-areas: "auto3Img auto3Descripcion" "auto3ComprarInformacion auto3ComprarInformacion";
   grid-area: auto3;
 }
 
 .auto3Img {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: auto3Img;
 }
 
 .auto3Descripcion {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: auto3Descripcion;
 }
 
 .auto3ComprarInformacion {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: auto3ComprarInformacion;
 }
 
 /* AUTO 4 */
 .auto4 {
-      grid-template-areas: "auto4Img auto4Descripcion" "auto4ComprarInformacion auto4ComprarInformacion";
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
+  grid-template-areas: "auto4Img auto4Descripcion" "auto4ComprarInformacion auto4ComprarInformacion";
   grid-area: auto4;
 }
 
 .auto4Img {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: auto4Img;
 }
 
 .auto4Descripcion {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: auto4Descripcion;
 }
 
 .auto4ComprarInformacion {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: auto4ComprarInformacion;
 }
 
 /* AUTO 5 */
 .auto5 {
-      grid-template-areas: "auto5Img auto5Descripcion" "auto5ComprarInformacion auto5ComprarInformacion";
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
+  grid-template-areas: "auto5Img auto5Descripcion" "auto5ComprarInformacion auto5ComprarInformacion";
   grid-area: auto5;
 }
 
 .auto5Img {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: auto5Img;
 }
 
 .auto5Descripcion {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: auto5Descripcion;
 }
 
 .auto5ComprarInformacion {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: auto5ComprarInformacion;
 }
 
 #comprar {
   background-color: #1c6dc9;
   border: 2px solid #4747f3;
-  -webkit-box-shadow: 1px 1px 10px #0000ff;
-          box-shadow: 1px 1px 10px #0000ff;
+  box-shadow: 1px 1px 10px #0000ff;
   width: 16rem;
   font-size: 2rem;
   padding: 1rem;
@@ -1215,8 +966,7 @@ h5 {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
   background-color: #1776e4;
   border: 2px solid #3232f7;
-  -webkit-box-shadow: 1px 1px 5px #0000ff;
-          box-shadow: 1px 1px 5px #0000ff;
+  box-shadow: 1px 1px 5px #0000ff;
   padding: 1rem;
   border-radius: 10px;
   transform: scale(1.1);
@@ -1239,8 +989,7 @@ h5 {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
   background-color: #ff8800;
   border: 2px solid #fc7232;
-  -webkit-box-shadow: 1px 1px 10px #ff9900;
-          box-shadow: 1px 1px 10px #ff9900;
+  box-shadow: 1px 1px 10px #ff9900;
   width: 13rem;
   font-size: 2rem;
   padding: 1rem;
@@ -1251,53 +1000,39 @@ h5 {
 #masInformacion:hover {
   background-color: #f3952a;
   border: 2px solid #fa611a;
-  -webkit-box-shadow: 1px 1px 5px #ff9900;
-          box-shadow: 1px 1px 5px #ff9900;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.3s;
+  box-shadow: 1px 1px 5px #ff9900;
+  transform: scale(1.1);
   transition: 0.3s;
 }
 
 @media only screen and (max-width: 768px) {
   .containerCerokm__autos {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     font-size: 1rem;
-    -ms-flex-item-align: baseline;
-        align-self: baseline;
+    align-self: baseline;
   }
+
   .containerCeroKM {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
+
   .containerCerokm__filtro {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    flex-flow: column wrap;
     width: 100%;
   }
+
   .tituloFiltro {
     width: 100%;
   }
+
   #masInformacion {
     font-size: 3vw;
     width: 100%;
   }
 }
-
 /* ################################################################################
 ##################################### PESTAÑA USADOS###############################
 ################################################################################ */
@@ -1320,34 +1055,25 @@ h5 {
 /* CONTAINER GENERAL DEL GRID*/
 .containerUsados {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
-  display: -ms-grid;
   display: grid;
   width: 80%;
   margin: 50px auto;
-  -ms-grid-columns: 1fr 3fr;
-      grid-template-columns: 1fr 3fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 10px 20px;
-      grid-template-areas: "containerUsados__filtro auto6" ". auto7" ". auto8" ". auto9" ". auto10";
+  grid-template-areas: "containerUsados__filtro auto6" ". auto7" ". auto8" ". auto9" ". auto10";
 }
 
 /* COLUMNA FILTRO */
 .containerUsados__filtro {
-  display: -ms-grid;
   display: grid;
-  -webkit-box-shadow: 1px 1px 5px black;
-          box-shadow: 1px 1px 5px black;
+  box-shadow: 1px 1px 5px black;
   padding: 15px;
   border-radius: 15px;
   background-color: #5858583d;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: auto auto auto auto;
-      grid-template-rows: auto auto auto auto;
-      grid-template-areas: "tituloFiltro" "ano" "marca" "modelo";
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "tituloFiltro" "ano" "marca" "modelo";
   grid-area: containerUsados__filtro;
 }
 
@@ -1355,27 +1081,19 @@ h5 {
   font-size: 4rem;
   text-shadow: 1px 1px 2px #3b434d;
   letter-spacing: 1px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: tituloFiltro;
   text-align: center;
 }
 
 .ano {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: ano;
 }
 
 .marca {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   grid-area: marca;
 }
 
 .modelo {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
   grid-area: modelo;
 }
 
@@ -1401,17 +1119,11 @@ h5 {
   background-color: #d8de2a1c;
   padding: 15px;
   border-radius: 15px;
-  -webkit-box-shadow: 1px 1px 5px black;
-          box-shadow: 1px 1px 5px black;
-  display: -ms-grid;
+  box-shadow: 1px 1px 5px black;
   display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
   gap: 0px 15px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -1433,184 +1145,130 @@ h5 {
 
 /* AUTO 6 */
 .auto6 {
-      grid-template-areas: "auto6Img auto6Descripcion" "auto6ComprarInformacion auto6ComprarInformacion";
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  grid-template-areas: "auto6Img auto6Descripcion" "auto6ComprarInformacion auto6ComprarInformacion";
   grid-area: auto6;
 }
 
 .auto6Img {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: auto6Img;
 }
 
 .auto6Descripcion {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: auto6Descripcion;
 }
 
 .auto6ComprarInformacion {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: auto6ComprarInformacion;
 }
 
 /* AUTO 7 */
 .auto7 {
-      grid-template-areas: "auto7Img auto7Descripcion" "auto7ComprarInformacion auto7ComprarInformacion";
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  grid-template-areas: "auto7Img auto7Descripcion" "auto7ComprarInformacion auto7ComprarInformacion";
   grid-area: auto7;
 }
 
 .auto7Img {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: auto7Img;
 }
 
 .auto7Descripcion {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: auto7Descripcion;
 }
 
 .auto7ComprarInformacion {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: auto7ComprarInformacion;
 }
 
 /* AUTO 8 */
 .auto8 {
-      grid-template-areas: "auto8Img auto8Descripcion" "auto8ComprarInformacion auto8ComprarInformacion";
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
+  grid-template-areas: "auto8Img auto8Descripcion" "auto8ComprarInformacion auto8ComprarInformacion";
   grid-area: auto8;
 }
 
 .auto8Img {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: auto8Img;
 }
 
 .auto8Descripcion {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: auto8Descripcion;
 }
 
 .auto8ComprarInformacion {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: auto8ComprarInformacion;
 }
 
 /* AUTO 9 */
 .auto9 {
-      grid-template-areas: "auto9Img auto9Descripcion" "auto9ComprarInformacion auto9ComprarInformacion";
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
+  grid-template-areas: "auto9Img auto9Descripcion" "auto9ComprarInformacion auto9ComprarInformacion";
   grid-area: auto9;
 }
 
 .auto9Img {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: auto9Img;
 }
 
 .auto9Descripcion {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: auto9Descripcion;
 }
 
 .auto9ComprarInformacion {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: auto9ComprarInformacion;
 }
 
 /* AUTO 10 */
 .auto10 {
-      grid-template-areas: "auto10Img auto10Descripcion" "auto10ComprarInformacion auto10ComprarInformacion";
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
+  grid-template-areas: "auto10Img auto10Descripcion" "auto10ComprarInformacion auto10ComprarInformacion";
   grid-area: auto10;
 }
 
 .auto10Img {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: auto10Img;
 }
 
 .auto10Descripcion {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: auto10Descripcion;
 }
 
 .auto10ComprarInformacion {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: auto10ComprarInformacion;
 }
 
 @media only screen and (max-width: 768px) {
   .containerUsado__autos {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     font-size: 1rem;
-    -ms-flex-item-align: baseline;
-        align-self: baseline;
+    align-self: baseline;
   }
+
   .containerUsados {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
+
   .containerUsados__filtro {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
+    flex-flow: column wrap;
     width: 100%;
   }
+
   .tituloFiltro {
     width: 100%;
   }
+
   #comprar {
     font-size: 3vw;
     width: 100%;
     margin: 10px 0 5px 0;
   }
+
   #masInformacion {
     font-size: 3vw;
     width: 100%;
   }
 }
-
 /* ################################################################################
 ##################################### FIN CSS #####################################
 ################################################################################ */
+
 /*# sourceMappingURL=styles.css.map */

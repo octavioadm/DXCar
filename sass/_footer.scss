@@ -1,0 +1,40 @@
+/* ################################################################################
+############################### PIE DE PAGINA - FOOTER ############################
+################################################################################ */
+.gradientLineFooter {
+  height: 2rem;
+  width: 100%;
+  background: linear-gradient(360deg, $grisBase, $violetaBase);
+}
+.underLineGradientLine {
+  height: 0.2rem;
+  width: 100%;
+  background: linear-gradient(90deg, #181717, #383838);
+}
+.footerColor {
+  background: $grisBase;
+}
+/* MAPA */
+.footerMap {
+  filter: drop-shadow(1px 1px 20px black);
+}
+/* REDES SOCIALES */
+.footerSocialNetworks__img {
+  border-radius: 50%;
+  margin: 2.5rem 1.5rem 1rem;
+  height: 4rem;
+
+  &:hover {
+    box-shadow: 1px 1px 20px #000000;
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+}
+@media (max-width: 768px) {
+  .containerLocation {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

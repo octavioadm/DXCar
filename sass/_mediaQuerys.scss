@@ -1,0 +1,69 @@
+/*#######################*/
+/*######## INDEX ########*/
+/*#######################*/
+@media (min-width: 0) {
+  .titleNewUsedCars {
+    display: none;
+  }
+  .newUsedCards {
+    margin-top: 50px;
+  }
+  .boxCards__titleCar {
+    margin-top: -300px;
+  }
+  .titleBrands {
+    margin-top: -300px;
+  }
+  #newUsedCards__img {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .newUsedCards {
+    p {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 5rem;
+      text-align: center;
+    }
+    .newUsedCards__button {
+      text-align: center;
+    }
+  }
+  #newUsedCards__img {
+    width: 100%;
+  }
+  .boxCards__card {
+    flex-direction: column;
+    align-items: center;
+
+    .boxCards__item {
+      width: 80%;
+      margin-top: 10px;
+      h4,
+      h5 {
+        text-align: center;
+      }
+      .containerColorCarsDisp {
+        justify-content: center;
+      }
+      .boxCards__ul {
+        margin: 0;
+      }
+    }
+  }
+  .containerBrands {
+    display: flex;
+    justify-content: center;
+    .containerBrands__in {
+      display: flex;
+      flex-direction: column;
+    }
+    .containerBrands__item {
+      img {
+        margin-top: 15px;
+      }
+    }
+  }
+}

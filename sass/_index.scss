@@ -1,0 +1,223 @@
+/* ################################################################################
+############################### PESTAÑA INICIO ####################################
+################################################################################ */
+.bodyInicio {
+  background-image: url("../img/autoInicio.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  .boxVideoPortada {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    top: 11.5rem;
+
+    #videoPortada {
+      position: relative;
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 60vh;
+    }
+  }
+  /* ONDAS VIOLETAS DEBAJO DE LOOP DE VIDEO */
+  .wave {
+    position: relative;
+    top: 11.5rem;
+    width: 100%;
+  }
+  /* BANNER TITULOS NEW USED */
+  .titleNewUsedCars {
+    font-family: $fuenteRussoVerdana;
+    font-style: oblique;
+    text-shadow: 1px 1px 10px #440aafa9;
+    font-size: 8vw;
+    margin-left: -5vw;
+    color: #000000;
+  }
+  /* CARDS NUEVOS Y USADOS */
+  .newUsedCards {
+    background: $gradientGreenBlack;
+    border-radius: 50px;
+    padding: 3%;
+    box-shadow: 1px 1px 5px black;
+    img:hover {
+      transform: scale(1.1);
+      transition-duration: 0.4s;
+    }
+    h2 {
+      font-family: $fuenteRussoVerdana;
+      font-size: 6rem;
+      color: #000000d7;
+      letter-spacing: 1px;
+      margin-top: 5rem;
+      text-shadow: 1px 1px 5px $grisBase;
+    }
+    p {
+      color: #212327;
+      font-weight: bolder;
+      font-size: 2.5rem;
+      margin: 2% 5%;
+    }
+    button {
+      font-family: $fuenteRussoVerdana;
+      background-color: rgb(73, 155, 248);
+      border: 2px solid rgb(71, 71, 243);
+      box-shadow: 1px 1px 5px blue;
+      font-size: 3rem;
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      color: #ffffff;
+      &:hover {
+        transform: scale(1.1);
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+    }
+  }
+
+  /* CARDS VEHICULOS DESTACADOS */
+  .boxCards {
+    position: relative;
+    top: 40rem;
+    .boxCards__titleCar {
+      font-family: $fuenteRussoVerdana;
+      text-shadow: 1px 1px 10px $grisBase;
+      color: #000000ec;
+      h2 {
+        margin: -15% 0% 0% 10%;
+      }
+      .boxCards__titleCar--titleSize {
+        font-size: 7vw;
+      }
+      p {
+        font-size: 4vw;
+        text-align: center;
+        padding: 3%;
+      }
+    }
+    .boxCards__card {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      .boxCards__item {
+        width: 25%;
+        border: 1px solid #000000;
+        margin: 0px 25px 0px 25px;
+        padding: 20px;
+        border-radius: 30px;
+        box-shadow: 1px 1px 10px $grisBase;
+        background: radial-gradient(ellipse at top, #d0d31579, transparent),
+          radial-gradient(ellipse at bottom, #3b434d, transparent);
+        .boxCards__img {
+          width: 100%;
+
+          &:hover {
+            animation: 1.5s bounce;
+          }
+        }
+        .boxCards__ul {
+          font-family: $fuenteRussoVerdana;
+          font-size: 2rem;
+          color: #000000;
+          margin: 4% 0% 5% 10%;
+          .boxCards__vinetaUL {
+            list-style-image: url("../img/vineta.png");
+          }
+        }
+        /* FLEX COLORES DISPONIBLES */
+        .containerColorCarsDisp {
+          display: flex;
+          justify-content: flex-start;
+          padding: 5%;
+          .containerColorCarsDisp__item {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            border-radius: 20%;
+            border: 1px solid #000000;
+            filter: drop-shadow(5px 5px 20px black);
+            &:hover {
+              transform: scale(1.1);
+              transition-duration: 0.3s;
+              filter: brightness(1.5);
+            }
+          }
+        }
+      }
+    }
+    h4,
+    h5 {
+      font-family: $fuenteRussoVerdana;
+      text-shadow: 1px 1px 3px #0000009f;
+      font-size: 3rem;
+      color: #000000;
+    }
+  }
+
+  #red {
+    background-color: #ff0000;
+  }
+  #blue {
+    background-color: #2660df;
+  }
+  #grey {
+    background-color: #666565;
+  }
+  #black {
+    background-color: #000000;
+  }
+  #green {
+    background-color: #008000;
+  }
+  #yellow {
+    background-color: #ffff00;
+  }
+  #orange {
+    background-color: #ffa500;
+  }
+
+  /* SECCION MARCAS TRABAJADAS */
+  .seccionMarcasTrabajadas {
+    margin-top: 80rem;
+    .titleBrands {
+      font-family: $fuenteRussoVerdana;
+      text-shadow: 1px 1px 10px $grisBase;
+      color: #000000;
+      p {
+        font-size: 4vw;
+        text-align: center;
+        padding: 1%;
+      }
+    }
+  }
+
+  .containerBrands {
+    width: 80%;
+    margin: 5rem auto;
+    border-radius: 15px;
+    background: radial-gradient(#d8de2aa9, #00000044);
+    .containerBrands__in {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 30px;
+      .containerBrands__item {
+        img {
+          width: 100%;
+          border-radius: 15px;
+          filter: drop-shadow(10px 10px 20px black);
+        }
+        &:hover {
+          transform: rotate3d(0, 1, 0.5, 3.142rad);
+          transition-duration: 1s;
+          -webkit-transform: rotate3d(0, 1, 0.5, 3.142rad);
+          -moz-transform: rotate3d(0, 1, 0.5, 3.142rad);
+          -ms-transform: rotate3d(0, 1, 0.5, 3.142rad);
+          -o-transform: rotate3d(0, 1, 0.5, 3.142rad);
+        }
+      }
+    }
+  }
+}
