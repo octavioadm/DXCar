@@ -1,42 +1,32 @@
 /*#######################*/
 /*######## INDEX ########*/
 /*#######################*/
+/*min-width:0 -> mayor o igual a 0 */
+/*max-width:768 -> menor o igual a 768*/
 @media (min-width: 0) {
   .titleNewUsedCars {
     display: none;
   }
   .newUsedCards {
-    margin-top: 50px;
+    margin-top: 5rem;
+    h2 {
+      text-align: center;
+    }
+  }
+  .newUsedCards__button {
+    text-align: center;
   }
   .boxCards__titleCar {
-    margin-top: -300px;
+    margin-top: -30rem;
   }
-  .titleBrands {
-    margin-top: -300px;
-  }
-  #newUsedCards__img {
-    width: 50%;
-  }
-}
-@media (max-width: 768px) {
-  .newUsedCards {
-    p {
-      font-size: 2rem;
-    }
-    h2 {
-      font-size: 5rem;
-      text-align: center;
-    }
-    .newUsedCards__button {
-      text-align: center;
-    }
-  }
+
   #newUsedCards__img {
     width: 100%;
   }
   .boxCards__card {
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 
     .boxCards__item {
       width: 80%;
@@ -53,17 +43,64 @@
       }
     }
   }
+  .titleBrands {
+    margin-top: -30rem;
+  }
   .containerBrands {
     display: flex;
     justify-content: center;
+
     .containerBrands__in {
       display: flex;
       flex-direction: column;
     }
     .containerBrands__item {
       img {
-        margin-top: 15px;
+        margin-top: 1.5rem;
       }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .newUsedCards {
+    p {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 5rem;
+      text-align: left;
+    }
+    .newUsedCards__button {
+      text-align: left;
+    }
+  }
+  #newUsedCards__img {
+    width: 50%;
+  }
+  .boxCards__card {
+    flex-direction: row;
+    .boxCards__item {
+      width: 25%;
+
+      h4,
+      h5 {
+        font-size: 1.5vw;
+        text-align: start;
+      }
+      .containerColorCarsDisp {
+        justify-content: flex-start;
+      }
+      .boxCards__ul {
+        margin: 0;
+      }
+    }
+  }
+  .containerBrands {
+    display: block;
+    .containerBrands__in {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
     }
   }
 }
