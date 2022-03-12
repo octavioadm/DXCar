@@ -327,443 +327,6 @@ html {
   -o-transform: rotate3d(0, 1, 0.5, 3.142rad);
 }
 
-/*#######################*/
-/*######## INDEX ########*/
-/*#######################*/
-/*min-width:0 -> mayor o igual a 0 */
-/*max-width:768 -> menor o igual a 768*/
-@media (min-width: 0) {
-  .titleNewUsedCars {
-    display: none;
-  }
-
-  .newUsedCards {
-    margin-top: 5rem;
-  }
-  .newUsedCards h2 {
-    text-align: center;
-  }
-
-  .newUsedCards__button {
-    text-align: center;
-  }
-
-  .boxCards__titleCar {
-    margin-top: -30rem;
-  }
-
-  #newUsedCards__img {
-    width: 100%;
-  }
-
-  .boxCards__card {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .boxCards__card .boxCards__item {
-    width: 80%;
-    margin-top: 10px;
-  }
-  .boxCards__card .boxCards__item h4,
-.boxCards__card .boxCards__item h5 {
-    text-align: center;
-  }
-  .boxCards__card .boxCards__item .containerColorCarsDisp {
-    justify-content: center;
-  }
-  .boxCards__card .boxCards__item .boxCards__ul {
-    margin: 0;
-  }
-
-  .titleBrands {
-    margin-top: -30rem;
-  }
-
-  .containerBrands {
-    display: flex;
-    justify-content: center;
-  }
-  .containerBrands .containerBrands__in {
-    display: flex;
-    flex-direction: column;
-  }
-  .containerBrands .containerBrands__item img {
-    margin-top: 1.5rem;
-  }
-}
-@media (min-width: 768px) {
-  .newUsedCards p {
-    font-size: 2rem;
-  }
-  .newUsedCards h2 {
-    font-size: 5rem;
-    text-align: left;
-  }
-  .newUsedCards .newUsedCards__button {
-    text-align: left;
-  }
-
-  #newUsedCards__img {
-    width: 50%;
-  }
-
-  .boxCards__card {
-    flex-direction: row;
-  }
-  .boxCards__card .boxCards__item {
-    width: 25%;
-  }
-  .boxCards__card .boxCards__item h4,
-.boxCards__card .boxCards__item h5 {
-    font-size: 1.5vw;
-    text-align: start;
-  }
-  .boxCards__card .boxCards__item .containerColorCarsDisp {
-    justify-content: flex-start;
-  }
-  .boxCards__card .boxCards__item .boxCards__ul {
-    margin: 0;
-  }
-
-  .containerBrands {
-    display: block;
-  }
-  .containerBrands .containerBrands__in {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-}
-/* ################################################################################
-############################### PESTAÑA CONTACTO ##################################
-################################################################################ */
-/* TITULO */
-.bodyContacto {
-  background-image: url("../img/autoContacto.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: #000000;
-}
-
-.titContacto {
-  position: relative;
-  top: 10rem;
-  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.titContacto h2 {
-  font-size: 5vw;
-  color: #c9c6c6d2;
-  text-shadow: 5px 5px 10px #3b434d;
-  animation: 0.7s 0s reverse slideinTitContacto;
-  margin-bottom: 3rem;
-}
-
-.titContacto h3 {
-  font-size: 2vw;
-  font-style: italic;
-  color: #f7f7f7d2;
-  margin-bottom: 2rem;
-  text-shadow: 2px 2px 10px #3b434d;
-  animation: 0.7s 0s reverse slideinTitContacto;
-  -webkit-animation: 0.7s 0s reverse slideinTitContacto;
-}
-
-/* EFECTO ANIMATION TITULO CONTACTO */
-@keyframes slideinTitContacto {
-  from {
-    margin-left: 5%;
-  }
-  to {
-    margin-left: -100%;
-  }
-}
-/* FORMULARIO - CONTACTO */
-.ContactForm {
-  background: linear-gradient(180deg, #3b434d81, #8400ff3b);
-  border: 1px solid #5e5959;
-  border-radius: 10px;
-  animation: 0.5s 0s reverse zoominContactForm;
-  -webkit-animation: 0.5s 0s reverse zoominContactForm;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.ContactForm label {
-  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
-}
-
-@keyframes zoominContactForm {
-  from {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-  }
-  to {
-    transform: scale(0);
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-  }
-}
-.ContactForm__submitButton {
-  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.8rem;
-  color: #ffffffd5;
-  font-weight: 100;
-  border: 2px solid #d4fab1;
-  border-radius: 5px;
-  padding: 9px 15px;
-  background-color: #7bff0096;
-  box-shadow: 1px 1px 2px #7bff00;
-  transition-duration: 0.4s;
-}
-
-.ContactForm__resetButton {
-  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.8rem;
-  letter-spacing: 1px;
-  color: #ffffffd5;
-  font-weight: 100;
-  margin-left: 2%;
-  border: 2px solid #ffffffbe;
-  border-radius: 5px;
-  padding: 9px 15px;
-  background-color: #777777a9;
-  box-shadow: 1px 1px 2px #000000be;
-  transition-duration: 0.4s;
-}
-
-/* EFECTOS BOTONES SUBMIT Y RESET */
-.ContactForm__submitButton:hover {
-  background-color: #92e742be;
-  box-shadow: 1px 1px 5px #f1ff70be;
-  border: 2px solid #ebfcc3;
-  color: #ffffffd5;
-}
-
-.ContactForm__resetButton:hover {
-  background-color: #000000be;
-  box-shadow: 1px 1px 5px #c20417be;
-  border: 2px solid #bb2837;
-  color: #ffffffd5;
-}
-
-@media (max-width: 768px) {
-  .titContacto h2 {
-    font-size: 10vw;
-  }
-
-  .titContacto h3 {
-    font-size: 4vw;
-  }
-
-  .ContactForm__resetButton {
-    margin: 0;
-  }
-
-  .containerButtons {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-}
-/* ################################################################################
-##################################### PESTAÑA EMPRESA #############################
-################################################################################ */
-/*SOBRE NOSOTROS*/
-.titleSection {
-  width: 80%;
-  margin: 5rem auto;
-  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
-  text-shadow: 1px 1px 5px #3b434d;
-}
-
-/*OPERACIONES*/
-.titleSection h2 {
-  font-size: 3.5rem;
-}
-
-/*CONDICIONALES*/
-/*aplicamos radius de 10 , en caso contrario no*/
-/*BOOLEANO*/
-/*EXTEND*/
-#containerAboutUs {
-  border: 1px solid rgba(110, 109, 109, 0.555);
-  border-radius: 10px;
-  overflow: auto;
-}
-
-.containerAboutUs {
-  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
-  width: 80%;
-  margin: 15rem auto 0;
-}
-
-.AboutUsTitle {
-  position: relative;
-  top: 130px;
-  width: 80%;
-  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
-  text-shadow: 1px 1px 5px #3b434d;
-}
-
-.containerAboutUs__logo {
-  background: #3b434d;
-  padding: 2rem;
-}
-
-.containerAboutUs__Description {
-  background: linear-gradient(90deg, #c4caa4b6, #d9dd6ea9);
-}
-
-.containerAboutUs__Description--parrafo, .cardsTeamImg {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2rem;
-  padding: 1.5rem;
-}
-
-.containerAboutUs__Contacto {
-  width: 90%;
-  margin: 1% 1%;
-}
-
-#botonContacto {
-  background-color: #1c6dc9;
-  border: 2px solid #4747f3;
-  box-shadow: 1px 1px 10px #0000ff;
-  width: 18rem;
-  font-size: 2rem;
-  padding: 1rem;
-  border-radius: 5px;
-  margin: 2% 0 1% 0%;
-  color: rgba(255, 255, 255, 0.87);
-}
-
-#botonContacto:hover {
-  background-color: #1776e4;
-  border: 2px solid #3232f7;
-  transform: scale(1.05);
-  transition: 0.3s;
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-}
-
-/*SECCION NUESTRO EQUIPO*/
-.containerTeam__img {
-  filter: drop-shadow(5px 5px 10px black);
-  -webkit-filter: drop-shadow(5px 5px 10px black);
-  margin: 5rem 0;
-}
-
-.containerTeam__img img {
-  width: 60%;
-  border: 1px solid rgba(110, 109, 109, 0.555);
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  transition: transform 1s, filter 1.5s ease-in-out;
-  filter: grayscale(100%);
-  -webkit-transition: transform 1s, filter 1.5s ease-in-out;
-  -moz-transition: transform 1s, filter 1.5s ease-in-out;
-  -ms-transition: transform 1s, filter 1.5s ease-in-out;
-  -o-transition: transform 1s, filter 1.5s ease-in-out;
-}
-
-.containerTeam__img img:hover {
-  filter: grayscale(0);
-}
-
-/*SECCION AUTORIDADES*/
-.containerCardsTeam {
-  margin: 2rem auto 10rem;
-}
-
-.cardsTeamItem {
-  box-shadow: 1px 1px 10px black;
-  background: linear-gradient(#0066ff3b, #ffffffcc);
-  border: 1px solid grey;
-  border-radius: 1rem;
-  text-align: center;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
-}
-
-.cardsTeamImg img {
-  border-radius: 1rem;
-  width: 100%;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
-}
-
-.cardsTeamDescription {
-  padding: 3rem;
-  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.cardsTeamDescription h2 {
-  font-size: 2.5rem;
-  text-shadow: 0.5px 0.5px 20px black;
-}
-
-.cardsTeamDescription h3 {
-  font-size: 2rem;
-  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.521);
-}
-
-@media (max-width: 768px) {
-  /*SOBRE NOSOTROS*/
-  .containerAboutUs__Contacto {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .containerAboutUs__Description--parrafo, .cardsTeamImg {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
-
-  #botonContacto {
-    width: 20rem;
-    font-size: 2rem;
-  }
-
-  /*NUESTRO EQUIPO*/
-  .titleSection {
-    text-align: center;
-  }
-
-  .containerCardsTeam {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 70%;
-    gap: 15px;
-  }
-
-  .containerTeam__img img {
-    width: 80%;
-  }
-}
 /* ################################################################################
 ##################################### PESTAÑA CERO KM #############################
 ################################################################################ */
@@ -1299,7 +862,453 @@ html {
   }
 }
 /* ################################################################################
-##################################### FIN CSS #####################################
+##################################### PESTAÑA EMPRESA #############################
 ################################################################################ */
+/*SOBRE NOSOTROS*/
+.titleSection {
+  width: 80%;
+  margin: 5rem auto;
+  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 1px 1px 5px #3b434d;
+}
+
+/*OPERACIONES*/
+.titleSection h2 {
+  font-size: 3.5rem;
+}
+
+/*CONDICIONALES*/
+/*aplicamos radius de 10 , en caso contrario no*/
+/*BOOLEANO*/
+/*EXTEND*/
+#containerAboutUs {
+  border: 1px solid rgba(110, 109, 109, 0.555);
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.containerAboutUs {
+  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
+  width: 80%;
+  margin: 15rem auto 0;
+}
+
+.AboutUsTitle {
+  position: relative;
+  top: 130px;
+  width: 80%;
+  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 1px 1px 5px #3b434d;
+}
+
+.containerAboutUs__logo {
+  background: #3b434d;
+  padding: 2rem;
+}
+
+.containerAboutUs__Description {
+  background: linear-gradient(90deg, #c4caa4b6, #d9dd6ea9);
+}
+
+.containerAboutUs__Description--parrafo, .cardsTeamImg {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+
+.containerAboutUs__Contacto {
+  width: 90%;
+  margin: 1% 1%;
+}
+
+#botonContacto {
+  background-color: #1c6dc9;
+  border: 2px solid #4747f3;
+  box-shadow: 1px 1px 10px #0000ff;
+  width: 18rem;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 2% 0 1% 0%;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+#botonContacto:hover {
+  background-color: #1776e4;
+  border: 2px solid #3232f7;
+  transform: scale(1.05);
+  transition: 0.3s;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+/*SECCION NUESTRO EQUIPO*/
+.containerTeam__img {
+  filter: drop-shadow(5px 5px 10px black);
+  -webkit-filter: drop-shadow(5px 5px 10px black);
+  margin: 5rem 0;
+}
+
+.containerTeam__img img {
+  width: 60%;
+  border: 1px solid rgba(110, 109, 109, 0.555);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  transition: transform 1s, filter 1.5s ease-in-out;
+  filter: grayscale(100%);
+  -webkit-transition: transform 1s, filter 1.5s ease-in-out;
+  -moz-transition: transform 1s, filter 1.5s ease-in-out;
+  -ms-transition: transform 1s, filter 1.5s ease-in-out;
+  -o-transition: transform 1s, filter 1.5s ease-in-out;
+}
+
+.containerTeam__img img:hover {
+  filter: grayscale(0);
+}
+
+/*SECCION AUTORIDADES*/
+.containerCardsTeam {
+  margin: 2rem auto 10rem;
+}
+
+.cardsTeamItem {
+  box-shadow: 1px 1px 10px black;
+  background: linear-gradient(#0066ff3b, #ffffffcc);
+  border: 1px solid grey;
+  border-radius: 1rem;
+  text-align: center;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.cardsTeamImg img {
+  border-radius: 1rem;
+  width: 100%;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.cardsTeamDescription {
+  padding: 3rem;
+  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cardsTeamDescription h2 {
+  font-size: 2.5rem;
+  text-shadow: 0.5px 0.5px 20px black;
+}
+
+.cardsTeamDescription h3 {
+  font-size: 2rem;
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.521);
+}
+
+@media (max-width: 768px) {
+  /*SOBRE NOSOTROS*/
+  .containerAboutUs__Contacto {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .containerAboutUs__Description--parrafo, .cardsTeamImg {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  #botonContacto {
+    width: 20rem;
+    font-size: 2rem;
+  }
+
+  /*NUESTRO EQUIPO*/
+  .titleSection {
+    text-align: center;
+  }
+
+  .containerCardsTeam {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    gap: 15px;
+  }
+
+  .containerTeam__img img {
+    width: 80%;
+  }
+}
+/*#######################*/
+/*######## INDEX ########*/
+/*#######################*/
+/*min-width:0 -> mayor o igual a 0 */
+/*max-width:768 -> menor o igual a 768*/
+@media (min-width: 0) {
+  .titleNewUsedCars {
+    display: none;
+  }
+
+  .newUsedCards {
+    margin-top: 5rem;
+  }
+  .newUsedCards h2 {
+    text-align: center;
+  }
+
+  .newUsedCards__button {
+    text-align: center;
+  }
+
+  .boxCards__titleCar {
+    margin-top: -30rem;
+  }
+
+  #newUsedCards__img {
+    width: 100%;
+  }
+
+  .boxCards__card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .boxCards__card .boxCards__item {
+    width: 80%;
+    margin-top: 10px;
+  }
+  .boxCards__card .boxCards__item h4,
+.boxCards__card .boxCards__item h5 {
+    text-align: center;
+  }
+  .boxCards__card .boxCards__item .containerColorCarsDisp {
+    justify-content: center;
+  }
+  .boxCards__card .boxCards__item .boxCards__ul {
+    margin: 0;
+  }
+
+  .titleBrands {
+    margin-top: -30rem;
+  }
+
+  .containerBrands {
+    display: flex;
+    justify-content: center;
+  }
+  .containerBrands .containerBrands__in {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerBrands .containerBrands__item img {
+    margin-top: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .newUsedCards p {
+    font-size: 2rem;
+  }
+  .newUsedCards h2 {
+    font-size: 5rem;
+    text-align: left;
+  }
+  .newUsedCards .newUsedCards__button {
+    text-align: left;
+  }
+
+  #newUsedCards__img {
+    width: 50%;
+  }
+
+  .boxCards__card {
+    flex-direction: row;
+  }
+  .boxCards__card .boxCards__item {
+    width: 25%;
+  }
+  .boxCards__card .boxCards__item h4,
+.boxCards__card .boxCards__item h5 {
+    font-size: 1.5vw;
+    text-align: start;
+  }
+  .boxCards__card .boxCards__item .containerColorCarsDisp {
+    justify-content: flex-start;
+  }
+  .boxCards__card .boxCards__item .boxCards__ul {
+    margin: 0;
+  }
+
+  .containerBrands {
+    display: block;
+  }
+  .containerBrands .containerBrands__in {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+/*#######################*/
+/*####### CONTACTO ######*/
+/*#######################*/
+@media (min-width: 0px) {
+  .titContacto h2 {
+    font-size: 10vw;
+  }
+
+  .titContacto h3 {
+    font-size: 4vw;
+  }
+
+  .ContactForm__resetButton {
+    margin: 0;
+  }
+
+  .containerButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .titContacto h2 {
+    font-size: 5vw;
+  }
+
+  .titContacto h3 {
+    font-size: 2vw;
+  }
+
+  .ContactForm__resetButton {
+    margin-left: 2%;
+  }
+
+  .containerButtons {
+    display: flex;
+    flex-direction: row;
+  }
+}
+/* ################################################################################
+############################### PESTAÑA CONTACTO ##################################
+################################################################################ */
+/* TITULO */
+.bodyContacto {
+  background-image: url("../img/autoContacto.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #000000;
+  /* FORMULARIO - CONTACTO */
+}
+.bodyContacto .titContacto {
+  position: relative;
+  top: 10rem;
+  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
+}
+.bodyContacto .titContacto h2 {
+  color: #c9c6c6d2;
+  text-shadow: 5px 5px 10px #3b434d;
+  animation: 0.7s 0s reverse slideinTitContacto;
+  margin-bottom: 3rem;
+}
+.bodyContacto .titContacto h3 {
+  font-style: italic;
+  color: #f7f7f7d2;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 10px #3b434d;
+  animation: 0.7s 0s reverse slideinTitContacto;
+  -webkit-animation: 0.7s 0s reverse slideinTitContacto;
+}
+.bodyContacto .ContactForm {
+  background: linear-gradient(180deg, #3b434d81, #8400ff3b);
+  border: 1px solid #5e5959;
+  border-radius: 10px;
+  animation: 0.5s 0s reverse zoominContactForm;
+  -webkit-animation: 0.5s 0s reverse zoominContactForm;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.bodyContacto .ContactForm label {
+  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
+}
+.bodyContacto .ContactForm .ContactForm__submitButton {
+  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.8rem;
+  color: #ffffffd5;
+  font-weight: 100;
+  border: 2px solid #d4fab1;
+  border-radius: 5px;
+  padding: 9px 15px;
+  background-color: #7bff0096;
+  box-shadow: 1px 1px 2px #7bff00;
+  transition-duration: 0.4s;
+}
+.bodyContacto .ContactForm .ContactForm__submitButton:hover {
+  background-color: #92e742be;
+  box-shadow: 1px 1px 5px #f1ff70be;
+  border: 2px solid #ebfcc3;
+  color: #ffffffd5;
+}
+.bodyContacto .ContactForm .ContactForm__resetButton {
+  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: #ffffffd5;
+  font-weight: 100;
+  border: 2px solid #ffffffbe;
+  border-radius: 5px;
+  padding: 9px 15px;
+  background-color: #777777a9;
+  box-shadow: 1px 1px 2px #000000be;
+  transition-duration: 0.4s;
+}
+.bodyContacto .ContactForm .ContactForm__resetButton:hover {
+  background-color: #000000be;
+  box-shadow: 1px 1px 5px #c20417be;
+  border: 2px solid #bb2837;
+  color: #ffffffd5;
+}
+
+/*#######################*/
+/*####### CONTACTO ######*/
+/*#######################*/
+/* EFECTO ANIMATION TITULO CONTACTO */
+@keyframes slideinTitContacto {
+  from {
+    margin-left: 5%;
+  }
+  to {
+    margin-left: -100%;
+  }
+}
+/*EFECTO ZOOM IN EN FORMULARIO*/
+@keyframes zoominContactForm {
+  from {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
