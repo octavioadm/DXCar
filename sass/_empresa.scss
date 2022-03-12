@@ -7,11 +7,18 @@
   margin: 5rem auto;
   font-family: $fuenteRussoVerdana;
   text-shadow: 1px 1px 5px $grisBase;
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+.AboutUsTitle {
+  position: relative;
+  top: 130px;
+  width: 80%;
+  font-family: $fuenteRussoVerdana;
+  text-shadow: 1px 1px 5px $grisBase;
 }
 /*OPERACIONES*/
-.titleSection h2 {
-  font-size: 3.5rem;
-}
 /*CONDICIONALES*/
 $bordeCurvo: grande; /*aplicamos radius de 10 , en caso contrario no*/
 /*BOOLEANO*/
@@ -37,139 +44,101 @@ $mostrar: true;
   font-family: $fuenteRussoVerdana;
   width: 80%;
   margin: 15rem auto 0;
+  .containerAboutUs__logo {
+    background: $grisBase;
+    padding: 2rem;
+  }
+  .containerAboutUs__Description {
+    background: linear-gradient(90deg, #c4caa4b6, #d9dd6ea9);
+    .containerAboutUs__Description--parrafo {
+      font-family: $fuenteVerdanaGeneva;
+    }
+    .containerAboutUs__Contacto {
+      width: 90%;
+    }
+    #botonContacto {
+      background-color: #1c6dc9;
+      border: 2px solid #4747f3;
+      box-shadow: 1px 1px 10px #0000ff;
+      font-size: 2rem;
+      padding: 1rem;
+      border-radius: 5px;
+      margin: 2% 0 1% 0%;
+      color: rgba(255, 255, 255, 0.87);
+      &:hover {
+        background-color: #1776e4;
+        border: 2px solid #3232f7;
+        transform: scale(1.05);
+        transition: 0.3s;
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+      }
+    }
+  }
 }
-.AboutUsTitle {
-  position: relative;
-  top: 130px;
-  width: 80%;
-  font-family: $fuenteRussoVerdana;
-  text-shadow: 1px 1px 5px $grisBase;
-}
-.containerAboutUs__logo {
-  background: $grisBase;
-  padding: 2rem;
-}
-.containerAboutUs__Description {
-  background: linear-gradient(90deg, #c4caa4b6, #d9dd6ea9);
-}
-.containerAboutUs__Description--parrafo {
-  font-family: $fuenteVerdanaGeneva;
-  font-size: 2rem;
-  padding: 1.5rem;
-}
-.containerAboutUs__Contacto {
-  width: 90%;
-  margin: 1% 1%;
-}
-#botonContacto {
-  background-color: #1c6dc9;
-  border: 2px solid #4747f3;
-  box-shadow: 1px 1px 10px #0000ff;
-  width: 18rem;
-  font-size: 2rem;
-  padding: 1rem;
-  border-radius: 5px;
-  margin: 2% 0 1% 0%;
-  color: rgba(255, 255, 255, 0.87);
-}
-#botonContacto:hover {
-  background-color: #1776e4;
-  border: 2px solid #3232f7;
-  transform: scale(1.05);
-  transition: 0.3s;
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-}
+
 /*SECCION NUESTRO EQUIPO*/
 .containerTeam__img {
   filter: drop-shadow(5px 5px 10px black);
   -webkit-filter: drop-shadow(5px 5px 10px black);
   margin: 5rem 0;
-}
-.containerTeam__img img {
-  width: 60%;
-  border: 1px solid rgba(110, 109, 109, 0.555);
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  transition: transform 1s, filter 1.5s ease-in-out;
-  filter: grayscale(100%);
-  -webkit-transition: transform 1s, filter 1.5s ease-in-out;
-  -moz-transition: transform 1s, filter 1.5s ease-in-out;
-  -ms-transition: transform 1s, filter 1.5s ease-in-out;
-  -o-transition: transform 1s, filter 1.5s ease-in-out;
-}
-.containerTeam__img img:hover {
-  filter: grayscale(0);
+  img {
+    border: 1px solid rgba(110, 109, 109, 0.555);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: transform 1s, filter 1.5s ease-in-out;
+    filter: grayscale(100%);
+    -webkit-transition: transform 1s, filter 1.5s ease-in-out;
+    -moz-transition: transform 1s, filter 1.5s ease-in-out;
+    -ms-transition: transform 1s, filter 1.5s ease-in-out;
+    -o-transition: transform 1s, filter 1.5s ease-in-out;
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
 }
 /*SECCION AUTORIDADES*/
 .containerCardsTeam {
   margin: 2rem auto 10rem;
-}
-.cardsTeamItem {
-  box-shadow: 1px 1px 10px black;
-  background: linear-gradient(#0066ff3b, #ffffffcc);
-  border: 1px solid grey;
-  border-radius: 1rem;
-  text-align: center;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
-}
-.cardsTeamImg img {
-  border-radius: 1rem;
-  width: 100%;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
-}
-.cardsTeamDescription {
-  padding: 3rem;
-  font-family: $fuenteRussoVerdana;
-}
-.cardsTeamDescription h2 {
-  font-size: 2.5rem;
-  text-shadow: 0.5px 0.5px 20px rgb(0, 0, 0);
-}
-.cardsTeamDescription h3 {
-  font-size: 2rem;
-  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.521);
-}
-@media (max-width: 768px) {
-  /*SOBRE NOSOTROS*/
-  .containerAboutUs__Contacto {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: 0 auto;
-  }
-  .containerAboutUs__Description--parrafo {
-    font-family: $fuenteVerdanaGeneva;
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
-  #botonContacto {
-    width: 20rem;
-    font-size: 2rem;
-  }
-  /*NUESTRO EQUIPO*/
-  .titleSection {
+
+  .cardsTeamItem {
+    box-shadow: 1px 1px 10px black;
+    background: linear-gradient(#0066ff3b, #ffffffcc);
+    border: 1px solid grey;
+    border-radius: 1rem;
     text-align: center;
-  }
-  .containerCardsTeam {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 70%;
-    gap: 15px;
-  }
-  .containerTeam__img img {
-    width: 80%;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+
+    .cardsTeamImg {
+      img {
+        border-radius: 1rem;
+        width: 100%;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+      }
+    }
+    .cardsTeamDescription {
+      padding: 3rem;
+      font-family: $fuenteRussoVerdana;
+
+      h2 {
+        font-size: 2.5rem;
+        text-shadow: 0.5px 0.5px 20px rgb(0, 0, 0);
+      }
+      h3 {
+        font-size: 2rem;
+        text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.521);
+      }
+    }
   }
 }

@@ -138,3 +138,67 @@
     flex-direction: row;
   }
 }
+/*#######################*/
+/*####### EMPRESA #######*/
+/*#######################*/
+@media (min-width: 0px) {
+  /*SOBRE NOSOTROS*/
+  .containerAboutUs__Contacto {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 1% auto;
+  }
+  .containerAboutUs__Description--parrafo {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+  #botonContacto {
+    width: 20rem;
+    font-size: 2rem;
+  }
+  /*NUESTRO EQUIPO*/
+  .titleSection {
+    text-align: center;
+  }
+  .containerCardsTeam {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    gap: 15px;
+  }
+  .containerTeam__img img {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  /*SOBRE NOSOTROS*/
+  .containerAboutUs__Contacto {
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 1% 1%;
+  }
+  .containerAboutUs__Description--parrafo {
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+  #botonContacto {
+    width: 18rem;
+    font-size: 2rem;
+  }
+  /*NUESTRO EQUIPO*/
+  .titleSection {
+    text-align: start;
+  }
+  .containerCardsTeam {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .containerTeam__img img {
+    width: 60%;
+  }
+}

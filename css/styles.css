@@ -871,12 +871,19 @@ html {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
   text-shadow: 1px 1px 5px #3b434d;
 }
-
-/*OPERACIONES*/
 .titleSection h2 {
   font-size: 3.5rem;
 }
 
+.AboutUsTitle {
+  position: relative;
+  top: 130px;
+  width: 80%;
+  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 1px 1px 5px #3b434d;
+}
+
+/*OPERACIONES*/
 /*CONDICIONALES*/
 /*aplicamos radius de 10 , en caso contrario no*/
 /*BOOLEANO*/
@@ -892,48 +899,30 @@ html {
   width: 80%;
   margin: 15rem auto 0;
 }
-
-.AboutUsTitle {
-  position: relative;
-  top: 130px;
-  width: 80%;
-  font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
-  text-shadow: 1px 1px 5px #3b434d;
-}
-
-.containerAboutUs__logo {
+.containerAboutUs .containerAboutUs__logo {
   background: #3b434d;
   padding: 2rem;
 }
-
-.containerAboutUs__Description {
+.containerAboutUs .containerAboutUs__Description {
   background: linear-gradient(90deg, #c4caa4b6, #d9dd6ea9);
 }
-
-.containerAboutUs__Description--parrafo, .cardsTeamImg {
+.containerAboutUs .containerAboutUs__Description .containerAboutUs__Description--parrafo, .containerAboutUs .containerAboutUs__Description .cardsTeamImg {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2rem;
-  padding: 1.5rem;
 }
-
-.containerAboutUs__Contacto {
+.containerAboutUs .containerAboutUs__Description .containerAboutUs__Contacto {
   width: 90%;
-  margin: 1% 1%;
 }
-
-#botonContacto {
+.containerAboutUs .containerAboutUs__Description #botonContacto {
   background-color: #1c6dc9;
   border: 2px solid #4747f3;
   box-shadow: 1px 1px 10px #0000ff;
-  width: 18rem;
   font-size: 2rem;
   padding: 1rem;
   border-radius: 5px;
   margin: 2% 0 1% 0%;
   color: rgba(255, 255, 255, 0.87);
 }
-
-#botonContacto:hover {
+.containerAboutUs .containerAboutUs__Description #botonContacto:hover {
   background-color: #1776e4;
   border: 2px solid #3232f7;
   transform: scale(1.05);
@@ -950,9 +939,7 @@ html {
   -webkit-filter: drop-shadow(5px 5px 10px black);
   margin: 5rem 0;
 }
-
 .containerTeam__img img {
-  width: 60%;
   border: 1px solid rgba(110, 109, 109, 0.555);
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -966,7 +953,6 @@ html {
   -ms-transition: transform 1s, filter 1.5s ease-in-out;
   -o-transition: transform 1s, filter 1.5s ease-in-out;
 }
-
 .containerTeam__img img:hover {
   filter: grayscale(0);
 }
@@ -975,8 +961,7 @@ html {
 .containerCardsTeam {
   margin: 2rem auto 10rem;
 }
-
-.cardsTeamItem {
+.containerCardsTeam .cardsTeamItem {
   box-shadow: 1px 1px 10px black;
   background: linear-gradient(#0066ff3b, #ffffffcc);
   border: 1px solid grey;
@@ -987,8 +972,7 @@ html {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
 }
-
-.cardsTeamImg img {
+.containerCardsTeam .cardsTeamItem .cardsTeamImg img {
   border-radius: 1rem;
   width: 100%;
   -webkit-border-radius: 1rem;
@@ -996,59 +980,19 @@ html {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
 }
-
-.cardsTeamDescription {
+.containerCardsTeam .cardsTeamItem .cardsTeamDescription {
   padding: 3rem;
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.cardsTeamDescription h2 {
+.containerCardsTeam .cardsTeamItem .cardsTeamDescription h2 {
   font-size: 2.5rem;
   text-shadow: 0.5px 0.5px 20px black;
 }
-
-.cardsTeamDescription h3 {
+.containerCardsTeam .cardsTeamItem .cardsTeamDescription h3 {
   font-size: 2rem;
   text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.521);
 }
 
-@media (max-width: 768px) {
-  /*SOBRE NOSOTROS*/
-  .containerAboutUs__Contacto {
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .containerAboutUs__Description--parrafo, .cardsTeamImg {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
-
-  #botonContacto {
-    width: 20rem;
-    font-size: 2rem;
-  }
-
-  /*NUESTRO EQUIPO*/
-  .titleSection {
-    text-align: center;
-  }
-
-  .containerCardsTeam {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 70%;
-    gap: 15px;
-  }
-
-  .containerTeam__img img {
-    width: 80%;
-  }
-}
 /*#######################*/
 /*######## INDEX ########*/
 /*#######################*/
@@ -1195,6 +1139,80 @@ html {
   .containerButtons {
     display: flex;
     flex-direction: row;
+  }
+}
+/*#######################*/
+/*####### EMPRESA #######*/
+/*#######################*/
+@media (min-width: 0px) {
+  /*SOBRE NOSOTROS*/
+  .containerAboutUs__Contacto {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 1% auto;
+  }
+
+  .containerAboutUs__Description--parrafo, .cardsTeamImg {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  #botonContacto {
+    width: 20rem;
+    font-size: 2rem;
+  }
+
+  /*NUESTRO EQUIPO*/
+  .titleSection {
+    text-align: center;
+  }
+
+  .containerCardsTeam {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    gap: 15px;
+  }
+
+  .containerTeam__img img {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  /*SOBRE NOSOTROS*/
+  .containerAboutUs__Contacto {
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 1% 1%;
+  }
+
+  .containerAboutUs__Description--parrafo, .cardsTeamImg {
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+
+  #botonContacto {
+    width: 18rem;
+    font-size: 2rem;
+  }
+
+  /*NUESTRO EQUIPO*/
+  .titleSection {
+    text-align: start;
+  }
+
+  .containerCardsTeam {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .containerTeam__img img {
+    width: 60%;
   }
 }
 /* ################################################################################
