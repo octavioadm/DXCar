@@ -3,215 +3,194 @@
 ################################################################################ */
 .bodyUsados {
   background-image: linear-gradient(45deg, #ffffff71 0%, #c09fe633 100%);
-}
-.containerTitleUsados {
-  width: 80%;
-  margin: 0 auto;
-  margin: 160px auto 10px;
-}
-.containerTitleUsados h2 {
-  font-family: $fuenteRussoVerdana;
-  font-size: 5rem;
-  text-shadow: 1px 1px 5px $grisBase;
-}
-/* CONTAINER GENERAL DEL GRID*/
-.containerUsados {
-  font-family: $fuenteRussoVerdana;
-  display: grid;
-  width: 80%;
-  margin: 50px auto;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px 20px;
-  grid-template-areas:
-    "containerUsados__filtro auto6"
-    ". auto7"
-    ". auto8"
-    ". auto9"
-    ". auto10";
-}
-/* COLUMNA FILTRO */
-.containerUsados__filtro {
-  display: grid;
-  box-shadow: 1px 1px 5px black;
-  padding: 15px;
-  border-radius: 15px;
-  background-color: #5858583d;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas:
-    "tituloFiltro"
-    "ano"
-    "marca"
-    "modelo";
-  grid-area: containerUsados__filtro;
-}
-.tituloFiltro h3 {
-  font-size: 4rem;
-  text-shadow: 1px 1px 2px $grisBase;
-  letter-spacing: 1px;
-  grid-area: tituloFiltro;
-  text-align: center;
-}
-.ano {
-  grid-area: ano;
-}
 
-.marca {
-  grid-area: marca;
-}
-
-.modelo {
-  grid-area: modelo;
-}
-
-.containerUsados__filtro h4 {
-  font-size: 2rem;
-  text-shadow: 1px 1px 1px $grisBase;
-  letter-spacing: 1px;
-}
-.containerUsados__filtro select {
-  font-family: $fuenteVerdanaGeneva;
-  font-size: 1.5rem;
-  border-radius: 0.5rem;
-  border-width: 0.2rem;
-  padding: 1rem;
-  margin: 1rem;
-  width: 90%;
-  color: #000000;
-}
-/* COLUMNA AUTOS-DESCRIPCION-COMPRA-INFORMACION */
-.containerUsado__autos {
-  background-color: #d8de2a1c;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 1px 1px 5px black;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto auto;
-  gap: 0px 15px;
-  height: fit-content;
-}
-.containerUsado__autos img {
-  margin-bottom: 10px;
-  border: 5px solid $grisBase;
-  border-style: double;
-  border-radius: 15px;
-  width: 100%;
-  min-width: 200px;
-}
-.containerUsado__autos h5 {
-  font-size: 4rem;
-  background-color: #9fde2a3d;
-  border-radius: 15px;
-  padding: 10px;
-}
-/* AUTO 6 */
-.auto6 {
-  grid-template-areas:
-    "auto6Img auto6Descripcion"
-    "auto6ComprarInformacion auto6ComprarInformacion";
-  grid-area: auto6;
-}
-.auto6Img {
-  grid-area: auto6Img;
-}
-.auto6Descripcion {
-  grid-area: auto6Descripcion;
-}
-.auto6ComprarInformacion {
-  grid-area: auto6ComprarInformacion;
-}
-/* AUTO 7 */
-.auto7 {
-  grid-template-areas:
-    "auto7Img auto7Descripcion"
-    "auto7ComprarInformacion auto7ComprarInformacion";
-  grid-area: auto7;
-}
-.auto7Img {
-  grid-area: auto7Img;
-}
-.auto7Descripcion {
-  grid-area: auto7Descripcion;
-}
-.auto7ComprarInformacion {
-  grid-area: auto7ComprarInformacion;
-}
-/* AUTO 8 */
-.auto8 {
-  grid-template-areas:
-    "auto8Img auto8Descripcion"
-    "auto8ComprarInformacion auto8ComprarInformacion";
-  grid-area: auto8;
-}
-.auto8Img {
-  grid-area: auto8Img;
-}
-.auto8Descripcion {
-  grid-area: auto8Descripcion;
-}
-.auto8ComprarInformacion {
-  grid-area: auto8ComprarInformacion;
-}
-/* AUTO 9 */
-.auto9 {
-  grid-template-areas:
-    "auto9Img auto9Descripcion"
-    "auto9ComprarInformacion auto9ComprarInformacion";
-  grid-area: auto9;
-}
-.auto9Img {
-  grid-area: auto9Img;
-}
-.auto9Descripcion {
-  grid-area: auto9Descripcion;
-}
-.auto9ComprarInformacion {
-  grid-area: auto9ComprarInformacion;
-}
-/* AUTO 10 */
-.auto10 {
-  grid-template-areas:
-    "auto10Img auto10Descripcion"
-    "auto10ComprarInformacion auto10ComprarInformacion";
-  grid-area: auto10;
-}
-.auto10Img {
-  grid-area: auto10Img;
-}
-.auto10Descripcion {
-  grid-area: auto10Descripcion;
-}
-.auto10ComprarInformacion {
-  grid-area: auto10ComprarInformacion;
-}
-@media only screen and (max-width: 768px) {
-  .containerUsado__autos {
-    display: flex;
-    flex-direction: column;
-    font-size: 1rem;
-    align-self: baseline;
+  .containerTitleUsados {
+    width: 80%;
+    margin: 0 auto;
+    margin: 160px auto 10px;
+    h2 {
+      font-family: $fuenteRussoVerdana;
+      font-size: 5rem;
+      text-shadow: 1px 1px 5px $grisBase;
+    }
   }
+  /* CONTAINER GENERAL DEL GRID*/
   .containerUsados {
-    display: flex;
-    flex-wrap: wrap;
+    font-family: $fuenteRussoVerdana;
+    width: 80%;
+    margin: 50px auto;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 20px;
+    grid-template-areas:
+      "containerUsados__filtro auto6"
+      ". auto7"
+      ". auto8"
+      ". auto9"
+      ". auto10";
+
+    /* COLUMNA FILTRO */
+    .containerUsados__filtro {
+      display: grid;
+      box-shadow: 1px 1px 5px black;
+      padding: 15px;
+      border-radius: 15px;
+      background-color: #5858583d;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas:
+        "tituloFiltro"
+        "cantkm"
+        "marca"
+        "modelo";
+      grid-area: containerUsados__filtro;
+    }
+    .tituloFiltro {
+      h3 {
+        font-size: 4rem;
+        text-shadow: 1px 1px 2px $grisBase;
+        letter-spacing: 1px;
+        grid-area: tituloFiltro;
+      }
+    }
+    h4 {
+      font-size: 2rem;
+      text-shadow: 1px 1px 1px $grisBase;
+      letter-spacing: 1px;
+    }
+    .cantkm {
+      grid-area: cantkm;
+    }
+
+    .marca {
+      grid-area: marca;
+    }
+
+    .modelo {
+      grid-area: modelo;
+    }
+    select {
+      font-family: $fuenteVerdanaGeneva;
+      font-size: 1.5rem;
+      border-radius: 0.5rem;
+      border-width: 0.2rem;
+      padding: 1rem;
+      margin: 1rem;
+      width: 90%;
+      color: #000000;
+    }
   }
-  .containerUsados__filtro {
-    display: flex;
-    flex-flow: column wrap;
-    width: 100%;
+
+  /* COLUMNA AUTOS-DESCRIPCION-COMPRA-INFORMACION */
+  .containerUsado__autos {
+    background-color: #d8de2a1c;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px black;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 0px 15px;
+    height: fit-content;
+
+    img {
+      margin-bottom: 10px;
+      border: 5px solid $grisBase;
+      border-style: double;
+      border-radius: 15px;
+      width: 100%;
+      min-width: 200px;
+    }
+    h5 {
+      background-color: #9fde2a3d;
+      border-radius: 15px;
+      padding: 10px;
+    }
   }
-  .tituloFiltro {
-    width: 100%;
+  /* AUTO 6 */
+  .auto6 {
+    grid-template-areas:
+      "auto6Img auto6Descripcion"
+      "auto6ComprarInformacion auto6ComprarInformacion";
+    grid-area: auto6;
+
+    .auto6Img {
+      grid-area: auto6Img;
+    }
+    .auto6Descripcion {
+      grid-area: auto6Descripcion;
+    }
+    .auto6ComprarInformacion {
+      grid-area: auto6ComprarInformacion;
+    }
   }
-  #comprar {
-    font-size: 3vw;
-    width: 100%;
-    margin: 10px 0 5px 0;
+
+  /* AUTO 7 */
+  .auto7 {
+    grid-template-areas:
+      "auto7Img auto7Descripcion"
+      "auto7ComprarInformacion auto7ComprarInformacion";
+    grid-area: auto7;
+    .auto7Img {
+      grid-area: auto7Img;
+    }
+    .auto7Descripcion {
+      grid-area: auto7Descripcion;
+    }
+    .auto7ComprarInformacion {
+      grid-area: auto7ComprarInformacion;
+    }
   }
-  #masInformacion {
-    font-size: 3vw;
-    width: 100%;
+
+  /* AUTO 8 */
+  .auto8 {
+    grid-template-areas:
+      "auto8Img auto8Descripcion"
+      "auto8ComprarInformacion auto8ComprarInformacion";
+    grid-area: auto8;
+    .auto8Img {
+      grid-area: auto8Img;
+    }
+    .auto8Descripcion {
+      grid-area: auto8Descripcion;
+    }
+    .auto8ComprarInformacion {
+      grid-area: auto8ComprarInformacion;
+    }
+  }
+
+  /* AUTO 9 */
+  .auto9 {
+    grid-template-areas:
+      "auto9Img auto9Descripcion"
+      "auto9ComprarInformacion auto9ComprarInformacion";
+    grid-area: auto9;
+
+    .auto9Img {
+      grid-area: auto9Img;
+    }
+    .auto9Descripcion {
+      grid-area: auto9Descripcion;
+    }
+    .auto9ComprarInformacion {
+      grid-area: auto9ComprarInformacion;
+    }
+  }
+
+  /* AUTO 10 */
+  .auto10 {
+    grid-template-areas:
+      "auto10Img auto10Descripcion"
+      "auto10ComprarInformacion auto10ComprarInformacion";
+    grid-area: auto10;
+
+    .auto10Img {
+      grid-area: auto10Img;
+    }
+    .auto10Descripcion {
+      grid-area: auto10Descripcion;
+    }
+    .auto10ComprarInformacion {
+      grid-area: auto10ComprarInformacion;
+    }
   }
 }

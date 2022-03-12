@@ -332,34 +332,35 @@ html {
 ################################################################################ */
 .bodyCerokm {
   background-image: linear-gradient(45deg, #ffffff71 0%, #c09fe633 100%);
+  /* CONTAINER GENERAL DEL GRID*/
+  /* COLUMNA AUTOS-DESCRIPCION-COMPRA-INFORMACION */
+  /* AUTO 1 */
+  /* AUTO 2 */
+  /* AUTO 3 */
+  /* AUTO 4 */
+  /* AUTO 5 */
 }
-
-.containerTitleCerokm {
+.bodyCerokm .containerTitleCerokm {
   width: 80%;
   margin: 0 auto;
   margin: 160px auto 10px;
 }
-
-.containerTitleCerokm h2 {
+.bodyCerokm .containerTitleCerokm h2 {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 5rem;
   text-shadow: 1px 1px 5px #3b434d;
 }
-
-/* CONTAINER GENERAL DEL GRID*/
-.containerCeroKM {
+.bodyCerokm .containerCeroKM {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
-  display: grid;
   width: 80%;
   margin: 50px auto;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 10px 20px;
   grid-template-areas: "containerCerokm__filtro auto1" ". auto2" ". auto3" ". auto4" ". auto5";
+  /* COLUMNA FILTRO */
 }
-
-/* COLUMNA FILTRO */
-.containerCerokm__filtro {
+.bodyCerokm .containerCeroKM .containerCerokm__filtro {
   display: grid;
   box-shadow: 1px 1px 5px black;
   padding: 15px;
@@ -370,33 +371,27 @@ html {
   grid-template-areas: "tituloFiltro" "ano" "marca" "modelo";
   grid-area: containerCerokm__filtro;
 }
-
-.tituloFiltro h3 {
+.bodyCerokm .containerCeroKM .containerCerokm__filtro .tituloFiltro h3 {
   font-size: 4rem;
   text-shadow: 1px 1px 2px #3b434d;
   letter-spacing: 1px;
   grid-area: tituloFiltro;
 }
-
-.ano {
-  grid-area: ano;
-}
-
-.marca {
-  grid-area: marca;
-}
-
-.modelo {
-  grid-area: modelo;
-}
-
-.containerCerokm__filtro h4 {
+.bodyCerokm .containerCeroKM .containerCerokm__filtro h4 {
   font-size: 2rem;
   text-shadow: 1px 1px 1px #3b434d;
   letter-spacing: 1px;
 }
-
-.containerCerokm__filtro select {
+.bodyCerokm .containerCeroKM .containerCerokm__filtro .ano {
+  grid-area: ano;
+}
+.bodyCerokm .containerCeroKM .containerCerokm__filtro .marca {
+  grid-area: marca;
+}
+.bodyCerokm .containerCeroKM .containerCerokm__filtro .modelo {
+  grid-area: modelo;
+}
+.bodyCerokm .containerCeroKM .containerCerokm__filtro select {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem;
   border-radius: 0.5rem;
@@ -406,21 +401,17 @@ html {
   width: 90%;
   color: #000000;
 }
-
-/* COLUMNA AUTOS-DESCRIPCION-COMPRA-INFORMACION */
-.containerCerokm__autos {
+.bodyCerokm .containerCerokm__autos {
   background-color: #d8de2a1c;
   padding: 15px;
   border-radius: 15px;
   box-shadow: 1px 1px 5px black;
-  display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto auto;
   gap: 0px 15px;
   height: fit-content;
 }
-
-.containerCerokm__autos img {
+.bodyCerokm .containerCerokm__autos img {
   margin-bottom: 10px;
   border: 5px solid #3b434d;
   border-style: double;
@@ -428,12 +419,75 @@ html {
   width: 100%;
   min-width: 200px;
 }
-
-.containerCerokm__autos h5 {
-  font-size: 4rem;
+.bodyCerokm .containerCerokm__autos h5 {
   background-color: #9fde2a3d;
   border-radius: 15px;
   padding: 10px;
+}
+.bodyCerokm .auto1 {
+  grid-template-areas: "auto1Img auto1Descripcion" "auto1ComprarInformacion auto1ComprarInformacion";
+  grid-area: auto1;
+}
+.bodyCerokm .auto1 .auto1Img {
+  grid-area: auto1Img;
+}
+.bodyCerokm .auto1 .auto1Descripcion {
+  grid-area: auto1Descripcion;
+}
+.bodyCerokm .auto1 .auto1ComprarInformacion {
+  grid-area: auto1ComprarInformacion;
+}
+.bodyCerokm .auto2 {
+  grid-template-areas: "auto2Img auto2Descripcion" "auto2ComprarInformacion auto2ComprarInformacion";
+  grid-area: auto2;
+}
+.bodyCerokm .auto2 .auto2Img {
+  grid-area: auto2Img;
+}
+.bodyCerokm .auto2 .auto2Descripcion {
+  grid-area: auto2Descripcion;
+}
+.bodyCerokm .auto2 .auto2ComprarInformacion {
+  grid-area: auto2ComprarInformacion;
+}
+.bodyCerokm .auto3 {
+  grid-template-areas: "auto3Img auto3Descripcion" "auto3ComprarInformacion auto3ComprarInformacion";
+  grid-area: auto3;
+}
+.bodyCerokm .auto3 .auto3Img {
+  grid-area: auto3Img;
+}
+.bodyCerokm .auto3 .auto3Descripcion {
+  grid-area: auto3Descripcion;
+}
+.bodyCerokm .auto3 .auto3ComprarInformacion {
+  grid-area: auto3ComprarInformacion;
+}
+.bodyCerokm .auto4 {
+  grid-template-areas: "auto4Img auto4Descripcion" "auto4ComprarInformacion auto4ComprarInformacion";
+  grid-area: auto4;
+}
+.bodyCerokm .auto4 .auto4Img {
+  grid-area: auto4Img;
+}
+.bodyCerokm .auto4 .auto4Descripcion {
+  grid-area: auto4Descripcion;
+}
+.bodyCerokm .auto4 .auto4ComprarInformacion {
+  grid-area: auto4ComprarInformacion;
+}
+.bodyCerokm .auto5 {
+  grid-template-areas: "auto5Img auto5Descripcion" "auto5ComprarInformacion auto5ComprarInformacion";
+  grid-area: auto5;
+}
+.bodyCerokm .auto5 .auto5Img {
+  grid-area: auto5Img;
+}
+.bodyCerokm .auto5 .auto5Descripcion {
+  grid-area: auto5Descripcion;
+}
+.bodyCerokm .auto5 .auto5ComprarInformacion {
+  grid-area: auto5ComprarInformacion;
 }
 
 .autoDescripcion__Desc {
@@ -454,96 +508,6 @@ html {
   font-size: 2rem;
 }
 
-/* AUTO 1 */
-.auto1 {
-  grid-template-areas: "auto1Img auto1Descripcion" "auto1ComprarInformacion auto1ComprarInformacion";
-  grid-area: auto1;
-}
-
-.auto1Img {
-  grid-area: auto1Img;
-}
-
-.auto1Descripcion {
-  grid-area: auto1Descripcion;
-}
-
-.auto1ComprarInformacion {
-  grid-area: auto1ComprarInformacion;
-}
-
-/* AUTO 2 */
-.auto2 {
-  grid-template-areas: "auto2Img auto2Descripcion" "auto2ComprarInformacion auto2ComprarInformacion";
-  grid-area: auto2;
-}
-
-.auto2Img {
-  grid-area: auto2Img;
-}
-
-.auto2Descripcion {
-  grid-area: auto2Descripcion;
-}
-
-.auto2ComprarInformacion {
-  grid-area: auto2ComprarInformacion;
-}
-
-/* AUTO 3 */
-.auto3 {
-  grid-template-areas: "auto3Img auto3Descripcion" "auto3ComprarInformacion auto3ComprarInformacion";
-  grid-area: auto3;
-}
-
-.auto3Img {
-  grid-area: auto3Img;
-}
-
-.auto3Descripcion {
-  grid-area: auto3Descripcion;
-}
-
-.auto3ComprarInformacion {
-  grid-area: auto3ComprarInformacion;
-}
-
-/* AUTO 4 */
-.auto4 {
-  grid-template-areas: "auto4Img auto4Descripcion" "auto4ComprarInformacion auto4ComprarInformacion";
-  grid-area: auto4;
-}
-
-.auto4Img {
-  grid-area: auto4Img;
-}
-
-.auto4Descripcion {
-  grid-area: auto4Descripcion;
-}
-
-.auto4ComprarInformacion {
-  grid-area: auto4ComprarInformacion;
-}
-
-/* AUTO 5 */
-.auto5 {
-  grid-template-areas: "auto5Img auto5Descripcion" "auto5ComprarInformacion auto5ComprarInformacion";
-  grid-area: auto5;
-}
-
-.auto5Img {
-  grid-area: auto5Img;
-}
-
-.auto5Descripcion {
-  grid-area: auto5Descripcion;
-}
-
-.auto5ComprarInformacion {
-  grid-area: auto5ComprarInformacion;
-}
-
 #comprar {
   background-color: #1c6dc9;
   border: 2px solid #4747f3;
@@ -552,10 +516,9 @@ html {
   font-size: 2rem;
   padding: 1rem;
   border-radius: 5px;
-  margin: 1%;
+  margin: 0 44%;
   color: rgba(255, 255, 255, 0.87);
 }
-
 #comprar:hover {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
   background-color: #1776e4;
@@ -584,82 +547,57 @@ html {
   background-color: #ff8800;
   border: 2px solid #fc7232;
   box-shadow: 1px 1px 10px #ff9900;
-  width: 13rem;
   font-size: 2rem;
   padding: 1rem;
   border-radius: 5px;
   color: rgba(255, 255, 255, 0.87);
 }
-
 #masInformacion:hover {
   background-color: #f3952a;
   border: 2px solid #fa611a;
   box-shadow: 1px 1px 5px #ff9900;
   transform: scale(1.1);
   transition: 0.3s;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
-@media only screen and (max-width: 768px) {
-  .containerCerokm__autos {
-    display: flex;
-    flex-direction: column;
-    font-size: 1rem;
-    align-self: baseline;
-  }
-
-  .containerCeroKM {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .containerCerokm__filtro {
-    display: flex;
-    flex-flow: column wrap;
-    width: 100%;
-  }
-
-  .tituloFiltro {
-    width: 100%;
-  }
-
-  #masInformacion {
-    font-size: 3vw;
-    width: 100%;
-  }
-}
 /* ################################################################################
 ##################################### PESTAÑA USADOS###############################
 ################################################################################ */
 .bodyUsados {
   background-image: linear-gradient(45deg, #ffffff71 0%, #c09fe633 100%);
+  /* CONTAINER GENERAL DEL GRID*/
+  /* COLUMNA AUTOS-DESCRIPCION-COMPRA-INFORMACION */
+  /* AUTO 6 */
+  /* AUTO 7 */
+  /* AUTO 8 */
+  /* AUTO 9 */
+  /* AUTO 10 */
 }
-
-.containerTitleUsados {
+.bodyUsados .containerTitleUsados {
   width: 80%;
   margin: 0 auto;
   margin: 160px auto 10px;
 }
-
-.containerTitleUsados h2 {
+.bodyUsados .containerTitleUsados h2 {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 5rem;
   text-shadow: 1px 1px 5px #3b434d;
 }
-
-/* CONTAINER GENERAL DEL GRID*/
-.containerUsados {
+.bodyUsados .containerUsados {
   font-family: "Russo One", Verdana, Geneva, Tahoma, sans-serif;
-  display: grid;
   width: 80%;
   margin: 50px auto;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 10px 20px;
   grid-template-areas: "containerUsados__filtro auto6" ". auto7" ". auto8" ". auto9" ". auto10";
+  /* COLUMNA FILTRO */
 }
-
-/* COLUMNA FILTRO */
-.containerUsados__filtro {
+.bodyUsados .containerUsados .containerUsados__filtro {
   display: grid;
   box-shadow: 1px 1px 5px black;
   padding: 15px;
@@ -667,37 +605,30 @@ html {
   background-color: #5858583d;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: "tituloFiltro" "ano" "marca" "modelo";
+  grid-template-areas: "tituloFiltro" "cantkm" "marca" "modelo";
   grid-area: containerUsados__filtro;
 }
-
-.tituloFiltro h3 {
+.bodyUsados .containerUsados .tituloFiltro h3 {
   font-size: 4rem;
   text-shadow: 1px 1px 2px #3b434d;
   letter-spacing: 1px;
   grid-area: tituloFiltro;
-  text-align: center;
 }
-
-.ano {
-  grid-area: ano;
-}
-
-.marca {
-  grid-area: marca;
-}
-
-.modelo {
-  grid-area: modelo;
-}
-
-.containerUsados__filtro h4 {
+.bodyUsados .containerUsados h4 {
   font-size: 2rem;
   text-shadow: 1px 1px 1px #3b434d;
   letter-spacing: 1px;
 }
-
-.containerUsados__filtro select {
+.bodyUsados .containerUsados .cantkm {
+  grid-area: cantkm;
+}
+.bodyUsados .containerUsados .marca {
+  grid-area: marca;
+}
+.bodyUsados .containerUsados .modelo {
+  grid-area: modelo;
+}
+.bodyUsados .containerUsados select {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem;
   border-radius: 0.5rem;
@@ -707,21 +638,17 @@ html {
   width: 90%;
   color: #000000;
 }
-
-/* COLUMNA AUTOS-DESCRIPCION-COMPRA-INFORMACION */
-.containerUsado__autos {
+.bodyUsados .containerUsado__autos {
   background-color: #d8de2a1c;
   padding: 15px;
   border-radius: 15px;
   box-shadow: 1px 1px 5px black;
-  display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto auto;
   gap: 0px 15px;
   height: fit-content;
 }
-
-.containerUsado__autos img {
+.bodyUsados .containerUsado__autos img {
   margin-bottom: 10px;
   border: 5px solid #3b434d;
   border-style: double;
@@ -729,138 +656,77 @@ html {
   width: 100%;
   min-width: 200px;
 }
-
-.containerUsado__autos h5 {
-  font-size: 4rem;
+.bodyUsados .containerUsado__autos h5 {
   background-color: #9fde2a3d;
   border-radius: 15px;
   padding: 10px;
 }
-
-/* AUTO 6 */
-.auto6 {
+.bodyUsados .auto6 {
   grid-template-areas: "auto6Img auto6Descripcion" "auto6ComprarInformacion auto6ComprarInformacion";
   grid-area: auto6;
 }
-
-.auto6Img {
+.bodyUsados .auto6 .auto6Img {
   grid-area: auto6Img;
 }
-
-.auto6Descripcion {
+.bodyUsados .auto6 .auto6Descripcion {
   grid-area: auto6Descripcion;
 }
-
-.auto6ComprarInformacion {
+.bodyUsados .auto6 .auto6ComprarInformacion {
   grid-area: auto6ComprarInformacion;
 }
-
-/* AUTO 7 */
-.auto7 {
+.bodyUsados .auto7 {
   grid-template-areas: "auto7Img auto7Descripcion" "auto7ComprarInformacion auto7ComprarInformacion";
   grid-area: auto7;
 }
-
-.auto7Img {
+.bodyUsados .auto7 .auto7Img {
   grid-area: auto7Img;
 }
-
-.auto7Descripcion {
+.bodyUsados .auto7 .auto7Descripcion {
   grid-area: auto7Descripcion;
 }
-
-.auto7ComprarInformacion {
+.bodyUsados .auto7 .auto7ComprarInformacion {
   grid-area: auto7ComprarInformacion;
 }
-
-/* AUTO 8 */
-.auto8 {
+.bodyUsados .auto8 {
   grid-template-areas: "auto8Img auto8Descripcion" "auto8ComprarInformacion auto8ComprarInformacion";
   grid-area: auto8;
 }
-
-.auto8Img {
+.bodyUsados .auto8 .auto8Img {
   grid-area: auto8Img;
 }
-
-.auto8Descripcion {
+.bodyUsados .auto8 .auto8Descripcion {
   grid-area: auto8Descripcion;
 }
-
-.auto8ComprarInformacion {
+.bodyUsados .auto8 .auto8ComprarInformacion {
   grid-area: auto8ComprarInformacion;
 }
-
-/* AUTO 9 */
-.auto9 {
+.bodyUsados .auto9 {
   grid-template-areas: "auto9Img auto9Descripcion" "auto9ComprarInformacion auto9ComprarInformacion";
   grid-area: auto9;
 }
-
-.auto9Img {
+.bodyUsados .auto9 .auto9Img {
   grid-area: auto9Img;
 }
-
-.auto9Descripcion {
+.bodyUsados .auto9 .auto9Descripcion {
   grid-area: auto9Descripcion;
 }
-
-.auto9ComprarInformacion {
+.bodyUsados .auto9 .auto9ComprarInformacion {
   grid-area: auto9ComprarInformacion;
 }
-
-/* AUTO 10 */
-.auto10 {
+.bodyUsados .auto10 {
   grid-template-areas: "auto10Img auto10Descripcion" "auto10ComprarInformacion auto10ComprarInformacion";
   grid-area: auto10;
 }
-
-.auto10Img {
+.bodyUsados .auto10 .auto10Img {
   grid-area: auto10Img;
 }
-
-.auto10Descripcion {
+.bodyUsados .auto10 .auto10Descripcion {
   grid-area: auto10Descripcion;
 }
-
-.auto10ComprarInformacion {
+.bodyUsados .auto10 .auto10ComprarInformacion {
   grid-area: auto10ComprarInformacion;
 }
 
-@media only screen and (max-width: 768px) {
-  .containerUsado__autos {
-    display: flex;
-    flex-direction: column;
-    font-size: 1rem;
-    align-self: baseline;
-  }
-
-  .containerUsados {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .containerUsados__filtro {
-    display: flex;
-    flex-flow: column wrap;
-    width: 100%;
-  }
-
-  .tituloFiltro {
-    width: 100%;
-  }
-
-  #comprar {
-    font-size: 3vw;
-    width: 100%;
-    margin: 10px 0 5px 0;
-  }
-
-  #masInformacion {
-    font-size: 3vw;
-    width: 100%;
-  }
-}
 /* ################################################################################
 ##################################### PESTAÑA EMPRESA #############################
 ################################################################################ */
@@ -1213,6 +1079,133 @@ html {
 
   .containerTeam__img img {
     width: 60%;
+  }
+}
+/*#######################*/
+/*####### CERO KM #######*/
+/*#######################*/
+@media only screen and (min-width: 0px) {
+  .containerCerokm__autos {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-self: baseline;
+  }
+  .containerCerokm__autos h5 {
+    font-size: 6vw;
+  }
+
+  .containerCeroKM {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .containerCerokm__filtro {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+  }
+
+  .tituloFiltro {
+    width: 100%;
+    text-align: center;
+  }
+
+  #masInformacion {
+    font-size: 3vw;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .containerCerokm__autos {
+    display: grid;
+    flex-direction: column;
+    font-size: 1rem;
+    align-self: baseline;
+  }
+  .containerCerokm__autos h5 {
+    font-size: 4rem;
+  }
+
+  .containerCeroKM {
+    display: grid;
+    flex-wrap: wrap;
+  }
+
+  .tituloFiltro {
+    width: 100%;
+  }
+
+  #masInformacion {
+    font-size: 2rem;
+    width: 16rem;
+  }
+}
+/*#######################*/
+/*####### USADOS #######*/
+/*#######################*/
+@media only screen and (min-width: 0px) {
+  .containerUsado__autos {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-self: baseline;
+  }
+  .containerUsado__autos h5 {
+    font-size: 6vw;
+  }
+
+  .containerUsados {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .containerUsados__filtro {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+  }
+
+  .tituloFiltro {
+    width: 100%;
+  }
+
+  #comprar {
+    font-size: 3vw;
+    width: 100%;
+    margin: 3% 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .containerUsado__autos {
+    display: grid;
+    flex-direction: column;
+    font-size: 1rem;
+    align-self: baseline;
+  }
+  .containerUsado__autos h5 {
+    font-size: 4rem;
+  }
+
+  .containerUsados {
+    display: grid;
+    flex-wrap: wrap;
+  }
+
+  .containerUsados__filtro {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+  }
+
+  .tituloFiltro {
+    width: 100%;
+  }
+
+  #comprar {
+    font-size: 2rem;
+    width: 16rem;
+    margin: 2% 1rem;
   }
 }
 /* ################################################################################

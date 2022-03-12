@@ -3,106 +3,195 @@
 ################################################################################ */
 .bodyCerokm {
   background-image: linear-gradient(45deg, #ffffff71 0%, #c09fe633 100%);
-}
-.containerTitleCerokm {
-  width: 80%;
-  margin: 0 auto;
-  margin: 160px auto 10px;
-}
-.containerTitleCerokm h2 {
-  font-family: $fuenteRussoVerdana;
-  font-size: 5rem;
-  text-shadow: 1px 1px 5px $grisBase;
-}
-/* CONTAINER GENERAL DEL GRID*/
-.containerCeroKM {
-  font-family: $fuenteRussoVerdana;
-  display: grid;
-  width: 80%;
-  margin: 50px auto;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px 20px;
-  grid-template-areas:
-    "containerCerokm__filtro auto1"
-    ". auto2"
-    ". auto3"
-    ". auto4"
-    ". auto5";
-}
-/* COLUMNA FILTRO */
-.containerCerokm__filtro {
-  display: grid;
-  box-shadow: 1px 1px 5px black;
-  padding: 15px;
-  border-radius: 15px;
-  background-color: #5858583d;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas:
-    "tituloFiltro"
-    "ano"
-    "marca"
-    "modelo";
-  grid-area: containerCerokm__filtro;
-}
 
-.tituloFiltro h3 {
-  font-size: 4rem;
-  text-shadow: 1px 1px 2px $grisBase;
-  letter-spacing: 1px;
-  grid-area: tituloFiltro;
-}
-.ano {
-  grid-area: ano;
-}
-.marca {
-  grid-area: marca;
-}
-.modelo {
-  grid-area: modelo;
-}
+  .containerTitleCerokm {
+    width: 80%;
+    margin: 0 auto;
+    margin: 160px auto 10px;
 
-.containerCerokm__filtro h4 {
-  font-size: 2rem;
-  text-shadow: 1px 1px 1px $grisBase;
-  letter-spacing: 1px;
-}
-.containerCerokm__filtro select {
-  font-family: $fuenteVerdanaGeneva;
-  font-size: 1.5rem;
-  border-radius: 0.5rem;
-  border-width: 0.2rem;
-  padding: 1rem;
-  margin: 1rem;
-  width: 90%;
-  color: #000000;
-}
-/* COLUMNA AUTOS-DESCRIPCION-COMPRA-INFORMACION */
-.containerCerokm__autos {
-  background-color: #d8de2a1c;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 1px 1px 5px black;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto auto;
-  gap: 0px 15px;
-  height: fit-content;
-}
-.containerCerokm__autos img {
-  margin-bottom: 10px;
-  border: 5px solid $grisBase;
-  border-style: double;
-  border-radius: 15px;
-  width: 100%;
-  min-width: 200px;
-}
-.containerCerokm__autos h5 {
-  font-size: 4rem;
-  background-color: #9fde2a3d;
-  border-radius: 15px;
-  padding: 10px;
+    h2 {
+      font-family: $fuenteRussoVerdana;
+      font-size: 5rem;
+      text-shadow: 1px 1px 5px $grisBase;
+    }
+  }
+  /* CONTAINER GENERAL DEL GRID*/
+  .containerCeroKM {
+    font-family: $fuenteRussoVerdana;
+    width: 80%;
+    margin: 50px auto;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 20px;
+    grid-template-areas:
+      "containerCerokm__filtro auto1"
+      ". auto2"
+      ". auto3"
+      ". auto4"
+      ". auto5";
+
+    /* COLUMNA FILTRO */
+    .containerCerokm__filtro {
+      display: grid;
+      box-shadow: 1px 1px 5px black;
+      padding: 15px;
+      border-radius: 15px;
+      background-color: #5858583d;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas:
+        "tituloFiltro"
+        "ano"
+        "marca"
+        "modelo";
+      grid-area: containerCerokm__filtro;
+
+      .tituloFiltro {
+        h3 {
+          font-size: 4rem;
+          text-shadow: 1px 1px 2px $grisBase;
+          letter-spacing: 1px;
+          grid-area: tituloFiltro;
+        }
+      }
+      h4 {
+        font-size: 2rem;
+        text-shadow: 1px 1px 1px $grisBase;
+        letter-spacing: 1px;
+      }
+      .ano {
+        grid-area: ano;
+      }
+      .marca {
+        grid-area: marca;
+      }
+      .modelo {
+        grid-area: modelo;
+      }
+      select {
+        font-family: $fuenteVerdanaGeneva;
+        font-size: 1.5rem;
+        border-radius: 0.5rem;
+        border-width: 0.2rem;
+        padding: 1rem;
+        margin: 1rem;
+        width: 90%;
+        color: #000000;
+      }
+    }
+  }
+  /* COLUMNA AUTOS-DESCRIPCION-COMPRA-INFORMACION */
+  .containerCerokm__autos {
+    background-color: #d8de2a1c;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px black;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 0px 15px;
+    height: fit-content;
+    img {
+      margin-bottom: 10px;
+      border: 5px solid $grisBase;
+      border-style: double;
+      border-radius: 15px;
+      width: 100%;
+      min-width: 200px;
+    }
+    h5 {
+      background-color: #9fde2a3d;
+      border-radius: 15px;
+      padding: 10px;
+    }
+  }
+  /* AUTO 1 */
+  .auto1 {
+    grid-template-areas:
+      "auto1Img auto1Descripcion"
+      "auto1ComprarInformacion auto1ComprarInformacion";
+    grid-area: auto1;
+
+    .auto1Img {
+      grid-area: auto1Img;
+    }
+    .auto1Descripcion {
+      grid-area: auto1Descripcion;
+    }
+    .auto1ComprarInformacion {
+      grid-area: auto1ComprarInformacion;
+    }
+  }
+
+  /* AUTO 2 */
+  .auto2 {
+    grid-template-areas:
+      "auto2Img auto2Descripcion"
+      "auto2ComprarInformacion auto2ComprarInformacion";
+    grid-area: auto2;
+
+    .auto2Img {
+      grid-area: auto2Img;
+    }
+    .auto2Descripcion {
+      grid-area: auto2Descripcion;
+    }
+    .auto2ComprarInformacion {
+      grid-area: auto2ComprarInformacion;
+    }
+  }
+
+  /* AUTO 3 */
+  .auto3 {
+    grid-template-areas:
+      "auto3Img auto3Descripcion"
+      "auto3ComprarInformacion auto3ComprarInformacion";
+    grid-area: auto3;
+    .auto3Img {
+      grid-area: auto3Img;
+    }
+    .auto3Descripcion {
+      grid-area: auto3Descripcion;
+    }
+    .auto3ComprarInformacion {
+      grid-area: auto3ComprarInformacion;
+    }
+  }
+
+  /* AUTO 4 */
+  .auto4 {
+    grid-template-areas:
+      "auto4Img auto4Descripcion"
+      "auto4ComprarInformacion auto4ComprarInformacion";
+    grid-area: auto4;
+
+    .auto4Img {
+      grid-area: auto4Img;
+    }
+    .auto4Descripcion {
+      grid-area: auto4Descripcion;
+    }
+    .auto4ComprarInformacion {
+      grid-area: auto4ComprarInformacion;
+    }
+  }
+
+  /* AUTO 5 */
+  .auto5 {
+    grid-template-areas:
+      "auto5Img auto5Descripcion"
+      "auto5ComprarInformacion auto5ComprarInformacion";
+    grid-area: auto5;
+
+    .auto5Img {
+      grid-area: auto5Img;
+    }
+    .auto5Descripcion {
+      grid-area: auto5Descripcion;
+    }
+    .auto5ComprarInformacion {
+      grid-area: auto5ComprarInformacion;
+    }
+  }
 }
 .autoDescripcion__Desc {
   font-style: italic;
@@ -119,86 +208,6 @@
   font-family: $fuenteVerdanaGeneva;
   font-size: 2rem;
 }
-/* AUTO 1 */
-.auto1 {
-  grid-template-areas:
-    "auto1Img auto1Descripcion"
-    "auto1ComprarInformacion auto1ComprarInformacion";
-  grid-area: auto1;
-}
-.auto1Img {
-  grid-area: auto1Img;
-}
-.auto1Descripcion {
-  grid-area: auto1Descripcion;
-}
-.auto1ComprarInformacion {
-  grid-area: auto1ComprarInformacion;
-}
-/* AUTO 2 */
-.auto2 {
-  grid-template-areas:
-    "auto2Img auto2Descripcion"
-    "auto2ComprarInformacion auto2ComprarInformacion";
-  grid-area: auto2;
-}
-.auto2Img {
-  grid-area: auto2Img;
-}
-.auto2Descripcion {
-  grid-area: auto2Descripcion;
-}
-.auto2ComprarInformacion {
-  grid-area: auto2ComprarInformacion;
-}
-/* AUTO 3 */
-.auto3 {
-  grid-template-areas:
-    "auto3Img auto3Descripcion"
-    "auto3ComprarInformacion auto3ComprarInformacion";
-  grid-area: auto3;
-}
-.auto3Img {
-  grid-area: auto3Img;
-}
-.auto3Descripcion {
-  grid-area: auto3Descripcion;
-}
-.auto3ComprarInformacion {
-  grid-area: auto3ComprarInformacion;
-}
-/* AUTO 4 */
-.auto4 {
-  grid-template-areas:
-    "auto4Img auto4Descripcion"
-    "auto4ComprarInformacion auto4ComprarInformacion";
-  grid-area: auto4;
-}
-.auto4Img {
-  grid-area: auto4Img;
-}
-.auto4Descripcion {
-  grid-area: auto4Descripcion;
-}
-.auto4ComprarInformacion {
-  grid-area: auto4ComprarInformacion;
-}
-/* AUTO 5 */
-.auto5 {
-  grid-template-areas:
-    "auto5Img auto5Descripcion"
-    "auto5ComprarInformacion auto5ComprarInformacion";
-  grid-area: auto5;
-}
-.auto5Img {
-  grid-area: auto5Img;
-}
-.auto5Descripcion {
-  grid-area: auto5Descripcion;
-}
-.auto5ComprarInformacion {
-  grid-area: auto5ComprarInformacion;
-}
 #comprar {
   background-color: #1c6dc9;
   border: 2px solid #4747f3;
@@ -207,71 +216,49 @@
   font-size: 2rem;
   padding: 1rem;
   border-radius: 5px;
-  margin: 1%;
+  margin: 0 44%;
   color: rgba(255, 255, 255, 0.87);
-}
-#comprar:hover {
-  font-family: $fuenteRussoVerdana;
-  background-color: #1776e4;
-  border: 2px solid #3232f7;
-  box-shadow: 1px 1px 5px #0000ff;
-  padding: 1rem;
-  border-radius: 10px;
-  transform: scale(1.1);
-  transition: 0.3s;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
+  &:hover {
+    font-family: $fuenteRussoVerdana;
+    background-color: #1776e4;
+    border: 2px solid #3232f7;
+    box-shadow: 1px 1px 5px #0000ff;
+    padding: 1rem;
+    border-radius: 10px;
+    transform: scale(1.1);
+    transition: 0.3s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  }
 }
 #masInformacion {
   font-family: $fuenteRussoVerdana;
   background-color: #ff8800;
   border: 2px solid #fc7232;
   box-shadow: 1px 1px 10px #ff9900;
-  width: 13rem;
   font-size: 2rem;
   padding: 1rem;
   border-radius: 5px;
   color: rgba(255, 255, 255, 0.87);
-}
-#masInformacion:hover {
-  background-color: #f3952a;
-  border: 2px solid #fa611a;
-  box-shadow: 1px 1px 5px #ff9900;
-  transform: scale(1.1);
-  transition: 0.3s;
-}
-@media only screen and (max-width: 768px) {
-  .containerCerokm__autos {
-    display: flex;
-    flex-direction: column;
-    font-size: 1rem;
-    align-self: baseline;
-  }
-  .containerCeroKM {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .containerCerokm__filtro {
-    display: flex;
-    flex-flow: column wrap;
-    width: 100%;
-  }
-  .tituloFiltro {
-    width: 100%;
-  }
-  #masInformacion {
-    font-size: 3vw;
-    width: 100%;
+  &:hover {
+    background-color: #f3952a;
+    border: 2px solid #fa611a;
+    box-shadow: 1px 1px 5px #ff9900;
+    transform: scale(1.1);
+    transition: 0.3s;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
   }
 }
