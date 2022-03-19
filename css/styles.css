@@ -771,7 +771,7 @@ html {
 }
 .containerAboutUs .containerAboutUs__Description {
   background: linear-gradient(90deg, #c4caa4b6, #d9dd6ea9);
-  /*BORRAR """"""""""""""""*/
+  /*BOTON CLICK AQUI - CONTACTO*/
 }
 .containerAboutUs .containerAboutUs__Description .containerAboutUs__Description--parrafo, .containerAboutUs .containerAboutUs__Description .cardsTeamImg {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
