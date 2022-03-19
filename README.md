@@ -1,6 +1,7 @@
 # DXCar
 
 Proyecto - Desarrollo Web - CODERHOUSE
+Proyecto pensado para una automotora dedicada a la venta de automoviles nuevos y usados con servicio postventa
 
 ## Proyecto
 
@@ -16,7 +17,7 @@ Si tienes algun comentario, realizalo aqui: octavioadm@gmail.com
 
 ## 🛠 Skills
 
-HTML, CSS, SASS, GIT, GITHUB ...
+HTML, CSS, SASS, BOOTSTRAP, GIT, GITHUB ...
 
 ## Screenshots
 
